@@ -148,7 +148,7 @@ bluej.numberOfRecentProjects=12
 ## specified, will override Java's user.home property.
 #####################################################################
 
-#bluej.userHome=/home/mik/tmp
+bluej.userHome=data
 
 #####################################################################
 ## Where the "userlib" directory is. This directory contains java
@@ -262,7 +262,7 @@ bluej.macos.screenmenubar=true
 ## syntax used
 #####################################################################
 
-bluej.windows.vm=%CD%\\openjdk-6.0.21
+bluej.windows.vm=lib/openjdk-6.0.21
 
 
 #######################################################################
