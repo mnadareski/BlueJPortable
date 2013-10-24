@@ -148,7 +148,7 @@ bluej.numberOfRecentProjects=12
 ## specified, will override Java's user.home property.
 #####################################################################
 
-bluej.userHome=data
+#bluej.userHome=/home/mik/tmp
 
 #####################################################################
 ## Where the "userlib" directory is. This directory contains java
@@ -184,7 +184,7 @@ bluej.userHome=data
 ## it was last closed down.   
 #####################################################################
 
-bluej.autoOpenLastProject=false
+bluej.autoOpenLastProject=true
 
 #####################################################################
 ## Web browser. The following are the commands used for opening a
@@ -262,7 +262,7 @@ bluej.macos.screenmenubar=true
 ## syntax used
 #####################################################################
 
-bluej.windows.vm=lib/openjdk-6.0.21
+#bluej.windows.vm=X\:\\Programming Apps\\J2SDK_1.4.1_02
 
 
 #######################################################################
@@ -407,7 +407,7 @@ bluej.terminal.buffering=false
 
 bluej.editor.autoIndent=true
 bluej.editor.syntaxHilighting=true
-bluej.editor.displayLineNumbers=true
+bluej.editor.displayLineNumbers=false
 bluej.editor.makeBackup=false
 bluej.editor.matchBrackets=true
 
