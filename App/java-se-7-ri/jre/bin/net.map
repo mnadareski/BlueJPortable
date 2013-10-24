@@ -1,0 +1,801 @@
+ net
+
+ Timestamp is 4dff5d85 (Mon Jun 20 07:47:33 2011)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000aa5eH .text                   CODE
+ 0002:00000000 000001e0H .idata$5                DATA
+ 0002:000001e0 00000004H .CRT$XCA                DATA
+ 0002:000001e4 00000004H .CRT$XCZ                DATA
+ 0002:000001e8 00000004H .CRT$XIA                DATA
+ 0002:000001ec 00000004H .CRT$XIAA               DATA
+ 0002:000001f0 00000004H .CRT$XIZ                DATA
+ 0002:00000200 00001bf8H .rdata                  DATA
+ 0002:00001df8 00000065H .rdata$debug            DATA
+ 0002:00001e60 00000004H .rdata$sxdata           DATA
+ 0002:00001e64 00000004H .rtc$IAA                DATA
+ 0002:00001e68 00000004H .rtc$IZZ                DATA
+ 0002:00001e6c 00000004H .rtc$TAA                DATA
+ 0002:00001e70 00000004H .rtc$TZZ                DATA
+ 0002:00001e78 00000064H .xdata$x                DATA
+ 0002:00001edc 00000040H .didat$2                DATA
+ 0002:00001f1c 00000020H .didat$3                DATA
+ 0002:00001f3c 00000034H .didat$4                DATA
+ 0002:00001f70 000000f2H .didat$6                DATA
+ 0002:00002064 00000034H .didat$7                DATA
+ 0002:00002098 00000078H .idata$2                DATA
+ 0002:00002110 00000014H .idata$3                DATA
+ 0002:00002124 000001e0H .idata$4                DATA
+ 0002:00002304 00000620H .idata$6                DATA
+ 0002:00002930 00001c74H .edata                  DATA
+ 0003:00000000 000000b0H .data                   DATA
+ 0003:000000b0 00000034H .didat$5                DATA
+ 0003:000000e8 00000590H .bss                    DATA
+ 0004:00000000 00000058H .rsrc$01                DATA
+ 0004:00000060 000002f0H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000001       ___safe_se_handler_count   00000001     <absolute>
+ 0000:00000000       ___ImageBase               10000000     <linker-defined>
+ 0001:00000000       _Java_java_net_DatagramPacket_init@8 10001000 f   DatagramPacket.obj
+ 0001:000000b4       _Java_java_net_InetAddress_init@8 100010b4 f   InetAddress.obj
+ 0001:00000138       _Java_java_net_Inet4Address_init@8 10001138 f   Inet4Address.obj
+ 0001:00000179       _Java_java_net_Inet6Address_init@8 10001179 f   Inet6Address.obj
+ 0001:0000029b       _free_netaddr              1000129b f   NetworkInterface.obj
+ 0001:000002b5       _getIF                     100012b5 f   NetworkInterface.obj
+ 0001:0000036f       _enumAddresses_win         1000136f f   NetworkInterface.obj
+ 0001:000004e3       _Java_java_net_NetworkInterface_init@8 100014e3 f   NetworkInterface.obj
+ 0001:000006ff       _createNetworkInterface    100016ff f   NetworkInterface.obj
+ 0001:00000a89       _Java_java_net_NetworkInterface_isUp0@16 10001a89 f   NetworkInterface.obj
+ 0001:00000ad8       _Java_java_net_NetworkInterface_isP2P0@16 10001ad8 f   NetworkInterface.obj
+ 0001:00000b1c       _Java_java_net_NetworkInterface_isLoopback0@16 10001b1c f   NetworkInterface.obj
+ 0001:00000b59       _Java_java_net_NetworkInterface_supportsMulticast0@16 10001b59 f   NetworkInterface.obj
+ 0001:00000b5e       _Java_java_net_NetworkInterface_getMacAddr0@20 10001b5e f   NetworkInterface.obj
+ 0001:00000beb       _Java_java_net_NetworkInterface_getMTU0@16 10001beb f   NetworkInterface.obj
+ 0001:00000c24       _free_netif                10001c24 f   NetworkInterface.obj
+ 0001:00000c6b       _enumInterfaces            10001c6b f   NetworkInterface.obj
+ 0001:00000f28       _Java_java_net_NetworkInterface_getByName0@12 10001f28 f   NetworkInterface.obj
+ 0001:00000fc7       _Java_java_net_NetworkInterface_getByIndex0@12 10001fc7 f   NetworkInterface.obj
+ 0001:0000102e       _Java_java_net_NetworkInterface_getByInetAddress0@12 1000202e f   NetworkInterface.obj
+ 0001:000010ec       _Java_java_net_NetworkInterface_getAll@8 100020ec f   NetworkInterface.obj
+ 0001:00001173       _Java_java_net_InetAddressImplFactory_isIPv6Supported@8 10002173 f   InetAddressImplFactory.obj
+ 0001:00001180       _isDottedIPAddress         10002180 f   Inet4AddressImpl.obj
+ 0001:000011ec       _Java_java_net_Inet6AddressImpl_getLocalHostName@8 100021ec f   Inet6AddressImpl.obj
+ 0001:000011ec       _Java_java_net_Inet4AddressImpl_getLocalHostName@8 100021ec f   Inet4AddressImpl.obj
+ 0001:00001249       _Java_java_net_Inet4AddressImpl_lookupAllHostAddr@12 10002249 f   Inet4AddressImpl.obj
+ 0001:00001521       _Java_java_net_Inet4AddressImpl_getHostByAddr@12 10002521 f   Inet4AddressImpl.obj
+ 0001:0000159d       _Java_java_net_Inet4AddressImpl_isReachable0@24 1000259d f   Inet4AddressImpl.obj
+ 0001:00001836       _Java_java_net_Inet6AddressImpl_lookupAllHostAddr@12 10002836 f   Inet6AddressImpl.obj
+ 0001:00001cb0       _Java_java_net_Inet6AddressImpl_getHostByAddr@12 10002cb0 f   Inet6AddressImpl.obj
+ 0001:00001de1       _Java_java_net_Inet6AddressImpl_isReachable0@32 10002de1 f   Inet6AddressImpl.obj
+ 0001:0000208e       _Java_java_net_SocketInputStream_init@8 1000308e f   SocketInputStream.obj
+ 0001:000020a0       _Java_java_net_SocketInputStream_socketRead0@28 100030a0 f   SocketInputStream.obj
+ 0001:000022a4       _Java_java_net_SocketOutputStream_init@8 100032a4 f   SocketOutputStream.obj
+ 0001:000022b6       _Java_java_net_SocketOutputStream_socketWrite0@24 100032b6 f   SocketOutputStream.obj
+ 0001:0000246c       _ipv6_available@0          1000346c f   net_util.obj
+ 0001:00002472       _JNI_OnLoad@8              10003472 f   net_util.obj
+ 0001:00002528       _init                      10003528 f   net_util.obj
+ 0001:0000255a       _NET_SockaddrToInetAddress@12 1000355a f   net_util.obj
+ 0001:00002791       _NET_SockaddrEqualsInetAddress@12 10003791 f   net_util.obj
+ 0001:000028a1       _IN6_IS_ADDR_LINKLOCAL     100038a1 f i net_util_md.obj
+ 0001:000028b9       _IN6ADDR_SETANY            100038b9 f i net_util_md.obj
+ 0001:000028e2       _DllMain@12                100038e2 f   net_util_md.obj
+ 0001:00002931       _initLocalAddrTable        10003931 f   net_util_md.obj
+ 0001:00002932       _NET_ThrowNew@12           10003932 f   net_util_md.obj
+ 0001:00002a00       _NET_ThrowCurrent          10003a00 f   net_util_md.obj
+ 0001:00002a15       _NET_ThrowSocketException  10003a15 f   net_util_md.obj
+ 0001:00002a54       _NET_ThrowByNameWithLastError 10003a54 f   net_util_md.obj
+ 0001:00002aab       _NET_GetFileDescriptorID   10003aab f   net_util_md.obj
+ 0001:00002ad7       _IPv6_supported            10003ad7 f   net_util_md.obj
+ 0001:00002af6       _NET_GetDefaultTOS         10003af6 f   net_util_md.obj
+ 0001:00002bbd       _NET_MapSocketOption@12    10003bbd f   net_util_md.obj
+ 0001:00002bfd       _NET_SetSockOpt@20         10003bfd f   net_util_md.obj
+ 0001:00002c6f       _NET_GetSockOpt@20         10003c6f f   net_util_md.obj
+ 0001:00002cbb       _NET_Bind@12               10003cbb f   net_util_md.obj
+ 0001:00002cf3       _NET_SocketClose@4         10003cf3 f   net_util_md.obj
+ 0001:00002d3b       _NET_Timeout@8             10003d3b f   net_util_md.obj
+ 0001:00002dab       _NET_Timeout2@16           10003dab f   net_util_md.obj
+ 0001:00002e81       _NET_BindV6@4              10003e81 f   net_util_md.obj
+ 0001:000031cd       _getDefaultIPv6Interface   100041cd f   net_util_md.obj
+ 0001:0000323b       _NET_InetAddressToSockaddr@24 1000423b f   net_util_md.obj
+ 0001:0000343e       _NET_GetPortFromSockaddr@4 1000443e f   net_util_md.obj
+ 0001:00003457       _NET_IsIPv4Mapped          10004457 f   net_util_md.obj
+ 0001:0000347c       _NET_IPv4MappedToIPv4      1000447c f   net_util_md.obj
+ 0001:000034a0       _NET_IsEqual               100044a0 f   net_util_md.obj
+ 0001:000034c4       _getScopeID                100044c4 f   net_util_md.obj
+ 0001:000034cc       _cmpScopeID                100044cc f   net_util_md.obj
+ 0001:000034dd       _NET_Wait                  100044dd f   net_util_md.obj
+ 0001:0000365c       _NET_Socket                1000465c f   net_util_md.obj
+ 0001:00003685       _NET_MapSocketOptionV6@12  10004685 f   net_util_md.obj
+ 0001:000036cb       _strappend                 100046cb f   ResolverConfigurationImpl.obj
+ 0001:000039bd       _Java_sun_net_dns_ResolverConfigurationImpl_init0@8 100049bd f   ResolverConfigurationImpl.obj
+ 0001:000039fd       _Java_sun_net_dns_ResolverConfigurationImpl_loadDNSconfig0@8 100049fd f   ResolverConfigurationImpl.obj
+ 0001:00003a8d       _Java_sun_net_dns_ResolverConfigurationImpl_notifyAddrChange0@8 10004a8d f   ResolverConfigurationImpl.obj
+ 0001:00003acd       _Java_sun_net_spi_DefaultProxySelector_init@8 10004acd f   DefaultProxySelector.obj
+ 0001:00003c41       _Java_sun_net_spi_DefaultProxySelector_getSystemProxy@16 10004c41 f   DefaultProxySelector.obj
+ 0001:00003fa4       _IN6_IS_ADDR_UNSPECIFIED   10004fa4 f i TwoStacksPlainSocketImpl.obj
+ 0001:00004037       _Java_java_net_TwoStacksPlainSocketImpl_initProto@8 10005037 f   TwoStacksPlainSocketImpl.obj
+ 0001:00004180       _Java_java_net_TwoStacksPlainSocketImpl_socketCreate@12 10005180 f   TwoStacksPlainSocketImpl.obj
+ 0001:000042b5       _Java_java_net_TwoStacksPlainSocketImpl_socketConnect@20 100052b5 f   TwoStacksPlainSocketImpl.obj
+ 0001:000046ee       _Java_java_net_TwoStacksPlainSocketImpl_socketBind@16 100056ee f   TwoStacksPlainSocketImpl.obj
+ 0001:0000494a       _Java_java_net_TwoStacksPlainSocketImpl_socketListen@12 1000594a f   TwoStacksPlainSocketImpl.obj
+ 0001:00004ab9       _Java_java_net_TwoStacksPlainSocketImpl_socketAccept@12 10005ab9 f   TwoStacksPlainSocketImpl.obj
+ 0001:00004f1f       _Java_java_net_TwoStacksPlainSocketImpl_socketAvailable@8 10005f1f f   TwoStacksPlainSocketImpl.obj
+ 0001:00004f8f       _Java_java_net_TwoStacksPlainSocketImpl_socketClose0@12 10005f8f f   TwoStacksPlainSocketImpl.obj
+ 0001:00005058       _Java_java_net_TwoStacksPlainSocketImpl_socketSetOption@20 10006058 f   TwoStacksPlainSocketImpl.obj
+ 0001:000052df       _Java_java_net_TwoStacksPlainSocketImpl_socketGetOption@16 100062df f   TwoStacksPlainSocketImpl.obj
+ 0001:00005492       _Java_java_net_TwoStacksPlainSocketImpl_socketShutdown@12 10006492 f   TwoStacksPlainSocketImpl.obj
+ 0001:000054df       _Java_java_net_TwoStacksPlainSocketImpl_socketSendUrgentData@12 100064df f   TwoStacksPlainSocketImpl.obj
+ 0001:00005556       _Java_java_net_DualStackPlainSocketImpl_initIDs@8 10006556 f   DualStackPlainSocketImpl.obj
+ 0001:0000559a       _Java_java_net_DualStackPlainSocketImpl_socket0@16 1000659a f   DualStackPlainSocketImpl.obj
+ 0001:00005614       _Java_java_net_DualStackPlainSocketImpl_bind0@20 10006614 f   DualStackPlainSocketImpl.obj
+ 0001:0000567f       _Java_java_net_DualStackPlainSocketImpl_connect0@20 1000667f f   DualStackPlainSocketImpl.obj
+ 0001:00005713       _Java_java_net_DualStackPlainSocketImpl_waitForConnect@16 10006713 f   DualStackPlainSocketImpl.obj
+ 0001:0000582e       _Java_java_net_DualStackPlainSocketImpl_localPort0@12 1000682e f   DualStackPlainSocketImpl.obj
+ 0001:000058b2       _Java_java_net_DualStackPlainSocketImpl_localAddress@16 100068b2 f   DualStackPlainSocketImpl.obj
+ 0001:0000594c       _Java_java_net_DualStackPlainSocketImpl_listen0@16 1000694c f   DualStackPlainSocketImpl.obj
+ 0001:00005977       _Java_java_net_DualStackPlainSocketImpl_accept0@16 10006977 f   DualStackPlainSocketImpl.obj
+ 0001:00005a34       _Java_java_net_DualStackPlainSocketImpl_waitForNewConnection@16 10006a34 f   DualStackPlainSocketImpl.obj
+ 0001:00005a7e       _Java_java_net_DualStackPlainSocketImpl_available0@12 10006a7e f   DualStackPlainSocketImpl.obj
+ 0001:00005ab8       _Java_java_net_DualStackPlainDatagramSocketImpl_socketClose@12 10006ab8 f   DualStackPlainDatagramSocketImpl.obj
+ 0001:00005ab8       _Java_java_net_DualStackPlainSocketImpl_close0@12 10006ab8 f   DualStackPlainSocketImpl.obj
+ 0001:00005ac4       _Java_java_net_DualStackPlainSocketImpl_shutdown0@16 10006ac4 f   DualStackPlainSocketImpl.obj
+ 0001:00005ad5       _Java_java_net_DualStackPlainSocketImpl_setIntOption@20 10006ad5 f   DualStackPlainSocketImpl.obj
+ 0001:00005b5a       _Java_java_net_DualStackPlainSocketImpl_getIntOption@16 10006b5a f   DualStackPlainSocketImpl.obj
+ 0001:00005bf1       _Java_java_net_DualStackPlainSocketImpl_sendOOB@16 10006bf1 f   DualStackPlainSocketImpl.obj
+ 0001:00005c38       _Java_java_net_DualStackPlainSocketImpl_configureBlocking@16 10006c38 f   DualStackPlainSocketImpl.obj
+ 0001:00005c76       _createInteger             10006c76 f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:00005cde       _createBoolean             10006cde f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:00005da4       _exceedSizeLimit           10006da4 f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:000060e6       _Java_java_net_TwoStacksPlainDatagramSocketImpl_init@8 100070e6 f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:000062c6       _Java_java_net_TwoStacksPlainDatagramSocketImpl_bind0@16 100072c6 f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:0000650e       _Java_java_net_TwoStacksPlainDatagramSocketImpl_connect0@16 1000750e f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:00006676       _Java_java_net_TwoStacksPlainDatagramSocketImpl_disconnect0@12 10007676 f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:00006726       _Java_java_net_TwoStacksPlainDatagramSocketImpl_send@12 10007726 f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:000069ce       _Java_java_net_TwoStacksPlainDatagramSocketImpl_peek@12 100079ce f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:00006bf5       _Java_java_net_TwoStacksPlainDatagramSocketImpl_peekData@12 10007bf5 f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:0000704e       _Java_java_net_TwoStacksPlainDatagramSocketImpl_receive0@12 1000804e f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:0000748a       _Java_java_net_TwoStacksPlainDatagramSocketImpl_datagramSocketCreate@8 1000848a f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:00007605       _Java_java_net_TwoStacksPlainDatagramSocketImpl_datagramSocketClose@8 10008605 f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:00007a56       _Java_java_net_TwoStacksPlainDatagramSocketImpl_socketSetOption@16 10008a56 f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:00007c27       _getMulticastInterface     10008c27 f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:000080b7       _Java_java_net_TwoStacksPlainDatagramSocketImpl_socketGetOption@12 100090b7 f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:0000829c       _Java_java_net_TwoStacksPlainDatagramSocketImpl_setTimeToLive@12 1000929c f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:00008378       _Java_java_net_TwoStacksPlainDatagramSocketImpl_setTTL@12 10009378 f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:0000838e       _Java_java_net_TwoStacksPlainDatagramSocketImpl_getTimeToLive@8 1000938e f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:00008468       _Java_java_net_TwoStacksPlainDatagramSocketImpl_getTTL@8 10009468 f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:000086ca       _Java_java_net_TwoStacksPlainDatagramSocketImpl_join@16 100096ca f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:000086e9       _Java_java_net_TwoStacksPlainDatagramSocketImpl_leave@16 100096e9 f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:000087d4       _Java_java_net_DualStackPlainDatagramSocketImpl_socketCreate@12 100097d4 f   DualStackPlainDatagramSocketImpl.obj
+ 0001:0000886f       _Java_java_net_DualStackPlainDatagramSocketImpl_socketBind@20 1000986f f   DualStackPlainDatagramSocketImpl.obj
+ 0001:000088f3       _Java_java_net_DualStackPlainDatagramSocketImpl_socketConnect@20 100098f3 f   DualStackPlainDatagramSocketImpl.obj
+ 0001:00008988       _Java_java_net_DualStackPlainDatagramSocketImpl_socketDisconnect@12 10009988 f   DualStackPlainDatagramSocketImpl.obj
+ 0001:000089eb       _Java_java_net_DualStackPlainDatagramSocketImpl_socketLocalPort@12 100099eb f   DualStackPlainDatagramSocketImpl.obj
+ 0001:00008a50       _Java_java_net_DualStackPlainDatagramSocketImpl_socketLocalAddress@12 10009a50 f   DualStackPlainDatagramSocketImpl.obj
+ 0001:00008ab4       _Java_java_net_DualStackPlainDatagramSocketImpl_socketReceiveOrPeekData@28 10009ab4 f   DualStackPlainDatagramSocketImpl.obj
+ 0001:00008db9       _Java_java_net_DualStackPlainDatagramSocketImpl_socketSend@36 10009db9 f   DualStackPlainDatagramSocketImpl.obj
+ 0001:00008ecd       _Java_java_net_DualStackPlainDatagramSocketImpl_socketSetIntOption@20 10009ecd f   DualStackPlainDatagramSocketImpl.obj
+ 0001:00008f29       _Java_java_net_DualStackPlainDatagramSocketImpl_socketGetIntOption@16 10009f29 f   DualStackPlainDatagramSocketImpl.obj
+ 0001:00008f9c       _Java_sun_net_www_protocol_http_ntlm_NTLMAuthSequence_initFirst@8 10009f9c f   NTLMAuthSequence.obj
+ 0001:00008fdc       _Java_sun_net_www_protocol_http_ntlm_NTLMAuthSequence_getCredentialsHandle@20 10009fdc f   NTLMAuthSequence.obj
+ 0001:0000917a       _Java_sun_net_www_protocol_http_ntlm_NTLMAuthSequence_getNextToken@20 1000a17a f   NTLMAuthSequence.obj
+ 0001:000093e2       _getAdapter                1000a3e2 f   NetworkInterface_winXP.obj
+ 0001:0000994e       _Java_java_net_NetworkInterface_supportsMulticast0_XP@16 1000a94e f   NetworkInterface_winXP.obj
+ 0001:0000997c       _Java_java_net_NetworkInterface_isUp0_XP@16 1000a97c f   NetworkInterface_winXP.obj
+ 0001:000099a7       _Java_java_net_NetworkInterface_getMacAddr0_XP@16 1000a9a7 f   NetworkInterface_winXP.obj
+ 0001:000099fd       _Java_java_net_NetworkInterface_getMTU0_XP@16 1000a9fd f   NetworkInterface_winXP.obj
+ 0001:00009a25       _Java_java_net_NetworkInterface_isLoopback0_XP@16 1000aa25 f   NetworkInterface_winXP.obj
+ 0001:00009a50       _Java_java_net_NetworkInterface_isP2P0_XP@16 1000aa50 f   NetworkInterface_winXP.obj
+ 0001:00009a8b       _getAllInterfacesAndAddresses 1000aa8b f   NetworkInterface_winXP.obj
+ 0001:00009cd3       _Java_java_net_NetworkInterface_getByName0_XP@12 1000acd3 f   NetworkInterface_winXP.obj
+ 0001:00009d52       _Java_java_net_NetworkInterface_getByIndex0_XP@12 1000ad52 f   NetworkInterface_winXP.obj
+ 0001:00009da3       _Java_java_net_NetworkInterface_getByInetAddress0_XP@12 1000ada3 f   NetworkInterface_winXP.obj
+ 0001:00009e12       _Java_java_net_NetworkInterface_getAll_XP@8 1000ae12 f   NetworkInterface_winXP.obj
+ 0001:00009e84       _JNU_ThrowOutOfMemoryError@8 1000ae84 f   java:java.dll
+ 0001:00009e8a       _JNU_ThrowByName@12        1000ae8a f   java:java.dll
+ 0001:00009e90       _JNU_NewStringPlatform@8   1000ae90 f   java:java.dll
+ 0001:00009e96       _JNU_ReleaseStringPlatformChars@12 1000ae96 f   java:java.dll
+ 0001:00009e9c       _JNU_GetStringPlatformChars@12 1000ae9c f   java:java.dll
+ 0001:00009ea2       _JNU_ThrowNullPointerException@8 1000aea2 f   java:java.dll
+ 0001:00009ea8       _jio_snprintf              1000aea8 f   java:java.dll
+ 0001:00009eae       _JNU_ThrowByNameWithLastError@12 1000aeae f   java:java.dll
+ 0001:00009eb4       ___WSAFDIsSet@8            1000aeb4 f   ws2_32:WS2_32.dll
+ 0001:00009eba       _JVM_InitializeSocketLibrary@0 1000aeba f   jvm:jvm.dll
+ 0001:00009ec0       _JVM_CurrentTimeMillis@8   1000aec0 f   jvm:jvm.dll
+ 0001:00009ec6       __imp_load__AcquireCredentialsHandleA@36 1000aec6     secur32:Secur32.dll
+ 0001:00009ed0       __tailMerge_Secur32_dll    1000aed0     secur32:Secur32.dll
+ 0001:00009ee1       _AcquireCredentialsHandleA@36 1000aee1 f   secur32:Secur32.dll
+ 0001:00009ee7       __imp_load__DeleteSecurityContext@4 1000aee7     secur32:Secur32.dll
+ 0001:00009ef1       __imp_load__FreeCredentialsHandle@4 1000aef1     secur32:Secur32.dll
+ 0001:00009efb       __imp_load__CompleteAuthToken@8 1000aefb     secur32:Secur32.dll
+ 0001:00009f05       _CompleteAuthToken@8       1000af05 f   secur32:Secur32.dll
+ 0001:00009f0b       __imp_load__InitializeSecurityContextA@48 1000af0b     secur32:Secur32.dll
+ 0001:00009f15       _InitializeSecurityContextA@48 1000af15 f   secur32:Secur32.dll
+ 0001:00009f1b       __imp_load__GetFriendlyIfIndex@4 1000af1b     iphlpapi:IPHLPAPI.DLL
+ 0001:00009f25       __tailMerge_IPHLPAPI_DLL   1000af25     iphlpapi:IPHLPAPI.DLL
+ 0001:00009f36       _GetFriendlyIfIndex@4      1000af36 f   iphlpapi:IPHLPAPI.DLL
+ 0001:00009f3c       __imp_load__GetIfTable@12  1000af3c     iphlpapi:IPHLPAPI.DLL
+ 0001:00009f46       _GetIfTable@12             1000af46 f   iphlpapi:IPHLPAPI.DLL
+ 0001:00009f4c       __imp_load__GetIpAddrTable@12 1000af4c     iphlpapi:IPHLPAPI.DLL
+ 0001:00009f56       _GetIpAddrTable@12         1000af56 f   iphlpapi:IPHLPAPI.DLL
+ 0001:00009f5c       __imp_load__GetAdaptersInfo@8 1000af5c     iphlpapi:IPHLPAPI.DLL
+ 0001:00009f66       _GetAdaptersInfo@8         1000af66 f   iphlpapi:IPHLPAPI.DLL
+ 0001:00009f6c       __imp_load__NotifyAddrChange@8 1000af6c     iphlpapi:IPHLPAPI.DLL
+ 0001:00009f76       _NotifyAddrChange@8        1000af76 f   iphlpapi:IPHLPAPI.DLL
+ 0001:00009f7c       __imp_load__GetAdaptersAddresses@20 1000af7c     iphlpapi:IPHLPAPI.DLL
+ 0001:00009f86       _GetAdaptersAddresses@20   1000af86 f   iphlpapi:IPHLPAPI.DLL
+ 0001:00009f8c       ___delayLoadHelper2@8      1000af8c f   delayimp:delayhlp.obj
+ 0001:0000a1c8       _memcpy                    1000b1c8 f   MSVCRT:MSVCR100.dll
+ 0001:0000a1ce       _strlen                    1000b1ce f   MSVCRT:MSVCR100.dll
+ 0001:0000a1d4       _strcpy                    1000b1d4 f   MSVCRT:MSVCR100.dll
+ 0001:0000a1da       @__security_check_cookie@4 1000b1da f   MSVCRT:secchk.obj
+ 0001:0000a1ea       _strcmp                    1000b1ea f   MSVCRT:MSVCR100.dll
+ 0001:0000a1f0       _memset                    1000b1f0 f   MSVCRT:MSVCR100.dll
+ 0001:0000a1f6       _strcat                    1000b1f6 f   MSVCRT:MSVCR100.dll
+ 0001:0000a24a       __CRT_INIT@12              1000b24a f   MSVCRT:crtdll.obj
+ 0001:0000a56a       __DllMainCRTStartup@12     1000b56a f   MSVCRT:crtdll.obj
+ 0001:0000a58d       ___report_gsfailure        1000b58d f   MSVCRT:gs_report.obj
+ 0001:0000a693       ___clean_type_info_names   1000b693 f   MSVCRT:tncleanup.obj
+ 0001:0000a69f       __onexit                   1000b69f f   MSVCRT:atonexit.obj
+ 0001:0000a740       _atexit                    1000b740 f   MSVCRT:atonexit.obj
+ 0001:0000a757       __RTC_Initialize           1000b757 f   MSVCRT:_initsect_.obj
+ 0001:0000a77d       __RTC_Terminate            1000b77d f   MSVCRT:_initsect_.obj
+ 0001:0000a7b0       __ValidateImageBase        1000b7b0 f   MSVCRT:pesect.obj
+ 0001:0000a7f0       __FindPESection            1000b7f0 f   MSVCRT:pesect.obj
+ 0001:0000a840       __IsNonwritableInCurrentImage 1000b840 f   MSVCRT:pesect.obj
+ 0001:0000a8fc       __initterm                 1000b8fc f   MSVCRT:MSVCR100.dll
+ 0001:0000a902       __initterm_e               1000b902 f   MSVCRT:MSVCR100.dll
+ 0001:0000a908       __amsg_exit                1000b908 f   MSVCRT:MSVCR100.dll
+ 0001:0000a90e       ___CppXcptFilter           1000b90e f   MSVCRT:MSVCR100.dll
+ 0001:0000a920       __SEH_prolog4              1000b920 f   MSVCRT:sehprolg4.obj
+ 0001:0000a965       __SEH_epilog4              1000b965 f   MSVCRT:sehprolg4.obj
+ 0001:0000a979       __except_handler4          1000b979 f   MSVCRT:chandler4gs.obj
+ 0001:0000a99e       ___security_init_cookie    1000b99e f   MSVCRT:gs_support.obj
+ 0001:0000aa3a       __crt_debugger_hook        1000ba3a f   MSVCRT:MSVCR100.dll
+ 0001:0000aa40       ___clean_type_info_names_internal 1000ba40 f   MSVCRT:MSVCR100.dll
+ 0001:0000aa46       __unlock                   1000ba46 f   MSVCRT:MSVCR100.dll
+ 0001:0000aa4c       ___dllonexit               1000ba4c f   MSVCRT:MSVCR100.dll
+ 0001:0000aa52       __lock                     1000ba52 f   MSVCRT:MSVCR100.dll
+ 0001:0000aa58       __except_handler4_common   1000ba58 f   MSVCRT:MSVCR100.dll
+ 0002:00000000       __imp__RegQueryValueExA@24 1000c000     advapi32:ADVAPI32.dll
+ 0002:00000004       __imp__RegOpenKeyExA@20    1000c004     advapi32:ADVAPI32.dll
+ 0002:00000008       __imp__RegCloseKey@4       1000c008     advapi32:ADVAPI32.dll
+ 0002:0000000c       \177ADVAPI32_NULL_THUNK_DATA 1000c00c     advapi32:ADVAPI32.dll
+ 0002:00000010       __imp__GetTickCount@0      1000c010     kernel32:KERNEL32.dll
+ 0002:00000014       __imp__QueryPerformanceCounter@4 1000c014     kernel32:KERNEL32.dll
+ 0002:00000018       __imp__IsDebuggerPresent@0 1000c018     kernel32:KERNEL32.dll
+ 0002:0000001c       __imp__SetUnhandledExceptionFilter@4 1000c01c     kernel32:KERNEL32.dll
+ 0002:00000020       __imp__UnhandledExceptionFilter@4 1000c020     kernel32:KERNEL32.dll
+ 0002:00000024       __imp__GetCurrentProcess@0 1000c024     kernel32:KERNEL32.dll
+ 0002:00000028       __imp__TerminateProcess@8  1000c028     kernel32:KERNEL32.dll
+ 0002:0000002c       __imp__InterlockedCompareExchange@12 1000c02c     kernel32:KERNEL32.dll
+ 0002:00000030       __imp__DecodePointer@4     1000c030     kernel32:KERNEL32.dll
+ 0002:00000034       __imp__EncodePointer@4     1000c034     kernel32:KERNEL32.dll
+ 0002:00000038       __imp__RaiseException@16   1000c038     kernel32:KERNEL32.dll
+ 0002:0000003c       __imp__LoadLibraryA@4      1000c03c     kernel32:KERNEL32.dll
+ 0002:00000040       __imp__GetCurrentThreadId@0 1000c040     kernel32:KERNEL32.dll
+ 0002:00000044       __imp__InterlockedExchange@8 1000c044     kernel32:KERNEL32.dll
+ 0002:00000048       __imp__FreeLibrary@4       1000c048     kernel32:KERNEL32.dll
+ 0002:0000004c       __imp__GetProcAddress@8    1000c04c     kernel32:KERNEL32.dll
+ 0002:00000050       __imp__LocalAlloc@8        1000c050     kernel32:KERNEL32.dll
+ 0002:00000054       __imp__InitializeCriticalSection@4 1000c054     kernel32:KERNEL32.dll
+ 0002:00000058       __imp__EnterCriticalSection@4 1000c058     kernel32:KERNEL32.dll
+ 0002:0000005c       __imp__LeaveCriticalSection@4 1000c05c     kernel32:KERNEL32.dll
+ 0002:00000060       __imp__GetOverlappedResult@16 1000c060     kernel32:KERNEL32.dll
+ 0002:00000064       __imp__SetHandleInformation@12 1000c064     kernel32:KERNEL32.dll
+ 0002:00000068       __imp__GetVersionExA@4     1000c068     kernel32:KERNEL32.dll
+ 0002:0000006c       __imp__Sleep@4             1000c06c     kernel32:KERNEL32.dll
+ 0002:00000070       __imp__GetCurrentProcessId@0 1000c070     kernel32:KERNEL32.dll
+ 0002:00000074       __imp__GetSystemTimeAsFileTime@4 1000c074     kernel32:KERNEL32.dll
+ 0002:00000078       __imp__GetLastError@0      1000c078     kernel32:KERNEL32.dll
+ 0002:0000007c       \177KERNEL32_NULL_THUNK_DATA 1000c07c     kernel32:KERNEL32.dll
+ 0002:00000080       __imp___unlock             1000c080     MSVCRT:MSVCR100.dll
+ 0002:00000084       __imp____clean_type_info_names_internal 1000c084     MSVCRT:MSVCR100.dll
+ 0002:00000088       __imp___crt_debugger_hook  1000c088     MSVCRT:MSVCR100.dll
+ 0002:0000008c       __imp____CppXcptFilter     1000c08c     MSVCRT:MSVCR100.dll
+ 0002:00000090       __imp___amsg_exit          1000c090     MSVCRT:MSVCR100.dll
+ 0002:00000094       __imp___initterm_e         1000c094     MSVCRT:MSVCR100.dll
+ 0002:00000098       __imp___initterm           1000c098     MSVCRT:MSVCR100.dll
+ 0002:0000009c       __imp___encoded_null       1000c09c     MSVCRT:MSVCR100.dll
+ 0002:000000a0       __imp___malloc_crt         1000c0a0     MSVCRT:MSVCR100.dll
+ 0002:000000a4       __imp__wcscpy              1000c0a4     MSVCRT:MSVCR100.dll
+ 0002:000000a8       __imp__strerror            1000c0a8     MSVCRT:MSVCR100.dll
+ 0002:000000ac       __imp__strtok              1000c0ac     MSVCRT:MSVCR100.dll
+ 0002:000000b0       __imp__strncmp             1000c0b0     MSVCRT:MSVCR100.dll
+ 0002:000000b4       __imp__strstr              1000c0b4     MSVCRT:MSVCR100.dll
+ 0002:000000b8       __imp__strchr              1000c0b8     MSVCRT:MSVCR100.dll
+ 0002:000000bc       __imp__sscanf              1000c0bc     MSVCRT:MSVCR100.dll
+ 0002:000000c0       __imp___lock               1000c0c0     MSVCRT:MSVCR100.dll
+ 0002:000000c4       __imp___onexit             1000c0c4     MSVCRT:MSVCR100.dll
+ 0002:000000c8       __imp___except_handler4_common 1000c0c8     MSVCRT:MSVCR100.dll
+ 0002:000000cc       __imp____dllonexit         1000c0cc     MSVCRT:MSVCR100.dll
+ 0002:000000d0       __imp__free                1000c0d0     MSVCRT:MSVCR100.dll
+ 0002:000000d4       __imp__memcpy              1000c0d4     MSVCRT:MSVCR100.dll
+ 0002:000000d8       __imp__realloc             1000c0d8     MSVCRT:MSVCR100.dll
+ 0002:000000dc       __imp__malloc              1000c0dc     MSVCRT:MSVCR100.dll
+ 0002:000000e0       __imp__wcslen              1000c0e0     MSVCRT:MSVCR100.dll
+ 0002:000000e4       __imp__strncpy             1000c0e4     MSVCRT:MSVCR100.dll
+ 0002:000000e8       __imp__strlen              1000c0e8     MSVCRT:MSVCR100.dll
+ 0002:000000ec       __imp__calloc              1000c0ec     MSVCRT:MSVCR100.dll
+ 0002:000000f0       __imp__strcpy              1000c0f0     MSVCRT:MSVCR100.dll
+ 0002:000000f4       __imp__sprintf             1000c0f4     MSVCRT:MSVCR100.dll
+ 0002:000000f8       __imp__strcmp              1000c0f8     MSVCRT:MSVCR100.dll
+ 0002:000000fc       __imp__isspace             1000c0fc     MSVCRT:MSVCR100.dll
+ 0002:00000100       __imp__memset              1000c100     MSVCRT:MSVCR100.dll
+ 0002:00000104       __imp___errno              1000c104     MSVCRT:MSVCR100.dll
+ 0002:00000108       __imp__strcat              1000c108     MSVCRT:MSVCR100.dll
+ 0002:0000010c       __imp____iob_func          1000c10c     MSVCRT:MSVCR100.dll
+ 0002:00000110       __imp__fprintf             1000c110     MSVCRT:MSVCR100.dll
+ 0002:00000114       \177MSVCR100_NULL_THUNK_DATA 1000c114     MSVCRT:MSVCR100.dll
+ 0002:00000118       __imp__freeaddrinfo@4      1000c118     ws2_32:WS2_32.dll
+ 0002:0000011c       __imp__gethostname@8       1000c11c     ws2_32:WS2_32.dll
+ 0002:00000120       __imp__gethostbyname@4     1000c120     ws2_32:WS2_32.dll
+ 0002:00000124       __imp__sendto@24           1000c124     ws2_32:WS2_32.dll
+ 0002:00000128       __imp__recvfrom@24         1000c128     ws2_32:WS2_32.dll
+ 0002:0000012c       __imp__accept@12           1000c12c     ws2_32:WS2_32.dll
+ 0002:00000130       __imp__listen@8            1000c130     ws2_32:WS2_32.dll
+ 0002:00000134       __imp__ioctlsocket@12      1000c134     ws2_32:WS2_32.dll
+ 0002:00000138       __imp__shutdown@8          1000c138     ws2_32:WS2_32.dll
+ 0002:0000013c       __imp__getprotobyname@4    1000c13c     ws2_32:WS2_32.dll
+ 0002:00000140       __imp__WSAIoctl@36         1000c140     ws2_32:WS2_32.dll
+ 0002:00000144       __imp__getsockname@12      1000c144     ws2_32:WS2_32.dll
+ 0002:00000148       __imp____WSAFDIsSet@8      1000c148     ws2_32:WS2_32.dll
+ 0002:0000014c       __imp__select@20           1000c14c     ws2_32:WS2_32.dll
+ 0002:00000150       __imp__WSASendDisconnect@8 1000c150     ws2_32:WS2_32.dll
+ 0002:00000154       __imp__WSASetLastError@4   1000c154     ws2_32:WS2_32.dll
+ 0002:00000158       __imp__socket@12           1000c158     ws2_32:WS2_32.dll
+ 0002:0000015c       __imp__WSAStartup@8        1000c15c     ws2_32:WS2_32.dll
+ 0002:00000160       __imp__WSACleanup@0        1000c160     ws2_32:WS2_32.dll
+ 0002:00000164       __imp__ntohs@4             1000c164     ws2_32:WS2_32.dll
+ 0002:00000168       __imp__send@16             1000c168     ws2_32:WS2_32.dll
+ 0002:0000016c       __imp__recv@16             1000c16c     ws2_32:WS2_32.dll
+ 0002:00000170       __imp__getnameinfo@28      1000c170     ws2_32:WS2_32.dll
+ 0002:00000174       __imp__getaddrinfo@16      1000c174     ws2_32:WS2_32.dll
+ 0002:00000178       __imp__gethostbyaddr@12    1000c178     ws2_32:WS2_32.dll
+ 0002:0000017c       __imp__WSAGetLastError@0   1000c17c     ws2_32:WS2_32.dll
+ 0002:00000180       __imp__setsockopt@20       1000c180     ws2_32:WS2_32.dll
+ 0002:00000184       __imp__bind@12             1000c184     ws2_32:WS2_32.dll
+ 0002:00000188       __imp__closesocket@4       1000c188     ws2_32:WS2_32.dll
+ 0002:0000018c       __imp__WSACreateEvent@0    1000c18c     ws2_32:WS2_32.dll
+ 0002:00000190       __imp__WSAEventSelect@12   1000c190     ws2_32:WS2_32.dll
+ 0002:00000194       __imp__htons@4             1000c194     ws2_32:WS2_32.dll
+ 0002:00000198       __imp__connect@12          1000c198     ws2_32:WS2_32.dll
+ 0002:0000019c       __imp__WSACloseEvent@4     1000c19c     ws2_32:WS2_32.dll
+ 0002:000001a0       __imp__getsockopt@20       1000c1a0     ws2_32:WS2_32.dll
+ 0002:000001a4       __imp__htonl@4             1000c1a4     ws2_32:WS2_32.dll
+ 0002:000001a8       __imp__ntohl@4             1000c1a8     ws2_32:WS2_32.dll
+ 0002:000001ac       \177WS2_32_NULL_THUNK_DATA 1000c1ac     ws2_32:WS2_32.dll
+ 0002:000001b0       __imp__JNU_ThrowByName@12  1000c1b0     java:java.dll
+ 0002:000001b4       __imp__JNU_NewStringPlatform@8 1000c1b4     java:java.dll
+ 0002:000001b8       __imp__JNU_ThrowOutOfMemoryError@8 1000c1b8     java:java.dll
+ 0002:000001bc       __imp__JNU_ThrowByNameWithLastError@12 1000c1bc     java:java.dll
+ 0002:000001c0       __imp__jio_snprintf        1000c1c0     java:java.dll
+ 0002:000001c4       __imp__JNU_ThrowNullPointerException@8 1000c1c4     java:java.dll
+ 0002:000001c8       __imp__JNU_GetStringPlatformChars@12 1000c1c8     java:java.dll
+ 0002:000001cc       __imp__JNU_ReleaseStringPlatformChars@12 1000c1cc     java:java.dll
+ 0002:000001d0       \177java_NULL_THUNK_DATA   1000c1d0     java:java.dll
+ 0002:000001d4       __imp__JVM_CurrentTimeMillis@8 1000c1d4     jvm:jvm.dll
+ 0002:000001d8       __imp__JVM_InitializeSocketLibrary@0 1000c1d8     jvm:jvm.dll
+ 0002:000001dc       \177jvm_NULL_THUNK_DATA    1000c1dc     jvm:jvm.dll
+ 0002:000001e0       ___xc_a                    1000c1e0     MSVCRT:cinitexe.obj
+ 0002:000001e4       ___xc_z                    1000c1e4     MSVCRT:cinitexe.obj
+ 0002:000001e8       ___xi_a                    1000c1e8     MSVCRT:cinitexe.obj
+ 0002:000001f0       ___xi_z                    1000c1f0     MSVCRT:cinitexe.obj
+ 0002:0000021c       ??_C@_09MAGKMKDD@bufLength?$AA@ 1000c21c     DatagramPacket.obj
+ 0002:00000228       ??_C@_06IJDLPEM@length?$AA@ 1000c228     DatagramPacket.obj
+ 0002:00000230       ??_C@_06KLHHMIGM@offset?$AA@ 1000c230     DatagramPacket.obj
+ 0002:00000238       ??_C@_03COAJHJPB@buf?$AA@  1000c238     DatagramPacket.obj
+ 0002:0000023c       ??_C@_02KCBIMKDL@?$FLB?$AA@ 1000c23c     DatagramPacket.obj
+ 0002:00000240       ??_C@_04LPGMAPLE@port?$AA@ 1000c240     DatagramPacket.obj
+ 0002:00000248       ??_C@_01JPJNBJEM@I?$AA@    1000c248     DatagramPacket.obj
+ 0002:0000024c       ??_C@_07LHEPONKL@address?$AA@ 1000c24c     DatagramPacket.obj
+ 0002:00000254       ??_C@_0BH@FIKCFBLO@Ljava?1net?1InetAddress?$DL?$AA@ 1000c254     DatagramPacket.obj
+ 0002:0000026c       ??_C@_0BC@LHOCKAOM@preferIPv6Address?$AA@ 1000c26c     InetAddress.obj
+ 0002:00000280       ??_C@_01POHCFINO@Z?$AA@    1000c280     InetAddress.obj
+ 0002:00000284       ??_C@_06NBOBHOCP@family?$AA@ 1000c284     InetAddress.obj
+ 0002:0000028c       ??_C@_0BF@LNJHKELF@java?1net?1InetAddress?$AA@ 1000c28c     InetAddress.obj
+ 0002:000002a4       ??_C@_06FALKBLGB@?$DMinit?$DO?$AA@ 1000c2a4     Inet4Address.obj
+ 0002:000002ac       ??_C@_03GAEACAIP@?$CI?$CJV?$AA@ 1000c2ac     Inet4Address.obj
+ 0002:000002b0       ??_C@_0BG@MGDLLCGN@java?1net?1Inet4Address?$AA@ 1000c2b0     Inet4Address.obj
+ 0002:000002c8       ??_C@_0BB@LLADEMMP@scope_ifname_set?$AA@ 1000c2c8     Inet6Address.obj
+ 0002:000002dc       ??_C@_0N@DKHAKOIC@scope_ifname?$AA@ 1000c2dc     Inet6Address.obj
+ 0002:000002ec       ??_C@_0BM@MEIIMOAC@Ljava?1net?1NetworkInterface?$DL?$AA@ 1000c2ec     Inet6Address.obj
+ 0002:00000308       ??_C@_0N@EMCDHDAD@scope_id_set?$AA@ 1000c308     Inet6Address.obj
+ 0002:00000318       ??_C@_0BA@CBBKEDDC@cached_scope_id?$AA@ 1000c318     Inet6Address.obj
+ 0002:00000328       ??_C@_08HMELDLBB@scope_id?$AA@ 1000c328     Inet6Address.obj
+ 0002:00000334       ??_C@_09OMLGLGNL@ipaddress?$AA@ 1000c334     Inet6Address.obj
+ 0002:00000340       ??_C@_0BG@OIMNJKOL@java?1net?1Inet6Address?$AA@ 1000c340     Inet6Address.obj
+ 0002:00000358       ??_C@_0BI@ODENFOIG@heap?5allocation?5failure?$AA@ 1000c358     NetworkInterface.obj
+ 0002:00000370       ??_C@_0BA@NOLMKEPF@java?1lang?1Error?$AA@ 1000c370     NetworkInterface.obj
+ 0002:00000380       ??_C@_0DB@GGBHCAPL@IP?5Helper?5Library?5GetIpAddrTable@ 1000c380     NetworkInterface.obj
+ 0002:000003b4       ??_C@_0L@NAAPBPMO@maskLength?$AA@ 1000c3b4     NetworkInterface.obj
+ 0002:000003c0       ??_C@_01CPLAODJH@S?$AA@    1000c3c0     NetworkInterface.obj
+ 0002:000003c4       ??_C@_09OALBOHJN@broadcast?$AA@ 1000c3c4     NetworkInterface.obj
+ 0002:000003d0       ??_C@_0BI@EDMBHPFP@Ljava?1net?1Inet4Address?$DL?$AA@ 1000c3d0     NetworkInterface.obj
+ 0002:000003e8       ??_C@_0BK@HBDFEEEP@java?1net?1InterfaceAddress?$AA@ 1000c3e8     NetworkInterface.obj
+ 0002:00000404       ??_C@_06JCHEOPIA@childs?$AA@ 1000c404     NetworkInterface.obj
+ 0002:0000040c       ??_C@_0BN@LEABGBNB@?$FLLjava?1net?1NetworkInterface?$DL?$AA@ 1000c40c     NetworkInterface.obj
+ 0002:0000042c       ??_C@_08OKHKOBIL@bindings?$AA@ 1000c42c     NetworkInterface.obj
+ 0002:00000438       ??_C@_0BN@FGCEFHCI@?$FLLjava?1net?1InterfaceAddress?$DL?$AA@ 1000c438     NetworkInterface.obj
+ 0002:00000458       ??_C@_05GAEKFHB@addrs?$AA@ 1000c458     NetworkInterface.obj
+ 0002:00000460       ??_C@_0BI@FKGHKPME@?$FLLjava?1net?1InetAddress?$DL?$AA@ 1000c460     NetworkInterface.obj
+ 0002:00000478       ??_C@_05FKHKFDID@index?$AA@ 1000c478     NetworkInterface.obj
+ 0002:00000480       ??_C@_0M@NDEOCEGH@displayName?$AA@ 1000c480     NetworkInterface.obj
+ 0002:0000048c       ??_C@_04MEMAJGDJ@name?$AA@ 1000c48c     NetworkInterface.obj
+ 0002:00000494       ??_C@_0BD@JFADHEFE@Ljava?1lang?1String?$DL?$AA@ 1000c494     NetworkInterface.obj
+ 0002:000004a8       ??_C@_05NLNDHDPO@eth?$CFd?$AA@ 1000c4a8     NetworkInterface.obj
+ 0002:000004b0       ??_C@_04MLKOAMFC@tr?$CFd?$AA@ 1000c4b0     NetworkInterface.obj
+ 0002:000004b8       ??_C@_06MBLFHLO@fddi?$CFd?$AA@ 1000c4b8     NetworkInterface.obj
+ 0002:000004c0       ??_C@_05OIOFDJGG@ppp?$CFd?$AA@ 1000c4c0     NetworkInterface.obj
+ 0002:000004c8       ??_C@_02KDBGGDMB@lo?$AA@   1000c4c8     NetworkInterface.obj
+ 0002:000004cc       ??_C@_04MJEIPAOO@sl?$CFd?$AA@ 1000c4cc     NetworkInterface.obj
+ 0002:000004d4       ??_C@_05PGFLNFCI@net?$CFd?$AA@ 1000c4d4     NetworkInterface.obj
+ 0002:000004dc       ??_C@_0CN@IHAKACDK@IP?5Helper?5Library?5GetIfTable?5fun@ 1000c4dc     NetworkInterface.obj
+ 0002:0000050c       ??_C@_09IPAEKDAI@localhost?$AA@ 1000c50c     Inet4AddressImpl.obj
+ 0002:00000518       ??_C@_0BO@JEDADEEB@java?1net?1UnknownHostException?$AA@ 1000c518     Inet4AddressImpl.obj
+ 0002:00000538       ??_C@_0O@DOOCGKOP@host?5argument?$AA@ 1000c538     Inet4AddressImpl.obj
+ 0002:00000548       ??_C@_08IGGJEOEE@hostName?$AA@ 1000c548     Inet4AddressImpl.obj
+ 0002:00000554       ??_C@_0BK@LKDLOIJL@java?1net?1ConnectException?$AA@ 1000c554     Inet4AddressImpl.obj
+ 0002:00000570       ??_C@_0P@FKKLKLOM@connect?5failed?$AA@ 1000c570     Inet4AddressImpl.obj
+ 0002:00000580       ??_C@_0BC@LNOJFPHG@Can?8t?5bind?5socket?$AA@ 1000c580     Inet4AddressImpl.obj
+ 0002:00000594       ??_C@_0BE@KNBHMLLP@Can?8t?5create?5socket?$AA@ 1000c594     Inet4AddressImpl.obj
+ 0002:000005a8       ??_C@_0BH@BDDDBHPI@heap?5allocation?5failed?$AA@ 1000c5a8     Inet6AddressImpl.obj
+ 0002:000005c0       ??_C@_0N@DMACLPJ@host?5is?5null?$AA@ 1000c5c0     Inet6AddressImpl.obj
+ 0002:000005d0       ??_C@_0BP@NBCDDEJF@Can?8t?5bind?5socket?5to?5interface?$AA@ 1000c5d0     Inet6AddressImpl.obj
+ 0002:000005f0       ??_C@_0CB@LJKAIJOC@sun?1net?1ConnectionResetException@ 1000c5f0     SocketInputStream.obj
+ 0002:00000611       ??_C@_00CNPNBAHC@?$AA@     1000c611     SocketInputStream.obj
+ 0002:00000614       ??_C@_0M@KMFGCEDE@recv?5failed?$AA@ 1000c614     SocketInputStream.obj
+ 0002:00000620       ??_C@_0O@DENDBPGJ@Socket?5Closed?$AA@ 1000c620     SocketInputStream.obj
+ 0002:00000630       ??_C@_0BP@DENMAKHD@java?1io?1InterruptedIOException?$AA@ 1000c630     SocketInputStream.obj
+ 0002:00000650       ??_C@_0BG@LKMKDKLB@Operation?5interrupted?$AA@ 1000c650     SocketInputStream.obj
+ 0002:00000668       ??_C@_0CA@FIMHICIJ@java?1net?1SocketTimeoutException?$AA@ 1000c668     SocketInputStream.obj
+ 0002:00000688       ??_C@_0P@MNGKMEOF@Read?5timed?5out?$AA@ 1000c688     SocketInputStream.obj
+ 0002:00000698       ??_C@_0O@PLGOCGPF@Socket?5closed?$AA@ 1000c698     SocketInputStream.obj
+ 0002:000006a8       ??_C@_0BJ@IJNLNPKI@java?1net?1SocketException?$AA@ 1000c6a8     SocketInputStream.obj
+ 0002:000006c4       ??_C@_0O@DGAKFOCN@socket?5closed?$AA@ 1000c6c4     SocketInputStream.obj
+ 0002:000006d4       ??_C@_0BD@PIDCCABF@socket?5write?5error?$AA@ 1000c6d4     SocketOutputStream.obj
+ 0002:000006e8       ??_C@_0DP@KCKHLBJL@No?5buffer?5space?5available?5?9?5exha@ 1000c6e8     SocketOutputStream.obj
+ 0002:00000728       ??_C@_0O@EFMIHGHE@data?5argument?$AA@ 1000c728     SocketOutputStream.obj
+ 0002:00000738       ??_C@_0BJ@OCGKBLBN@java?4net?4preferIPv4Stack?$AA@ 1000c738     net_util.obj
+ 0002:00000754       ??_C@_0L@HKKDKOBF@getBoolean?$AA@ 1000c754     net_util.obj
+ 0002:00000760       ??_C@_0BG@CGIGLAGP@?$CILjava?1lang?1String?$DL?$CJZ?$AA@ 1000c760     net_util.obj
+ 0002:00000778       ??_C@_0BC@DDPBLLCP@java?1lang?1Boolean?$AA@ 1000c778     net_util.obj
+ 0002:0000078c       ??_C@_0BP@JABHMODJ@java?1lang?1UnsatisfiedLinkError?$AA@ 1000c78c     net_util.obj
+ 0002:000007ac       ??_C@_0CC@HBHBHFNC@failed?5to?5initialize?5net?5library@ 1000c7ac     net_util.obj
+ 0002:000007d0       ??_C@_0BN@KGMIDOOK@Overlapped?5operation?5aborted?$AA@ 1000c7d0     net_util_md.obj
+ 0002:000007f0       ??_C@_0BO@ILFFGILJ@Graceful?5shutdown?5in?5progress?$AA@ 1000c7f0     net_util_md.obj
+ 0002:00000810       ??_C@_0CB@GHMLGJBG@Winsock?4dll?5version?5out?5of?5range@ 1000c810     net_util_md.obj
+ 0002:00000834       ??_C@_0CA@DOKOCCFB@Nonauthoritative?5host?5not?5found?$AA@ 1000c834     net_util_md.obj
+ 0002:00000854       ??_C@_0CB@PLJNFILF@Network?5subsystem?5is?5unavailable@ 1000c854     net_util_md.obj
+ 0002:00000878       ??_C@_0BP@BOOHLDLA@This?5is?5a?5nonrecoverable?5error?$AA@ 1000c878     net_util_md.obj
+ 0002:00000898       ??_C@_0CN@KFPNHBIN@Valid?5name?0?5no?5data?5record?5of?5re@ 1000c898     net_util_md.obj
+ 0002:000008c8       ??_C@_0CI@CFJNLLNI@Successful?5WSAStartup?5not?5yet?5pe@ 1000c8c8     net_util_md.obj
+ 0002:000008f0       ??_C@_0BO@GICNLCFB@Insufficient?5memory?5available?$AA@ 1000c8f0     net_util_md.obj
+ 0002:00000910       ??_C@_0P@CAFMJNJH@Host?5not?5found?$AA@ 1000c910     net_util_md.obj
+ 0002:00000920       ??_C@_0CB@EPFKGNAK@Resource?5temporarily?5unavailable@ 1000c920     net_util_md.obj
+ 0002:00000944       ??_C@_0BF@EHICFGGJ@Class?5type?5not?5found?$AA@ 1000c944     net_util_md.obj
+ 0002:0000095c       ??_C@_0BF@IBBHAGLD@Connection?5timed?5out?$AA@ 1000c95c     net_util_md.obj
+ 0002:00000974       ??_C@_0BK@LMAIHBL@Socket?5type?5not?5supported?$AA@ 1000c974     net_util_md.obj
+ 0002:00000990       ??_C@_0CC@DAIJOIKC@Cannot?5send?5after?5socket?5shutdow@ 1000c990     net_util_md.obj
+ 0002:000009b4       ??_C@_0BP@PDKJLOAE@Protocol?5wrong?5type?5for?5socket?$AA@ 1000c9b4     net_util_md.obj
+ 0002:000009d4       ??_C@_0BH@JNBKLLAJ@Protocol?5not?5supported?$AA@ 1000c9d4     net_util_md.obj
+ 0002:000009ec       ??_C@_0BD@LPHIGPM@Too?5many?5processes?$AA@ 1000c9ec     net_util_md.obj
+ 0002:00000a00       ??_C@_0BO@EBCCBLCJ@Protocol?5family?5not?5supported?$AA@ 1000ca00     net_util_md.obj
+ 0002:00000a20       ??_C@_0BI@EDJAHLMH@Operation?5not?5supported?$AA@ 1000ca20     net_util_md.obj
+ 0002:00000a38       ??_C@_0BO@PFGGHOGH@Socket?5operation?5on?5nonsocket?$AA@ 1000ca38     net_util_md.obj
+ 0002:00000a58       ??_C@_0BI@ILAOGBJJ@Socket?5is?5not?5connected?$AA@ 1000ca58     net_util_md.obj
+ 0002:00000a70       ??_C@_0BE@NEGCDJON@Bad?5protocol?5option?$AA@ 1000ca70     net_util_md.obj
+ 0002:00000a84       ??_C@_0DJ@FJOKEEBP@No?5buffer?5space?5available?5?$CImaxim@ 1000ca84     net_util_md.obj
+ 0002:00000ac0       ??_C@_0BH@CIEOBPFM@Network?5is?5unreachable?$AA@ 1000cac0     net_util_md.obj
+ 0002:00000ad8       ??_C@_0CE@JHDCOCF@Network?5dropped?5connection?5on?5re@ 1000cad8     net_util_md.obj
+ 0002:00000afc       ??_C@_0BA@LPIEBGEK@Network?5is?5down?$AA@ 1000cafc     net_util_md.obj
+ 0002:00000b10       ??_C@_0EN@MMGGBIMI@The?5message?5is?5larger?5than?5the?5m@ 1000cb10     net_util_md.obj
+ 0002:00000b60       ??_C@_0BE@INBJMKGG@Too?5many?5open?5files?$AA@ 1000cb60     net_util_md.obj
+ 0002:00000b74       ??_C@_0BM@CCONNCKE@Socket?5is?5already?5connected?$AA@ 1000cb74     net_util_md.obj
+ 0002:00000b90       ??_C@_0BB@HMGGCEBG@Invalid?5argument?$AA@ 1000cb90     net_util_md.obj
+ 0002:00000ba4       ??_C@_0BK@FJBOAFDK@Interrupted?5function?5call?$AA@ 1000cba4     net_util_md.obj
+ 0002:00000bc0       ??_C@_0BK@LBMNDGCG@Operation?5now?5in?5progress?$AA@ 1000cbc0     net_util_md.obj
+ 0002:00000bdc       ??_C@_0BB@PFBILCPA@No?5route?5to?5host?$AA@ 1000cbdc     net_util_md.obj
+ 0002:00000bf0       ??_C@_0BH@PBADJGIL@NoRouteToHostException?$AA@ 1000cbf0     net_util_md.obj
+ 0002:00000c08       ??_C@_0N@OHOPOBEF@Host?5is?5down?$AA@ 1000cc08     net_util_md.obj
+ 0002:00000c18       ??_C@_0M@LOEHLCJD@Bad?5address?$AA@ 1000cc18     net_util_md.obj
+ 0002:00000c24       ??_C@_0BN@HFCIEIME@Destination?5address?5required?$AA@ 1000cc24     net_util_md.obj
+ 0002:00000c44       ??_C@_0BJ@FJAMCHKE@Connection?5reset?5by?5peer?$AA@ 1000cc44     net_util_md.obj
+ 0002:00000c60       ??_C@_0BD@NPDMPPFP@Connection?5refused?$AA@ 1000cc60     net_util_md.obj
+ 0002:00000c74       ??_C@_0BB@CICOPLDE@ConnectException?$AA@ 1000cc74     net_util_md.obj
+ 0002:00000c88       ??_C@_0CB@DJAOADN@Software?5caused?5connection?5abort@ 1000cc88     net_util_md.obj
+ 0002:00000cac       ??_C@_0BO@BMABNIPB@Operation?5already?5in?5progress?$AA@ 1000ccac     net_util_md.obj
+ 0002:00000ccc       ??_C@_0DA@KDGLCJJO@Address?5family?5not?5supported?5by?5@ 1000cccc     net_util_md.obj
+ 0002:00000cfc       ??_C@_0CA@NBHADPNL@Cannot?5assign?5requested?5address?$AA@ 1000ccfc     net_util_md.obj
+ 0002:00000d1c       ??_C@_0BH@LOKACPE@Address?5already?5in?5use?$AA@ 1000cd1c     net_util_md.obj
+ 0002:00000d34       ??_C@_0O@GLDCGPDO@BindException?$AA@ 1000cd34     net_util_md.obj
+ 0002:00000d44       ??_C@_0BC@HFNFNKAI@Permission?5denied?$AA@ 1000cd44     net_util_md.obj
+ 0002:00000f74       ??_C@_04HDOCAJNK@?$CFs?$CFs?$AA@ 1000cf74     net_util_md.obj
+ 0002:00000f7c       ??_C@_09ELLCMIIO@java?1net?1?$AA@ 1000cf7c     net_util_md.obj
+ 0002:00000f88       ??_C@_0BA@EOEGOLGE@SocketException?$AA@ 1000cf88     net_util_md.obj
+ 0002:00000f98       ??_C@_0CL@EIMGMHJP@Unrecognized?5Windows?5Sockets?5err@ 1000cf98     net_util_md.obj
+ 0002:00000fc4       ??_C@_06DJHOIPC@?$CFs?3?5?$CFs?$AA@ 1000cfc4     net_util_md.obj
+ 0002:00000fcc       ??_C@_0BH@GDIHDDN@no?5further?5information?$AA@ 1000cfcc     net_util_md.obj
+ 0002:00000fe4       ??_C@_0BG@FKCLIFOO@errno?3?5?$CFd?0?5error?3?5?$CFs?6?$AA@ 1000cfe4     net_util_md.obj
+ 0002:00000ffc       ??_C@_02ENHFDPNM@fd?$AA@   1000cffc     net_util_md.obj
+ 0002:00001000       ??_C@_0BH@MPHCPCAM@java?1io?1FileDescriptor?$AA@ 1000d000     net_util_md.obj
+ 0002:00001018       ??_C@_0L@JFBEJJHM@DefaultTOS?$AA@ 1000d018     net_util_md.obj
+ 0002:00001024       ??_C@_0DH@IMHEAAEF@SYSTEM?2CurrentControlSet?2Service@ 1000d024     net_util_md.obj
+ 0002:0000105c       ??_C@_0DB@GKAPFAKD@SYSTEM?2CurrentControlSet?2Service@ 1000d05c     net_util_md.obj
+ 0002:00001090       ??_C@_0BM@PJBFLPGI@Protocol?5family?5unavailable?$AA@ 1000d090     net_util_md.obj
+ 0002:000010ac       ??_C@_01CLKCMJKC@?5?$AA@   1000d0ac     ResolverConfigurationImpl.obj
+ 0002:000010b0       ??_C@_0P@BLDHOCGF@DhcpNameServer?$AA@ 1000d0b0     ResolverConfigurationImpl.obj
+ 0002:000010c0       ??_C@_0L@MPBDOIAL@NameServer?$AA@ 1000d0c0     ResolverConfigurationImpl.obj
+ 0002:000010cc       ??_C@_0L@OOMBDFPC@DhcpDomain?$AA@ 1000d0cc     ResolverConfigurationImpl.obj
+ 0002:000010d8       ??_C@_06HFDFFJHI@Domain?$AA@ 1000d0d8     ResolverConfigurationImpl.obj
+ 0002:000010e0       ??_C@_0L@HPPGIMO@EnableDhcp?$AA@ 1000d0e0     ResolverConfigurationImpl.obj
+ 0002:000010f0       ??_C@_0EB@FEBCMLKE@SYSTEM?2CurrentControlSet?2Service@ 1000d0f0     ResolverConfigurationImpl.obj
+ 0002:00001134       ??_C@_0L@HPLHIFHN@SearchList?$AA@ 1000d134     ResolverConfigurationImpl.obj
+ 0002:00001140       ??_C@_0DD@IKBMIFKO@SYSTEM?2CurrentControlSet?2Service@ 1000d140     ResolverConfigurationImpl.obj
+ 0002:00001174       ??_C@_0P@HAAMGONH@os_nameservers?$AA@ 1000d174     ResolverConfigurationImpl.obj
+ 0002:00001184       ??_C@_0O@BBEOADGN@os_searchlist?$AA@ 1000d184     ResolverConfigurationImpl.obj
+ 0002:00001194       ??_C@_0DM@IMMDCFC@Software?2Microsoft?2Windows?2Curre@ 1000d194     DefaultProxySelector.obj
+ 0002:000011d0       ??_C@_0BB@BNNOLJPL@createUnresolved?$AA@ 1000d1d0     DefaultProxySelector.obj
+ 0002:000011e4       ??_C@_0DC@FDHLAKNF@?$CILjava?1lang?1String?$DLI?$CJLjava?1net?1I@ 1000d1e4     DefaultProxySelector.obj
+ 0002:00001218       ??_C@_05HKHMHAPI@SOCKS?$AA@ 1000d218     DefaultProxySelector.obj
+ 0002:00001220       ??_C@_04MEDPFIKH@HTTP?$AA@ 1000d220     DefaultProxySelector.obj
+ 0002:00001228       ??_C@_0BG@JJBIBCMK@Ljava?1net?1Proxy$Type?$DL?$AA@ 1000d228     DefaultProxySelector.obj
+ 0002:00001240       ??_C@_08KOHKDPPJ@NO_PROXY?$AA@ 1000d240     DefaultProxySelector.obj
+ 0002:0000124c       ??_C@_0BB@GMCFBELK@Ljava?1net?1Proxy?$DL?$AA@ 1000d24c     DefaultProxySelector.obj
+ 0002:00001260       ??_C@_0DB@PIODMB@?$CILjava?1net?1Proxy$Type?$DLLjava?1net?1@ 1000d260     DefaultProxySelector.obj
+ 0002:00001294       ??_C@_0BL@HBNNAPLM@java?1net?1InetSocketAddress?$AA@ 1000d294     DefaultProxySelector.obj
+ 0002:000012b0       ??_C@_0BE@CNHDIHBN@java?1net?1Proxy$Type?$AA@ 1000d2b0     DefaultProxySelector.obj
+ 0002:000012c4       ??_C@_0BH@EIEAJJDI@JNI?5errror?5at?5line?5?$CFd?6?$AA@ 1000d2c4     DefaultProxySelector.obj
+ 0002:000012dc       ??_C@_0P@CALONDPA@java?1net?1Proxy?$AA@ 1000d2dc     DefaultProxySelector.obj
+ 0002:000012ec       ??_C@_02DPKJAMEF@?$CFd?$AA@ 1000d2ec     DefaultProxySelector.obj
+ 0002:000012f0       ??_C@_03HFAIOBFI@?$CFs?$DN?$AA@ 1000d2f0     DefaultProxySelector.obj
+ 0002:000012f4       ??_C@_05LBOKJHLG@socks?$AA@ 1000d2f4     DefaultProxySelector.obj
+ 0002:000012fc       ??_C@_05BCHGOAMK@https?$AA@ 1000d2fc     DefaultProxySelector.obj
+ 0002:00001304       ??_C@_06IBHFMCPJ@gopher?$AA@ 1000d304     DefaultProxySelector.obj
+ 0002:0000130c       ??_C@_03LMDBDBEG@ftp?$AA@  1000d30c     DefaultProxySelector.obj
+ 0002:00001310       ??_C@_04IAFLKNP@http?$AA@  1000d310     DefaultProxySelector.obj
+ 0002:00001318       ??_C@_02LNAEAIDO@?$DL?5?$AA@ 1000d318     DefaultProxySelector.obj
+ 0002:0000131c       ??_C@_0M@BCMAAPLG@ProxyServer?$AA@ 1000d31c     DefaultProxySelector.obj
+ 0002:00001328       ??_C@_0O@KBIEAGIG@ProxyOverride?$AA@ 1000d328     DefaultProxySelector.obj
+ 0002:00001338       ??_C@_0M@IOGAMEAC@ProxyEnable?$AA@ 1000d338     DefaultProxySelector.obj
+ 0002:00001344       ??_C@_0N@DOLJHIMH@serverSocket?$AA@ 1000d344     TwoStacksPlainSocketImpl.obj
+ 0002:00001354       ??_C@_0BI@PLIDPFNP@Ljava?1net?1ServerSocket?$DL?$AA@ 1000d354     TwoStacksPlainSocketImpl.obj
+ 0002:0000136c       ??_C@_0N@FBKGBGNJ@trafficClass?$AA@ 1000d36c     TwoStacksPlainSocketImpl.obj
+ 0002:0000137c       ??_C@_07DDHNKDGP@timeout?$AA@ 1000d37c     TwoStacksPlainSocketImpl.obj
+ 0002:00001384       ??_C@_09NOFGBFHM@localport?$AA@ 1000d384     TwoStacksPlainSocketImpl.obj
+ 0002:00001390       ??_C@_06PKMJGOAK@lastfd?$AA@ 1000d390     TwoStacksPlainSocketImpl.obj
+ 0002:00001398       ??_C@_03EJHFOMHC@fd1?$AA@  1000d398     TwoStacksPlainSocketImpl.obj
+ 0002:0000139c       ??_C@_0BJ@BDFOFHPL@Ljava?1io?1FileDescriptor?$DL?$AA@ 1000d39c     TwoStacksPlainSocketImpl.obj
+ 0002:000013b8       ??_C@_03FCLDNGNL@TCP?$AA@  1000d3b8     TwoStacksPlainSocketImpl.obj
+ 0002:000013bc       ??_C@_0BA@FDCHHAEF@null?5fd1?5object?$AA@ 1000d3bc     TwoStacksPlainSocketImpl.obj
+ 0002:000013cc       ??_C@_06HBNONAG@create?$AA@ 1000d3cc     TwoStacksPlainSocketImpl.obj
+ 0002:000013d4       ??_C@_0P@BEFKEEJP@null?5fd?5object?$AA@ 1000d3d4     TwoStacksPlainSocketImpl.obj
+ 0002:000013e4       ??_C@_0BD@PDGFKJCK@getsockname?5failed?$AA@ 1000d3e4     TwoStacksPlainSocketImpl.obj
+ 0002:000013f8       ??_C@_07KAIBNCHO@connect?$AA@ 1000d3f8     TwoStacksPlainSocketImpl.obj
+ 0002:00001400       ??_C@_0BP@PANEALJE@Unable?5to?5establish?5connection?$AA@ 1000d400     TwoStacksPlainSocketImpl.obj
+ 0002:00001420       ??_C@_0BC@DJFNFCAI@connect?5timed?5out?$AA@ 1000d420     TwoStacksPlainSocketImpl.obj
+ 0002:00001438       ??_C@_0FF@BAOCINGB@connect?3?5Address?5is?5invalid?5on?5l@ 1000d438     TwoStacksPlainSocketImpl.obj
+ 0002:00001490       ??_C@_0BI@CCNHNILJ@Destination?5unreachable?$AA@ 1000d490     TwoStacksPlainSocketImpl.obj
+ 0002:000014a8       ??_C@_0BP@FPBJDHAC@inet?5address?5argument?5is?5null?4?$AA@ 1000d4a8     TwoStacksPlainSocketImpl.obj
+ 0002:000014c8       ??_C@_0CA@KIKJKBOB@getsockname?5in?5plain?5socketBind?$AA@ 1000d4c8     TwoStacksPlainSocketImpl.obj
+ 0002:000014e8       ??_C@_08DOMCMNDL@JVM_Bind?$AA@ 1000d4e8     TwoStacksPlainSocketImpl.obj
+ 0002:000014f4       ??_C@_0BG@KFNCOJOM@inet?5address?5argument?$AA@ 1000d4f4     TwoStacksPlainSocketImpl.obj
+ 0002:0000150c       ??_C@_0O@MHKNJCGE@listen?5failed?$AA@ 1000d50c     TwoStacksPlainSocketImpl.obj
+ 0002:0000151c       ??_C@_0P@HOPPFJIC@socket?5address?$AA@ 1000d51c     TwoStacksPlainSocketImpl.obj
+ 0002:0000152c       ??_C@_0BJ@CKIILKAP@socket?5address?5or?5fd?5obj?$AA@ 1000d52c     TwoStacksPlainSocketImpl.obj
+ 0002:00001548       ??_C@_0BG@DCFFKIHC@operation?5interrupted?$AA@ 1000d548     TwoStacksPlainSocketImpl.obj
+ 0002:00001560       ??_C@_0O@EIDFHCCL@select?5failed?$AA@ 1000d560     TwoStacksPlainSocketImpl.obj
+ 0002:00001570       ??_C@_0BB@JOKEJOH@Accept?5timed?5out?$AA@ 1000d570     TwoStacksPlainSocketImpl.obj
+ 0002:00001584       ??_C@_0P@LEIDGPMC@socket?5is?5null?$AA@ 1000d584     TwoStacksPlainSocketImpl.obj
+ 0002:00001594       ??_C@_0BB@DIMAMJLH@socket?5available?$AA@ 1000d594     TwoStacksPlainSocketImpl.obj
+ 0002:000015a8       ??_C@_0BG@NLEJABIB@socket?5already?5closed?$AA@ 1000d5a8     TwoStacksPlainSocketImpl.obj
+ 0002:000015c0       ??_C@_0L@CKHNIFCM@setsockopt?$AA@ 1000d5c0     TwoStacksPlainSocketImpl.obj
+ 0002:000015cc       ??_C@_0DB@PPHBIKEI@Option?5not?5supported?5by?5TwoStack@ 1000d5cc     TwoStacksPlainSocketImpl.obj
+ 0002:00001600       ??_C@_0P@HBJFFFFJ@Invalid?5option?$AA@ 1000d600     TwoStacksPlainSocketImpl.obj
+ 0002:00001610       ??_C@_0BH@OLFAGGPP@setsockopt?5SO_RCVTIMEO?$AA@ 1000d610     TwoStacksPlainSocketImpl.obj
+ 0002:00001628       ??_C@_05MFEJDJP@value?$AA@ 1000d628     TwoStacksPlainSocketImpl.obj
+ 0002:00001630       ??_C@_0BC@OHJKABOO@java?1lang?1Integer?$AA@ 1000d630     TwoStacksPlainSocketImpl.obj
+ 0002:00001644       ??_C@_0L@DEFCDCGF@getsockopt?$AA@ 1000d644     TwoStacksPlainSocketImpl.obj
+ 0002:00001650       ??_C@_04HLBMEOMD@addr?$AA@ 1000d650     TwoStacksPlainSocketImpl.obj
+ 0002:00001658       ??_C@_0BK@JGFJKHKC@Error?5getting?5socket?5name?$AA@ 1000d658     TwoStacksPlainSocketImpl.obj
+ 0002:00001674       ??_C@_04MIIPNNEF@send?$AA@ 1000d674     TwoStacksPlainSocketImpl.obj
+ 0002:0000167c       ??_C@_0BL@KCCEIBDI@?$CILjava?1net?1InetAddress?$DLI?$CJV?$AA@ 1000d67c     DualStackPlainSocketImpl.obj
+ 0002:00001698       ??_C@_0BK@BFOOMAAO@Unsupported?5socket?5option?$AA@ 1000d698     DualStackPlainSocketImpl.obj
+ 0002:000016b4       ??_C@_0BC@GBCMOPPJ@configureBlocking?$AA@ 1000d6b4     DualStackPlainSocketImpl.obj
+ 0002:000016c8       ??_C@_04PFANPMCN@?$CII?$CJV?$AA@ 1000d6c8     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:000016d0       ??_C@_04LHKBAEFM@?$CIZ?$CJV?$AA@ 1000d6d0     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:000016d8       ??_C@_0BK@CKMMMKHL@Unable?5to?5obtain?5hostname?$AA@ 1000d6d8     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:000016f4       ??_C@_09JGOMOAGJ@connected?$AA@ 1000d6f4     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001700       ??_C@_09BPJHDKHI@localPort?$AA@ 1000d700     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:0000170c       ??_C@_05OOPOHKND@fduse?$AA@ 1000d70c     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001714       ??_C@_0M@PJEGOMKJ@Cannot?5bind?$AA@ 1000d714     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001720       ??_C@_0BA@IBCMDLCP@JVM_GetSockName?$AA@ 1000d720     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001730       ??_C@_0BB@IGCLOFNO@argument?5address?$AA@ 1000d730     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001744       ??_C@_0BM@DPDKEIHM@null?5address?5?$HM?$HM?5null?5buffer?$AA@ 1000d744     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001760       ??_C@_0BF@DHIDENDP@Datagram?5send?5failed?$AA@ 1000d760     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001778       ??_C@_0BF@LKFFGFKN@Protocol?5not?5allowed?$AA@ 1000d778     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001790       ??_C@_0M@FKPMEIFN@null?5packet?$AA@ 1000d790     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:0000179c       ??_C@_0BF@GHEEKLOJ@Datagram?5peek?5failed?$AA@ 1000d79c     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:000017b4       ??_C@_0BC@FEBIBOEI@Receive?5timed?5out?$AA@ 1000d7b4     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:000017c8       ??_C@_0CC@BDDMPFBF@java?1net?1PortUnreachableExceptio@ 1000d7c8     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:000017ec       ??_C@_0BG@EDMCJFNE@ICMP?5Port?5Unreachable?$AA@ 1000d7ec     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001804       ??_C@_0CA@LHJKECEL@timeout?5in?5datagram?5socket?5peek?$AA@ 1000d804     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001824       ??_C@_0P@NHMBIAJD@Peek?5timed?5out?$AA@ 1000d824     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001834       ??_C@_0BH@OBJCPBFA@Null?5address?5in?5peek?$CI?$CJ?$AA@ 1000d834     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:0000184c       ??_C@_0BI@GDLKKOMD@Datagram?5receive?5failed?$AA@ 1000d84c     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001864       ??_C@_0O@EEGMFPKK@packet?5buffer?$AA@ 1000d864     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001874       ??_C@_06HKKJOEPD@packet?$AA@ 1000d874     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:0000187c       ??_C@_0BH@HIFKKJJA@Socket?5creation?5failed?$AA@ 1000d87c     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001898       ??_C@_0EG@BPIHIIBO@bad?5argument?5for?5IP_MULTICAST_IF@ 1000d898     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:000018e0       ??_C@_0BK@OMHJKJIG@java?1net?1NetworkInterface?$AA@ 1000d8e0     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:000018fc       ??_C@_0CL@DOKPHAMI@no?5InetAddress?5instances?5of?5requ@ 1000d8fc     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001928       ??_C@_0DM@IFNIENGO@IPV6_MULTICAST_IF?5failed?5?$CIinterf@ 1000d928     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001964       ??_C@_0BM@NAPLPNMN@Error?5setting?5socket?5option?$AA@ 1000d964     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001980       ??_C@_0EF@JBMEFJAO@bad?5argument?5for?5IP_MULTICAST_IF@ 1000d980     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:000019c8       ??_C@_0BA@KNNGAGBM@setsockopt?5IPv6?$AA@ 1000d9c8     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:000019d8       ??_C@_0DG@HAOMPAGJ@Socket?5option?5not?5supported?5by?5P@ 1000d9d8     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001a10       ??_C@_0DJ@HEGBECIK@IPV6_MULTICAST_IF?5returned?5inter@ 1000da10     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001a4c       ??_C@_0DP@FFHJMIJA@IPV6_MULTICAST_IF?5returned?5index@ 1000da4c     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001a8c       ??_C@_0BA@ILEICAKK@anyLocalAddress?$AA@ 1000da8c     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001a9c       ??_C@_0BJ@PCBGABPN@?$CI?$CJLjava?1net?1InetAddress?$DL?$AA@ 1000da9c     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001ab8       ??_C@_0BM@CFKNCEIM@Error?5getting?5socket?5option?$AA@ 1000dab8     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001ad8       ??_C@_0EA@FEALAIDB@Socket?5option?5not?5supported?5by?5T@ 1000dad8     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001b18       ??_C@_0CB@FFGGBAEL@error?5getting?5socket?5option?3?5?$CFs?6@ 1000db18     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001b3c       ??_C@_0BP@FKDKMPAN@set?5IPV6_MULTICAST_HOPS?5failed?$AA@ 1000db3c     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001b5c       ??_C@_0BM@KFCLABAN@set?5IP_MULTICAST_TTL?5failed?$AA@ 1000db5c     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001b78       ??_C@_0BM@LIKDCEKJ@get?5IP_MULTICAST_TTL?5failed?$AA@ 1000db78     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001b94       ??_C@_0BD@DCFJIHFI@IPv6?5not?5supported?$AA@ 1000db94     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001ba8       ??_C@_0BD@OLPOJDPI@get?5ifindex?5failed?$AA@ 1000dba8     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001bbc       ??_C@_0BN@CJPJHKGI@get?5IPV6_MULTICAST_IF?5failed?$AA@ 1000dbbc     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001bdc       ??_C@_0CK@FBGIOLD@Can?8t?5join?5an?5IPv6?5group?5on?5a?5IP@ 1000dbdc     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001c08       ??_C@_0BC@JFLIBEAA@not?5in6?5multicast?$AA@ 1000dc08     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001c1c       ??_C@_0BG@JBKBCMEL@error?5setting?5options?$AA@ 1000dc1c     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001c34       ??_C@_0CK@FKKDPICG@no?5Inet4Address?5associated?5with?5@ 1000dc34     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001c60       ??_C@_0DE@NGNCLOOP@IP_ADD_MEMBERSHIP?5failed?5?$CIout?5of@ 1000dc60     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001c94       ??_C@_0BL@KIMGBHOL@get?5IP_MULTICAST_IF?5failed?$AA@ 1000dc94     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001cb0       ??_C@_0DA@OBEPBCCJ@Can?8t?5join?5an?5IPv4?5group?5on?5an?5I@ 1000dcb0     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001ce0       ??_C@_0BB@FCPOINAD@not?5in?5multicast?$AA@ 1000dce0     TwoStacksPlainDatagramSocketImpl.obj
+ 0002:00001cf4       ??_C@_09NDBMIONH@crdHandle?$AA@ 1000dcf4     NTLMAuthSequence.obj
+ 0002:00001d00       ??_C@_09ILBCNDDJ@ctxHandle?$AA@ 1000dd00     NTLMAuthSequence.obj
+ 0002:00001d0c       ??_C@_01LELAEKIP@J?$AA@    1000dd0c     NTLMAuthSequence.obj
+ 0002:00001d10       ??_C@_04KGCGDDND@NTLM?$AA@ 1000dd10     NTLMAuthSequence.obj
+ 0002:00001d18       ??_C@_0DH@HIDBKCBL@IP?5Helper?5Library?5GetAdaptersAdd@ 1000dd18     NetworkInterface_winXP.obj
+ 0002:00001d50       ??_C@_0BL@ENCPOIKC@java?1lang?1OutOfMemoryError?$AA@ 1000dd50     NetworkInterface_winXP.obj
+ 0002:00001d6c       ??_C@_05LFCNEKM@tun?$CFd?$AA@ 1000dd6c     NetworkInterface_winXP.obj
+ 0002:00001d80       __sz_Secur32_dll           1000dd80     secur32:Secur32.dll
+ 0002:00001d90       __sz_IPHLPAPI_DLL          1000dd90     iphlpapi:IPHLPAPI.DLL
+ 0002:00001da0       __pDefaultRawDllMain       1000dda0     MSVCRT:crtdll.obj
+ 0002:00001da0       __pRawDllMain              1000dda0     MSVCRT:crtdll.obj
+ 0002:00001db0       __load_config_used         1000ddb0     MSVCRT:loadcfg.obj
+ 0002:00001e60       ___safe_se_handler_table   1000de60     <linker-defined>
+ 0002:00001e64       ___rtc_iaa                 1000de64     MSVCRT:_initsect_.obj
+ 0002:00001e68       ___rtc_izz                 1000de68     MSVCRT:_initsect_.obj
+ 0002:00001e6c       ___rtc_taa                 1000de6c     MSVCRT:_initsect_.obj
+ 0002:00001e70       ___rtc_tzz                 1000de70     MSVCRT:_initsect_.obj
+ 0002:00001edc       __DELAY_IMPORT_DESCRIPTOR_Secur32_dll 1000dedc     secur32:Secur32.dll
+ 0002:00001efc       __DELAY_IMPORT_DESCRIPTOR_IPHLPAPI_DLL 1000defc     iphlpapi:IPHLPAPI.DLL
+ 0002:00001f1c       __NULL_DELAY_IMPORT_DESCRIPTOR 1000df1c     secur32:Secur32.dll
+ 0002:00001f54       \177IPHLPAPI_NULL_THUNK_DATA_DLN 1000df54     iphlpapi:IPHLPAPI.DLL
+ 0002:00001f6c       \177Secur32_NULL_THUNK_DATA_DLN 1000df6c     secur32:Secur32.dll
+ 0002:00002068       \177Secur32_NULL_THUNK_DATA_DLB 1000e068     secur32:Secur32.dll
+ 0002:00002080       \177IPHLPAPI_NULL_THUNK_DATA_DLB 1000e080     iphlpapi:IPHLPAPI.DLL
+ 0002:00002098       __IMPORT_DESCRIPTOR_java   1000e098     java:java.dll
+ 0002:000020ac       __IMPORT_DESCRIPTOR_WS2_32 1000e0ac     ws2_32:WS2_32.dll
+ 0002:000020c0       __IMPORT_DESCRIPTOR_jvm    1000e0c0     jvm:jvm.dll
+ 0002:000020d4       __IMPORT_DESCRIPTOR_ADVAPI32 1000e0d4     advapi32:ADVAPI32.dll
+ 0002:000020e8       __IMPORT_DESCRIPTOR_MSVCR100 1000e0e8     MSVCRT:MSVCR100.dll
+ 0002:000020fc       __IMPORT_DESCRIPTOR_KERNEL32 1000e0fc     kernel32:KERNEL32.dll
+ 0002:00002110       __NULL_IMPORT_DESCRIPTOR   1000e110     java:java.dll
+ 0003:00000000       _isRcvTimeoutSupported     10011000     net_util_md.obj
+ 0003:00000098       ___security_cookie         10011098     MSVCRT:gs_cookie.obj
+ 0003:0000009c       ___security_cookie_complement 1001109c     MSVCRT:gs_cookie.obj
+ 0003:000000a0       ___native_dllmain_reason   100110a0     MSVCRT:natstart.obj
+ 0003:000000a4       ___native_vcclrit_reason   100110a4     MSVCRT:natstart.obj
+ 0003:000000b0       __imp__GetFriendlyIfIndex@4 100110b0     iphlpapi:IPHLPAPI.DLL
+ 0003:000000b4       __imp__NotifyAddrChange@8  100110b4     iphlpapi:IPHLPAPI.DLL
+ 0003:000000b8       __imp__GetAdaptersInfo@8   100110b8     iphlpapi:IPHLPAPI.DLL
+ 0003:000000bc       __imp__GetIpAddrTable@12   100110bc     iphlpapi:IPHLPAPI.DLL
+ 0003:000000c0       __imp__GetIfTable@12       100110c0     iphlpapi:IPHLPAPI.DLL
+ 0003:000000c4       __imp__GetAdaptersAddresses@20 100110c4     iphlpapi:IPHLPAPI.DLL
+ 0003:000000c8       \177IPHLPAPI_NULL_THUNK_DATA_DLA 100110c8     iphlpapi:IPHLPAPI.DLL
+ 0003:000000cc       __imp__CompleteAuthToken@8 100110cc     secur32:Secur32.dll
+ 0003:000000d0       __imp__FreeCredentialsHandle@4 100110d0     secur32:Secur32.dll
+ 0003:000000d4       __imp__DeleteSecurityContext@4 100110d4     secur32:Secur32.dll
+ 0003:000000d8       __imp__AcquireCredentialsHandleA@36 100110d8     secur32:Secur32.dll
+ 0003:000000dc       __imp__InitializeSecurityContextA@48 100110dc     secur32:Secur32.dll
+ 0003:000000e0       \177Secur32_NULL_THUNK_DATA_DLA 100110e0     secur32:Secur32.dll
+ 0003:0000023c       __hmod__Secur32_dll        1001123c     secur32:Secur32.dll
+ 0003:00000240       __hmod__IPHLPAPI_DLL       10011240     iphlpapi:IPHLPAPI.DLL
+ 0003:00000244       ___puiHead                 10011244     delayimp:delayhlp.obj
+ 0003:00000248       ___pfnDliFailureHook2      10011248     delayimp:delayhk1.obj
+ 0003:0000024c       ___pfnDliNotifyHook2       1001124c     delayimp:delayhk2.obj
+ 0003:0000057c       ?__type_info_root_node@@3U__type_info_node@@A 1001157c     MSVCRT:tncleanup.obj
+ 0003:00000584       _pdsi_connected            10011584     <common>
+ 0003:00000588       _pdsi_localPortID          10011588     <common>
+ 0003:0000058c       _pdsi_fdID                 1001158c     <common>
+ 0003:00000590       _pdsi_fduseID              10011590     <common>
+ 0003:00000594       _pdsi_timeoutID            10011594     <common>
+ 0003:00000598       _pdsi_fd1ID                10011598     <common>
+ 0003:0000059c       _pdsi_lastfdID             1001159c     <common>
+ 0003:000005a0       _psi_addressID             100115a0     <common>
+ 0003:000005a4       _psi_serverSocketID        100115a4     <common>
+ 0003:000005a8       _psi_fd1ID                 100115a8     <common>
+ 0003:000005ac       _psi_timeoutID             100115ac     <common>
+ 0003:000005b0       _psi_portID                100115b0     <common>
+ 0003:000005b4       _psi_fdID                  100115b4     <common>
+ 0003:000005b8       _psi_localportID           100115b8     <common>
+ 0003:000005bc       _psi_trafficClassID        100115bc     <common>
+ 0003:000005c0       _psi_lastfdID              100115c0     <common>
+ 0003:000005c4       _ni_ibmaskID               100115c4     <common>
+ 0003:000005c8       _ni_iacls                  100115c8     <common>
+ 0003:000005cc       _ni_ia4Ctor                100115cc     <common>
+ 0003:000005d0       _ni_iaAddr                 100115d0     <common>
+ 0003:000005d4       _ni_childsID               100115d4     <common>
+ 0003:000005d8       _ni_ibctrID                100115d8     <common>
+ 0003:000005dc       _ni_ia6cls                 100115dc     <common>
+ 0003:000005e0       _ni_ibcls                  100115e0     <common>
+ 0003:000005e4       _ni_displayNameID          100115e4     <common>
+ 0003:000005e8       _ni_ia4cls                 100115e8     <common>
+ 0003:000005ec       _ni_bindsID                100115ec     <common>
+ 0003:000005f0       _ni_ctor                   100115f0     <common>
+ 0003:000005f4       _ni_ia6ctrID               100115f4     <common>
+ 0003:000005f8       _ni_indexID                100115f8     <common>
+ 0003:000005fc       _ni_ibaddressID            100115fc     <common>
+ 0003:00000600       _ni_ibbroadcastID          10011600     <common>
+ 0003:00000604       _ni_nameID                 10011604     <common>
+ 0003:00000608       _ni_class                  10011608     <common>
+ 0003:0000060c       _ni_ia6ipaddressID         1001160c     <common>
+ 0003:00000610       _ni_addrsID                10011610     <common>
+ 0003:00000614       _ia6_scopeifnameID         10011614     <common>
+ 0003:00000618       _ia6_scopeidID             10011618     <common>
+ 0003:0000061c       _ia6_ctrID                 1001161c     <common>
+ 0003:00000620       _ia6_scopeidsetID          10011620     <common>
+ 0003:00000624       _ia6_ipaddressID           10011624     <common>
+ 0003:00000628       _ia6_scopeifnamesetID      10011628     <common>
+ 0003:0000062c       _ia6_class                 1001162c     <common>
+ 0003:00000630       _ia6_cachedscopeidID       10011630     <common>
+ 0003:00000634       _ia4_class                 10011634     <common>
+ 0003:00000638       _ia4_ctrID                 10011638     <common>
+ 0003:0000063c       _ia_addressID              1001163c     <common>
+ 0003:00000640       _ia_familyID               10011640     <common>
+ 0003:00000644       _ia_class                  10011644     <common>
+ 0003:00000648       _ia_preferIPv6AddressID    10011648     <common>
+ 0003:0000064c       _dp_portID                 1001164c     <common>
+ 0003:00000650       _dp_bufLengthID            10011650     <common>
+ 0003:00000654       _dp_bufID                  10011654     <common>
+ 0003:00000658       _dp_offsetID               10011658     <common>
+ 0003:0000065c       _dp_addressID              1001165c     <common>
+ 0003:00000660       _dp_lengthID               10011660     <common>
+ 0003:00000664       ___native_startup_state    10011664     <common>
+ 0003:00000668       ___native_startup_lock     10011668     <common>
+ 0003:0000066c       ___onexitend               1001166c     <common>
+ 0003:00000670       ___onexitbegin             10011670     <common>
+ 0003:00000674       ___dyn_tls_init_callback   10011674     <common>
+
+ entry point at        0001:0000a56a
+
+ Static symbols
+
+ 0001:0000371e       _loadConfig                1000471e f   ResolverConfigurationImpl.obj
+ 0001:00003fdf       _getFD                     10004fdf f   TwoStacksPlainSocketImpl.obj
+ 0001:0000400b       _getFD1                    1000500b f   TwoStacksPlainSocketImpl.obj
+ 0001:00005d4c       _getFD                     10006d4c f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:00005d78       _getFD1                    10006d78 f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:00005fa2       _supportPortUnreachable    10006fa2 f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:0000600d       _purgeOutstandingICMP      1000700d f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:00006993       _checkLastFD               10007993 f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:000076c3       _getInetAddrFromIf         100086c3 f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:000077b6       _getInet4AddrFromIf        100087b6 f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:0000782b       _getIndexFromIf            1000882b f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:00007873       _setMulticastInterface     10008873 f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:0000846d       _mcast_join_leave          1000946d f   TwoStacksPlainDatagramSocketImpl.obj
+ 0001:00008708       _purgeOutstandingICMP      10009708 f   DualStackPlainDatagramSocketImpl.obj
+ 0001:00009143       _endSequence               1000a143 f   NTLMAuthSequence.obj
+ 0001:00009355       _getAdapters               1000a355 f   NetworkInterface_winXP.obj
+ 0001:000094ab       _getAddrsFromAdapter       1000a4ab f   NetworkInterface_winXP.obj
+ 0001:000095d1       _createNetworkInterfaceXP  1000a5d1 f   NetworkInterface_winXP.obj
+ 0001:0000a1fc       _pre_c_init                1000b1fc f   MSVCRT:crtdll.obj
+ 0001:0000a454       ___DllMainCRTStartup       1000b454 f   MSVCRT:crtdll.obj

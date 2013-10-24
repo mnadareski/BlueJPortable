@@ -1,0 +1,1274 @@
+ hprof
+
+ Timestamp is 4dff5dd5 (Mon Jun 20 07:48:53 2011)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0001768eH .text                   CODE
+ 0002:00000000 0000015cH .idata$5                DATA
+ 0002:0000015c 00000004H .CRT$XCA                DATA
+ 0002:00000160 00000004H .CRT$XCZ                DATA
+ 0002:00000164 00000004H .CRT$XIA                DATA
+ 0002:00000168 00000004H .CRT$XIAA               DATA
+ 0002:0000016c 00000004H .CRT$XIZ                DATA
+ 0002:00000170 000045c8H .rdata                  DATA
+ 0002:00004738 00000066H .rdata$debug            DATA
+ 0002:000047a0 00000004H .rdata$sxdata           DATA
+ 0002:000047a4 00000004H .rtc$IAA                DATA
+ 0002:000047a8 00000004H .rtc$IZZ                DATA
+ 0002:000047ac 00000004H .rtc$TAA                DATA
+ 0002:000047b0 00000004H .rtc$TZZ                DATA
+ 0002:000047b8 00000064H .xdata$x                DATA
+ 0002:0000481c 00000050H .idata$2                DATA
+ 0002:0000486c 00000014H .idata$3                DATA
+ 0002:00004880 0000015cH .idata$4                DATA
+ 0002:000049dc 00000440H .idata$6                DATA
+ 0002:00004e20 00000069H .edata                  DATA
+ 0003:00000000 00000120H .data                   DATA
+ 0003:00000120 000006f0H .bss                    DATA
+ 0004:00000000 00000058H .rsrc$01                DATA
+ 0004:00000060 000002f8H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       __except_list              00000000     <absolute>
+ 0000:00000001       ___safe_se_handler_count   00000001     <absolute>
+ 0000:00009876       __ldused                   00009876     <absolute>
+ 0000:00009876       __fltused                  00009876     <absolute>
+ 0000:00000000       ___ImageBase               10000000     <linker-defined>
+ 0001:00000000       _io_write_file_footer      10001000 f   hprof_io.obj
+ 0001:00000000       _io_write_oldprof_footer   10001000 f   hprof_io.obj
+ 0001:00000000       _io_write_trace_footer     10001000 f   hprof_io.obj
+ 0001:00000000       _md_init                   10001000 f   hprof_md.obj
+ 0001:00000000       _debug_malloc_police       10001000 f   debug_malloc.obj
+ 0001:00000090       _blocks_init               10001090 f   hprof_blocks.obj
+ 0001:000000c0       _blocks_alloc              100010c0 f   hprof_blocks.obj
+ 0001:00000120       _blocks_term               10001120 f   hprof_blocks.obj
+ 0001:00003be0       _check_binary_file         10004be0 f   hprof_check.obj
+ 0001:00003ff0       _class_init                10004ff0 f   hprof_class.obj
+ 0001:00004020       _class_find_or_create      10005020 f   hprof_class.obj
+ 0001:000040a0       _class_create              100050a0 f   hprof_class.obj
+ 0001:00004100       _class_prime_system_classes 10005100 f   hprof_class.obj
+ 0001:000041c0       _class_add_status          100051c0 f   hprof_class.obj
+ 0001:000041f0       _class_get_status          100051f0 f   hprof_class.obj
+ 0001:00004210       _class_get_signature       10005210 f   hprof_class.obj
+ 0001:00004240       _class_get_serial_number   10005240 f   hprof_class.obj
+ 0001:00004270       _class_all_status_remove   10005270 f   hprof_class.obj
+ 0001:00004290       _class_do_unloads          10005290 f   hprof_class.obj
+ 0001:000042b0       _class_list                100052b0 f   hprof_class.obj
+ 0001:000042e0       _class_cleanup             100052e0 f   hprof_class.obj
+ 0001:00004310       _class_delete_global_references 10005310 f   hprof_class.obj
+ 0001:00004330       _class_set_methods         10005330 f   hprof_class.obj
+ 0001:000043e0       _class_new_classref        100053e0 f   hprof_class.obj
+ 0001:00004430       _class_get_class           10005430 f   hprof_class.obj
+ 0001:000044e0       _class_get_methodID        100054e0 f   hprof_class.obj
+ 0001:00004590       _class_set_inst_size       10005590 f   hprof_class.obj
+ 0001:000045c0       _class_get_inst_size       100055c0 f   hprof_class.obj
+ 0001:000045e0       _class_set_object_index    100055e0 f   hprof_class.obj
+ 0001:00004610       _class_get_object_index    10005610 f   hprof_class.obj
+ 0001:00004630       _class_get_super           10005630 f   hprof_class.obj
+ 0001:00004650       _class_set_super           10005650 f   hprof_class.obj
+ 0001:00004680       _class_get_loader          10005680 f   hprof_class.obj
+ 0001:000046b0       _class_get_all_fields      100056b0 f   hprof_class.obj
+ 0001:000049d0       _cpu_sample_init           100059d0 f   hprof_cpu.obj
+ 0001:00004a60       _cpu_sample_off            10005a60 f   hprof_cpu.obj
+ 0001:00004aa0       _cpu_sample_on             10005aa0 f   hprof_cpu.obj
+ 0001:00004b40       _cpu_sample_term           10005b40 f   hprof_cpu.obj
+ 0001:00004be0       _debug_message             10005be0 f   hprof_error.obj
+ 0001:00004c30       _error_setup               10005c30 f   hprof_error.obj
+ 0001:00004c50       _error_do_pause            10005c50 f   hprof_error.obj
+ 0001:00004ca0       _error_exit_process        10005ca0 f   hprof_error.obj
+ 0001:00004cb0       _verbose_message           10005cb0 f   hprof_error.obj
+ 0001:00004ce0       _error_handler             10005ce0 f   hprof_error.obj
+ 0001:00004f10       _event_object_init         10005f10 f   hprof_event.obj
+ 0001:00004f70       _event_newarray            10005f70 f   hprof_event.obj
+ 0001:00004fd0       _event_call                10005fd0 f   hprof_event.obj
+ 0001:00005040       _event_exception_catch     10006040 f   hprof_event.obj
+ 0001:000050a0       _event_return              100060a0 f   hprof_event.obj
+ 0001:00005110       _event_class_prepare       10006110 f   hprof_event.obj
+ 0001:00005170       _event_class_load          10006170 f   hprof_event.obj
+ 0001:000052c0       _event_thread_start        100062c0 f   hprof_event.obj
+ 0001:00005430       _event_thread_end          10006430 f   hprof_event.obj
+ 0001:000054e0       _frame_init                100064e0 f   hprof_frame.obj
+ 0001:00005510       _frame_find_or_create      10006510 f   hprof_frame.obj
+ 0001:000055d0       _frame_list                100065d0 f   hprof_frame.obj
+ 0001:00005600       _frame_cleanup             10006600 f   hprof_frame.obj
+ 0001:00005630       _frame_set_status          10006630 f   hprof_frame.obj
+ 0001:00005660       _frame_get_location        10006660 f   hprof_frame.obj
+ 0001:00005730       _frame_get_status          10006730 f   hprof_frame.obj
+ 0001:00008ab0       _Agent_OnUnload@4          10009ab0 f   hprof_init.obj
+ 0001:00009380       _Agent_OnLoad@12           1000a380 f   hprof_init.obj
+ 0001:0000a200       _io_flush                  1000b200 f   hprof_io.obj
+ 0001:0000a240       _io_setup                  1000b240 f   hprof_io.obj
+ 0001:0000a330       _io_cleanup                1000b330 f   hprof_io.obj
+ 0001:0000a430       _io_write_file_header      1000b430 f   hprof_io.obj
+ 0001:0000a6b0       _io_write_class_load       1000b6b0 f   hprof_io.obj
+ 0001:0000a7d0       _io_write_class_unload     1000b7d0 f   hprof_io.obj
+ 0001:0000a840       _io_write_sites_header     1000b840 f   hprof_io.obj
+ 0001:0000a9e0       _io_write_sites_elem       1000b9e0 f   hprof_io.obj
+ 0001:0000aba0       _io_write_sites_footer     1000bba0 f   hprof_io.obj
+ 0001:0000abc0       _io_write_thread_start     1000bbc0 f   hprof_io.obj
+ 0001:0000ad60       _io_write_thread_end       1000bd60 f   hprof_io.obj
+ 0001:0000adf0       _io_write_frame            1000bdf0 f   hprof_io.obj
+ 0001:0000af20       _io_write_trace_header     1000bf20 f   hprof_io.obj
+ 0001:0000b030       _io_write_trace_elem       1000c030 f   hprof_io.obj
+ 0001:0000b150       _io_write_cpu_samples_header 1000c150 f   hprof_io.obj
+ 0001:0000b210       _io_write_cpu_samples_elem 1000c210 f   hprof_io.obj
+ 0001:0000b300       _io_write_cpu_samples_footer 1000c300 f   hprof_io.obj
+ 0001:0000b330       _io_write_heap_summary     1000c330 f   hprof_io.obj
+ 0001:0000b420       _io_write_oldprof_header   1000c420 f   hprof_io.obj
+ 0001:0000b440       _io_write_oldprof_elem     1000c440 f   hprof_io.obj
+ 0001:0000b510       _io_write_monitor_header   1000c510 f   hprof_io.obj
+ 0001:0000b580       _io_write_monitor_elem     1000c580 f   hprof_io.obj
+ 0001:0000b610       _io_write_monitor_footer   1000c610 f   hprof_io.obj
+ 0001:0000b630       _io_write_monitor_sleep    1000c630 f   hprof_io.obj
+ 0001:0000b6a0       _io_write_monitor_wait     1000c6a0 f   hprof_io.obj
+ 0001:0000b720       _io_write_monitor_waited   1000c720 f   hprof_io.obj
+ 0001:0000b7a0       _io_write_monitor_dump_header 1000c7a0 f   hprof_io.obj
+ 0001:0000b7c0       _io_write_monitor_dump_thread_state 1000c7c0 f   hprof_io.obj
+ 0001:0000ba00       _io_write_monitor_dump_state 1000ca00 f   hprof_io.obj
+ 0001:0000bbf0       _io_write_monitor_dump_footer 1000cbf0 f   hprof_io.obj
+ 0001:0000bc10       _io_heap_header            1000cc10 f   hprof_io.obj
+ 0001:0000bed0       _io_heap_footer            1000ced0 f   hprof_io.obj
+ 0001:0000bfb0       _io_heap_root_thread_object 1000cfb0 f   hprof_io.obj
+ 0001:0000c0a0       _io_heap_root_unknown      1000d0a0 f   hprof_io.obj
+ 0001:0000c0f0       _io_heap_root_jni_global   1000d0f0 f   hprof_io.obj
+ 0001:0000c1a0       _io_heap_root_jni_local    1000d1a0 f   hprof_io.obj
+ 0001:0000c260       _io_heap_root_system_class 1000d260 f   hprof_io.obj
+ 0001:0000c2c0       _io_heap_root_monitor      1000d2c0 f   hprof_io.obj
+ 0001:0000c310       _io_heap_root_thread       1000d310 f   hprof_io.obj
+ 0001:0000c3b0       _io_heap_root_java_frame   1000d3b0 f   hprof_io.obj
+ 0001:0000c470       _io_heap_class_dump        1000d470 f   hprof_io.obj
+ 0001:0000ca40       _io_heap_instance_dump     1000da40 f   hprof_io.obj
+ 0001:0000cc50       _io_heap_object_array      1000dc50 f   hprof_io.obj
+ 0001:0000cd90       _io_heap_prim_array        1000dd90 f   hprof_io.obj
+ 0001:0000cec0       _ioname_init               1000dec0 f   hprof_ioname.obj
+ 0001:0000cef0       _ioname_find_or_create     1000def0 f   hprof_ioname.obj
+ 0001:0000cf30       _ioname_cleanup            1000df30 f   hprof_ioname.obj
+ 0001:0000d540       _listener_init             1000e540 f   hprof_listener.obj
+ 0001:0000d5b0       _listener_term             1000e5b0 f   hprof_listener.obj
+ 0001:0000d770       _loader_find_or_create     1000e770 f   hprof_loader.obj
+ 0001:0000d840       _loader_init               1000e840 f   hprof_loader.obj
+ 0001:0000d870       _loader_list               1000e870 f   hprof_loader.obj
+ 0001:0000d8a0       _loader_cleanup            1000e8a0 f   hprof_loader.obj
+ 0001:0000d8d0       _loader_delete_global_references 1000e8d0 f   hprof_loader.obj
+ 0001:0000d8f0       _loader_object_index       1000e8f0 f   hprof_loader.obj
+ 0001:0000d980       _md_getpid                 1000e980 f   hprof_md.obj
+ 0001:0000d9a0       _md_sleep                  1000e9a0 f   hprof_md.obj
+ 0001:0000d9c0       _md_connect                1000e9c0 f   hprof_md.obj
+ 0001:0000da60       _md_recv                   1000ea60 f   hprof_md.obj
+ 0001:0000da80       _md_shutdown               1000ea80 f   hprof_md.obj
+ 0001:0000daa0       _md_open                   1000eaa0 f   hprof_md.obj
+ 0001:0000dac0       _md_open_binary            1000eac0 f   hprof_md.obj
+ 0001:0000dae0       _md_creat                  1000eae0 f   hprof_md.obj
+ 0001:0000db00       _md_creat_binary           1000eb00 f   hprof_md.obj
+ 0001:0000db20       _md_seek                   1000eb20 f   hprof_md.obj
+ 0001:0000db60       _md_close                  1000eb60 f   hprof_md.obj
+ 0001:0000db70       _md_send                   1000eb70 f   hprof_md.obj
+ 0001:0000db90       _md_read                   1000eb90 f   hprof_md.obj
+ 0001:0000dba0       _md_write                  1000eba0 f   hprof_md.obj
+ 0001:0000dbb0       _md_get_microsecs          1000ebb0 f   hprof_md.obj
+ 0001:0000dbc0       _md_get_timemillis         1000ebc0 f   hprof_md.obj
+ 0001:0000dc80       _md_get_thread_cpu_timemillis 1000ec80 f   hprof_md.obj
+ 0001:0000dc90       _DllMain@12                1000ec90 f   hprof_md.obj
+ 0001:0000dd00       _md_vsnprintf              1000ed00 f   hprof_md.obj
+ 0001:0000dd10       _md_snprintf               1000ed10 f   hprof_md.obj
+ 0001:0000dd30       _md_system_error           1000ed30 f   hprof_md.obj
+ 0001:0000dd80       _md_htons                  1000ed80 f   hprof_md.obj
+ 0001:0000dd90       _md_htonl                  1000ed90 f   hprof_md.obj
+ 0001:0000dda0       _md_ntohs                  1000eda0 f   hprof_md.obj
+ 0001:0000ddb0       _md_ntohl                  1000edb0 f   hprof_md.obj
+ 0001:0000de50       _md_build_library_name     1000ee50 f   hprof_md.obj
+ 0001:0000df00       _md_load_library           1000ef00 f   hprof_md.obj
+ 0001:0000df60       _md_unload_library         1000ef60 f   hprof_md.obj
+ 0001:0000df70       _md_find_library_entry     1000ef70 f   hprof_md.obj
+ 0001:0000df90       _md_get_prelude_path       1000ef90 f   hprof_md.obj
+ 0001:0000e1b0       _monitor_init              1000f1b0 f   hprof_monitor.obj
+ 0001:0000e1e0       _monitor_list              1000f1e0 f   hprof_monitor.obj
+ 0001:0000e210       _monitor_cleanup           1000f210 f   hprof_monitor.obj
+ 0001:0000e240       _monitor_clear             1000f240 f   hprof_monitor.obj
+ 0001:0000e260       _monitor_write_contended_time 1000f260 f   hprof_monitor.obj
+ 0001:0000e470       _monitor_contended_enter_event 1000f470 f   hprof_monitor.obj
+ 0001:0000e4c0       _monitor_contended_entered_event 1000f4c0 f   hprof_monitor.obj
+ 0001:0000e510       _monitor_wait_event        1000f510 f   hprof_monitor.obj
+ 0001:0000e5d0       _monitor_waited_event      1000f5d0 f   hprof_monitor.obj
+ 0001:0000e750       _object_new                1000f750 f   hprof_object.obj
+ 0001:0000e850       _object_init               1000f850 f   hprof_object.obj
+ 0001:0000e890       _object_get_site           1000f890 f   hprof_object.obj
+ 0001:0000e8c0       _object_get_size           1000f8c0 f   hprof_object.obj
+ 0001:0000e8f0       _object_get_kind           1000f8f0 f   hprof_object.obj
+ 0001:0000e920       _object_free               1000f920 f   hprof_object.obj
+ 0001:0000e990       _object_list               1000f990 f   hprof_object.obj
+ 0001:0000e9c0       _object_cleanup            1000f9c0 f   hprof_object.obj
+ 0001:0000e9f0       _object_set_thread_serial_number 1000f9f0 f   hprof_object.obj
+ 0001:0000ea20       _object_get_thread_serial_number 1000fa20 f   hprof_object.obj
+ 0001:0000ea40       _object_get_references     1000fa40 f   hprof_object.obj
+ 0001:0000ea60       _object_set_references     1000fa60 f   hprof_object.obj
+ 0001:0000ea90       _object_clear_references   1000fa90 f   hprof_object.obj
+ 0001:0000eab0       _object_reference_dump     1000fab0 f   hprof_object.obj
+ 0001:0000f730       _reference_init            10010730 f   hprof_reference.obj
+ 0001:0000f760       _reference_obj             10010760 f   hprof_reference.obj
+ 0001:0000f800       _reference_prim_field      10010800 f   hprof_reference.obj
+ 0001:0000f8b0       _reference_prim_array      100108b0 f   hprof_reference.obj
+ 0001:0000f9b0       _reference_cleanup         100109b0 f   hprof_reference.obj
+ 0001:0000f9f0       _reference_dump_instance   100109f0 f   hprof_reference.obj
+ 0001:0000fa00       _reference_dump_class      10010a00 f   hprof_reference.obj
+ 0001:0000fa40       _site_get_class_index      10010a40 f   hprof_site.obj
+ 0001:0000fa70       _site_get_trace_index      10010a70 f   hprof_site.obj
+ 0001:0000fc00       _site_find_or_create       10010c00 f   hprof_site.obj
+ 0001:0000fc50       _site_init                 10010c50 f   hprof_site.obj
+ 0001:0000fc80       _site_list                 10010c80 f   hprof_site.obj
+ 0001:0000fcb0       _site_cleanup              10010cb0 f   hprof_site.obj
+ 0001:0000fce0       _site_update_stats         10010ce0 f   hprof_site.obj
+ 0001:0000fd90       _site_write                10010d90 f   hprof_site.obj
+ 0001:00010810       _site_heapdump             10011810 f   hprof_site.obj
+ 0001:00010980       _stack_init                10011980 f   hprof_stack.obj
+ 0001:000109c0       _stack_element             100119c0 f   hprof_stack.obj
+ 0001:000109d0       _stack_top                 100119d0 f   hprof_stack.obj
+ 0001:000109f0       _stack_depth               100119f0 f   hprof_stack.obj
+ 0001:00010a00       _stack_pop                 10011a00 f   hprof_stack.obj
+ 0001:00010a20       _stack_push                10011a20 f   hprof_stack.obj
+ 0001:00010a60       _stack_term                10011a60 f   hprof_stack.obj
+ 0001:00010a80       _string_init               10011a80 f   hprof_string.obj
+ 0001:00010ab0       _string_find_or_create     10011ab0 f   hprof_string.obj
+ 0001:00010b10       _string_list               10011b10 f   hprof_string.obj
+ 0001:00010b40       _string_cleanup            10011b40 f   hprof_string.obj
+ 0001:00010b70       _string_get                10011b70 f   hprof_string.obj
+ 0001:00010ba0       _string_get_len            10011ba0 f   hprof_string.obj
+ 0001:000112a0       _table_initialize          100122a0 f   hprof_table.obj
+ 0001:000113d0       _table_element_count       100123d0 f   hprof_table.obj
+ 0001:00011400       _table_free_entry          10012400 f   hprof_table.obj
+ 0001:00011490       _table_walk_items          10012490 f   hprof_table.obj
+ 0001:00011540       _table_cleanup             10012540 f   hprof_table.obj
+ 0001:00011600       _table_create_entry        10012600 f   hprof_table.obj
+ 0001:00011690       _table_find_entry          10012690 f   hprof_table.obj
+ 0001:00011700       _table_find_or_create_entry 10012700 f   hprof_table.obj
+ 0001:000117d0       _table_get_info            100127d0 f   hprof_table.obj
+ 0001:00011870       _table_get_key             10012870 f   hprof_table.obj
+ 0001:00011910       _table_lock_enter          10012910 f   hprof_table.obj
+ 0001:00011930       _table_lock_exit           10012930 f   hprof_table.obj
+ 0001:00011950       _tag_create                10012950 f   hprof_tag.obj
+ 0001:00011960       _tag_extract               10012960 f   hprof_tag.obj
+ 0001:00011990       _tag_new_object            10012990 f   hprof_tag.obj
+ 0001:000119d0       _tag_class                 100129d0 f   hprof_tag.obj
+ 0001:00011c40       _tls_garbage_collect       10012c40 f   hprof_tls.obj
+ 0001:000121f0       _tls_find_or_create        100131f0 f   hprof_tls.obj
+ 0001:00012300       _tls_agent_thread          10013300 f   hprof_tls.obj
+ 0001:00012330       _tls_init                  10013330 f   hprof_tls.obj
+ 0001:00012360       _tls_list                  10013360 f   hprof_tls.obj
+ 0001:00012390       _tls_sum_sample_status     10013390 f   hprof_tls.obj
+ 0001:000123c0       _tls_set_sample_status     100133c0 f   hprof_tls.obj
+ 0001:000123f0       _tls_get_tracker_status    100133f0 f   hprof_tls.obj
+ 0001:000124e0       _tls_get_monitor           100134e0 f   hprof_tls.obj
+ 0001:00012500       _tls_set_thread_object_index 10013500 f   hprof_tls.obj
+ 0001:00012530       _tls_get_thread_serial_number 10013530 f   hprof_tls.obj
+ 0001:00012570       _tls_set_monitor           10013570 f   hprof_tls.obj
+ 0001:000125a0       _tls_cleanup               100135a0 f   hprof_tls.obj
+ 0001:000125d0       _tls_delete_global_references 100135d0 f   hprof_tls.obj
+ 0001:000125f0       _tls_thread_ended          100135f0 f   hprof_tls.obj
+ 0001:000126e0       _tls_sample_all_threads    100136e0 f   hprof_tls.obj
+ 0001:000127c0       _tls_push_method           100137c0 f   hprof_tls.obj
+ 0001:00012830       _tls_pop_exception_catch   10013830 f   hprof_tls.obj
+ 0001:00012950       _tls_pop_method            10013950 f   hprof_tls.obj
+ 0001:00012b70       _tls_dump_traces           10013b70 f   hprof_tls.obj
+ 0001:00012bb0       _tls_monitor_start_timer   10013bb0 f   hprof_tls.obj
+ 0001:00012be0       _tls_monitor_stop_timer    10013be0 f   hprof_tls.obj
+ 0001:00012c20       _tls_get_trace             10013c20 f   hprof_tls.obj
+ 0001:00012d20       _tls_set_in_heap_dump      10013d20 f   hprof_tls.obj
+ 0001:00012d50       _tls_get_in_heap_dump      10013d50 f   hprof_tls.obj
+ 0001:00012d80       _tls_clear_in_heap_dump    10013d80 f   hprof_tls.obj
+ 0001:00012da0       _tls_find                  10013da0 f   hprof_tls.obj
+ 0001:00013050       _tls_dump_monitor_state    10014050 f   hprof_tls.obj
+ 0001:00013860       _trace_init                10014860 f   hprof_trace.obj
+ 0001:00013890       _trace_list                10014890 f   hprof_trace.obj
+ 0001:000138c0       _trace_cleanup             100148c0 f   hprof_trace.obj
+ 0001:000138f0       _trace_get_serial_number   100148f0 f   hprof_trace.obj
+ 0001:00013920       _trace_increment_cost      10014920 f   hprof_trace.obj
+ 0001:00013980       _trace_find_or_create      10014980 f   hprof_trace.obj
+ 0001:00013a70       _trace_get_current         10014a70 f   hprof_trace.obj
+ 0001:00013b00       _trace_get_all_current     10014b00 f   hprof_trace.obj
+ 0001:00013c30       _trace_increment_all_sample_costs 10014c30 f   hprof_trace.obj
+ 0001:00013cf0       _trace_output_unmarked     10014cf0 f   hprof_trace.obj
+ 0001:00013d40       _trace_output_cost         10014d40 f   hprof_trace.obj
+ 0001:00013fe0       _trace_output_cost_in_prof_format 10014fe0 f   hprof_trace.obj
+ 0001:00014290       _trace_clear_cost          10015290 f   hprof_trace.obj
+ 0001:00014730       _tracker_engage            10015730 f   hprof_tracker.obj
+ 0001:00014750       _tracker_disengage         10015750 f   hprof_tracker.obj
+ 0001:00014760       _tracker_method            10015760 f   hprof_tracker.obj
+ 0001:000147a0       _tracker_setup_class       100157a0 f   hprof_tracker.obj
+ 0001:000147d0       _tracker_setup_methods     100157d0 f   hprof_tracker.obj
+ 0001:000149a0       _getEnv                    100159a0 f   hprof_util.obj
+ 0001:00014a30       _jvmtiAllocate             10015a30 f   hprof_util.obj
+ 0001:00014a90       _jvmtiDeallocate           10015a90 f   hprof_util.obj
+ 0001:00014ad0       _hprof_malloc              10015ad0 f   hprof_util.obj
+ 0001:00014b10       _hprof_free                10015b10 f   hprof_util.obj
+ 0001:00014b20       _jvmtiVersion              10015b20 f   hprof_util.obj
+ 0001:00014b80       _createRawMonitor          10015b80 f   hprof_util.obj
+ 0001:00014bd0       _rawMonitorEnter           10015bd0 f   hprof_util.obj
+ 0001:00014c10       _rawMonitorWait            10015c10 f   hprof_util.obj
+ 0001:00014c50       _rawMonitorNotifyAll       10015c50 f   hprof_util.obj
+ 0001:00014c90       _rawMonitorExit            10015c90 f   hprof_util.obj
+ 0001:00014cd0       _destroyRawMonitor         10015cd0 f   hprof_util.obj
+ 0001:00014d10       _setEventNotificationMode  10015d10 f   hprof_util.obj
+ 0001:00014d50       _exceptionOccurred         10015d50 f   hprof_util.obj
+ 0001:00014d60       _exceptionDescribe         10015d60 f   hprof_util.obj
+ 0001:00014d70       _exceptionClear            10015d70 f   hprof_util.obj
+ 0001:00014d80       _newGlobalReference        10015d80 f   hprof_util.obj
+ 0001:00014da0       _newWeakGlobalReference    10015da0 f   hprof_util.obj
+ 0001:00014dc0       _deleteGlobalReference     10015dc0 f   hprof_util.obj
+ 0001:00014de0       _newLocalReference         10015de0 f   hprof_util.obj
+ 0001:00014e00       _deleteLocalReference      10015e00 f   hprof_util.obj
+ 0001:00014e20       _deleteWeakGlobalReference 10015e20 f   hprof_util.obj
+ 0001:00014e40       _getObjectClass            10015e40 f   hprof_util.obj
+ 0001:00014e60       _getSuperclass             10015e60 f   hprof_util.obj
+ 0001:00014e80       _getStaticMethodID         10015e80 f   hprof_util.obj
+ 0001:00014f10       _getMethodID               10015f10 f   hprof_util.obj
+ 0001:00014f70       _findClass                 10015f70 f   hprof_util.obj
+ 0001:00014ff0       _getStaticFieldID          10015ff0 f   hprof_util.obj
+ 0001:00015080       _setStaticIntField         10016080 f   hprof_util.obj
+ 0001:000153a0       _isSameObject              100163a0 f   hprof_util.obj
+ 0001:000153d0       _pushLocalFrame            100163d0 f   hprof_util.obj
+ 0001:00015470       _popLocalFrame             10016470 f   hprof_util.obj
+ 0001:000154b0       _registerNatives           100164b0 f   hprof_util.obj
+ 0001:000154f0       _getErrorName              100164f0 f   hprof_util.obj
+ 0001:00015520       _getPhase                  10016520 f   hprof_util.obj
+ 0001:00015550       _phaseString               10016550 f   hprof_util.obj
+ 0001:000155b0       _getObjectSize             100165b0 f   hprof_util.obj
+ 0001:00015610       _getClassStatus            10016610 f   hprof_util.obj
+ 0001:00015660       _getClassLoader            10016660 f   hprof_util.obj
+ 0001:000156b0       _getTag                    100166b0 f   hprof_util.obj
+ 0001:00015710       _setTag                    10016710 f   hprof_util.obj
+ 0001:00015750       _getObjectMonitorUsage     10016750 f   hprof_util.obj
+ 0001:00015790       _getOwnedMonitorInfo       10016790 f   hprof_util.obj
+ 0001:000157f0       _getSystemProperty         100167f0 f   hprof_util.obj
+ 0001:00015840       _getClassSignature         10016840 f   hprof_util.obj
+ 0001:000158d0       _getSourceFileName         100168d0 f   hprof_util.obj
+ 0001:00015b00       _primTypeToSigChar         10016b00 f   hprof_util.obj
+ 0001:00015b80       _sigToPrimSize             10016b80 f   hprof_util.obj
+ 0001:000161b0       _getAllClassFieldInfo      100171b0 f   hprof_util.obj
+ 0001:000162c0       _getMethodClass            100172c0 f   hprof_util.obj
+ 0001:00016310       _isMethodNative            10017310 f   hprof_util.obj
+ 0001:00016360       _getMethodName             10017360 f   hprof_util.obj
+ 0001:00016400       _getPotentialCapabilities  10017400 f   hprof_util.obj
+ 0001:00016460       _addCapabilities           10017460 f   hprof_util.obj
+ 0001:000164b0       _setEventCallbacks         100174b0 f   hprof_util.obj
+ 0001:000164f0       _getThreadLocalStorage     100174f0 f   hprof_util.obj
+ 0001:00016540       _setThreadLocalStorage     10017540 f   hprof_util.obj
+ 0001:00016580       _getThreadState            10017580 f   hprof_util.obj
+ 0001:000165c0       _getThreadInfo             100175c0 f   hprof_util.obj
+ 0001:00016610       _getThreadGroupInfo        10017610 f   hprof_util.obj
+ 0001:00016660       _getLoadedClasses          10017660 f   hprof_util.obj
+ 0001:00016760       _getLineNumber             10017760 f   hprof_util.obj
+ 0001:00016830       _getMaxMemory              10017830 f   hprof_util.obj
+ 0001:000168f0       _createAgentThread         100178f0 f   hprof_util.obj
+ 0001:00016ab0       _getFrameCount             10017ab0 f   hprof_util.obj
+ 0001:00016ae0       _getStackTrace             10017ae0 f   hprof_util.obj
+ 0001:00016b20       _getThreadListStackTraces  10017b20 f   hprof_util.obj
+ 0001:00016b70       _followReferences          10017b70 f   hprof_util.obj
+ 0001:00016bc0       _runGC                     10017bc0 f   hprof_util.obj
+ 0001:00016c00       _getJvmti                  10017c00 f   hprof_util.obj
+ 0001:00016d33       @__security_check_cookie@4 10017d33 f   MSVCRT:secchk.obj
+ 0001:00016d42       _memcpy                    10017d42 f   MSVCRT:MSVCR100.dll
+ 0001:00016d50       _memset                    10017d50 f   MSVCRT:MSVCR100.dll
+ 0001:00016d60       __alldiv                   10017d60 f   MSVCRT:lldiv.obj
+ 0001:00016e10       __allshr                   10017e10 f   MSVCRT:llshr.obj
+ 0001:00016e7f       __CRT_INIT@12              10017e7f f   MSVCRT:crtdll.obj
+ 0001:0001719f       __DllMainCRTStartup@12     1001819f f   MSVCRT:crtdll.obj
+ 0001:000171c2       ___report_gsfailure        100181c2 f   MSVCRT:gs_report.obj
+ 0001:000172c8       ___clean_type_info_names   100182c8 f   MSVCRT:tncleanup.obj
+ 0001:000172d4       __onexit                   100182d4 f   MSVCRT:atonexit.obj
+ 0001:00017375       _atexit                    10018375 f   MSVCRT:atonexit.obj
+ 0001:0001738c       __RTC_Initialize           1001838c f   MSVCRT:_initsect_.obj
+ 0001:000173b2       __RTC_Terminate            100183b2 f   MSVCRT:_initsect_.obj
+ 0001:000173e0       __ValidateImageBase        100183e0 f   MSVCRT:pesect.obj
+ 0001:00017420       __FindPESection            10018420 f   MSVCRT:pesect.obj
+ 0001:00017470       __IsNonwritableInCurrentImage 10018470 f   MSVCRT:pesect.obj
+ 0001:0001752c       __initterm                 1001852c f   MSVCRT:MSVCR100.dll
+ 0001:00017532       __initterm_e               10018532 f   MSVCRT:MSVCR100.dll
+ 0001:00017538       __amsg_exit                10018538 f   MSVCRT:MSVCR100.dll
+ 0001:0001753e       ___CppXcptFilter           1001853e f   MSVCRT:MSVCR100.dll
+ 0001:00017550       __SEH_prolog4              10018550 f   MSVCRT:sehprolg4.obj
+ 0001:00017595       __SEH_epilog4              10018595 f   MSVCRT:sehprolg4.obj
+ 0001:000175a9       __except_handler4          100185a9 f   MSVCRT:chandler4gs.obj
+ 0001:000175ce       ___security_init_cookie    100185ce f   MSVCRT:gs_support.obj
+ 0001:0001766a       __crt_debugger_hook        1001866a f   MSVCRT:MSVCR100.dll
+ 0001:00017670       ___clean_type_info_names_internal 10018670 f   MSVCRT:MSVCR100.dll
+ 0001:00017676       __unlock                   10018676 f   MSVCRT:MSVCR100.dll
+ 0001:0001767c       ___dllonexit               1001867c f   MSVCRT:MSVCR100.dll
+ 0001:00017682       __lock                     10018682 f   MSVCRT:MSVCR100.dll
+ 0001:00017688       __except_handler4_common   10018688 f   MSVCRT:MSVCR100.dll
+ 0002:00000000       __imp__InterlockedCompareExchange@12 10019000     kernel32:KERNEL32.dll
+ 0002:00000004       __imp__DecodePointer@4     10019004     kernel32:KERNEL32.dll
+ 0002:00000008       __imp__EncodePointer@4     10019008     kernel32:KERNEL32.dll
+ 0002:0000000c       __imp__FreeLibrary@4       1001900c     kernel32:KERNEL32.dll
+ 0002:00000010       __imp__GetLastError@0      10019010     kernel32:KERNEL32.dll
+ 0002:00000014       __imp__GetSystemTimeAsFileTime@4 10019014     kernel32:KERNEL32.dll
+ 0002:00000018       __imp__GetCurrentProcessId@0 10019018     kernel32:KERNEL32.dll
+ 0002:0000001c       __imp__GetCurrentThreadId@0 1001901c     kernel32:KERNEL32.dll
+ 0002:00000020       __imp__GetTickCount@0      10019020     kernel32:KERNEL32.dll
+ 0002:00000024       __imp__QueryPerformanceCounter@4 10019024     kernel32:KERNEL32.dll
+ 0002:00000028       __imp__IsDebuggerPresent@0 10019028     kernel32:KERNEL32.dll
+ 0002:0000002c       __imp__SetUnhandledExceptionFilter@4 1001902c     kernel32:KERNEL32.dll
+ 0002:00000030       __imp__UnhandledExceptionFilter@4 10019030     kernel32:KERNEL32.dll
+ 0002:00000034       __imp__GetCurrentProcess@0 10019034     kernel32:KERNEL32.dll
+ 0002:00000038       __imp__TerminateProcess@8  10019038     kernel32:KERNEL32.dll
+ 0002:0000003c       __imp__FormatMessageA@28   1001903c     kernel32:KERNEL32.dll
+ 0002:00000040       __imp__SystemTimeToFileTime@8 10019040     kernel32:KERNEL32.dll
+ 0002:00000044       __imp__GetSystemTime@4     10019044     kernel32:KERNEL32.dll
+ 0002:00000048       __imp__Sleep@4             10019048     kernel32:KERNEL32.dll
+ 0002:0000004c       __imp__GetModuleHandleA@4  1001904c     kernel32:KERNEL32.dll
+ 0002:00000050       __imp__GetModuleFileNameA@12 10019050     kernel32:KERNEL32.dll
+ 0002:00000054       __imp__LoadLibraryA@4      10019054     kernel32:KERNEL32.dll
+ 0002:00000058       __imp__GetProcAddress@8    10019058     kernel32:KERNEL32.dll
+ 0002:0000005c       __imp__InterlockedExchange@8 1001905c     kernel32:KERNEL32.dll
+ 0002:00000060       \177KERNEL32_NULL_THUNK_DATA 10019060     kernel32:KERNEL32.dll
+ 0002:00000064       __imp__exit                10019064     MSVCRT:MSVCR100.dll
+ 0002:00000068       __imp__strrchr             10019068     MSVCRT:MSVCR100.dll
+ 0002:0000006c       __imp__remove              1001906c     MSVCRT:MSVCR100.dll
+ 0002:00000070       __imp__tolower             10019070     MSVCRT:MSVCR100.dll
+ 0002:00000074       __imp__strchr              10019074     MSVCRT:MSVCR100.dll
+ 0002:00000078       __imp__fprintf             10019078     MSVCRT:MSVCR100.dll
+ 0002:0000007c       __imp__strtod              1001907c     MSVCRT:MSVCR100.dll
+ 0002:00000080       __imp__strtol              10019080     MSVCRT:MSVCR100.dll
+ 0002:00000084       __imp__getenv              10019084     MSVCRT:MSVCR100.dll
+ 0002:00000088       __imp__free                10019088     MSVCRT:MSVCR100.dll
+ 0002:0000008c       __imp__signal              1001908c     MSVCRT:MSVCR100.dll
+ 0002:00000090       __imp___time64             10019090     MSVCRT:MSVCR100.dll
+ 0002:00000094       __imp___lseeki64           10019094     MSVCRT:MSVCR100.dll
+ 0002:00000098       __imp___vsnprintf          10019098     MSVCRT:MSVCR100.dll
+ 0002:0000009c       __imp__strerror            1001909c     MSVCRT:MSVCR100.dll
+ 0002:000000a0       __imp__sprintf             100190a0     MSVCRT:MSVCR100.dll
+ 0002:000000a4       __imp__qsort               100190a4     MSVCRT:MSVCR100.dll
+ 0002:000000a8       __imp__malloc              100190a8     MSVCRT:MSVCR100.dll
+ 0002:000000ac       __imp__write               100190ac     MSVCRT:MSVCR100.dll
+ 0002:000000ac       __imp___write              100190ac     MSVCRT:MSVCR100.dll
+ 0002:000000b0       __imp___encoded_null       100190b0     MSVCRT:MSVCR100.dll
+ 0002:000000b4       __imp___initterm           100190b4     MSVCRT:MSVCR100.dll
+ 0002:000000b8       __imp___initterm_e         100190b8     MSVCRT:MSVCR100.dll
+ 0002:000000bc       __imp___amsg_exit          100190bc     MSVCRT:MSVCR100.dll
+ 0002:000000c0       __imp____CppXcptFilter     100190c0     MSVCRT:MSVCR100.dll
+ 0002:000000c4       __imp___crt_debugger_hook  100190c4     MSVCRT:MSVCR100.dll
+ 0002:000000c8       __imp____clean_type_info_names_internal 100190c8     MSVCRT:MSVCR100.dll
+ 0002:000000cc       __imp___unlock             100190cc     MSVCRT:MSVCR100.dll
+ 0002:000000d0       __imp____dllonexit         100190d0     MSVCRT:MSVCR100.dll
+ 0002:000000d4       __imp___lock               100190d4     MSVCRT:MSVCR100.dll
+ 0002:000000d8       __imp___onexit             100190d8     MSVCRT:MSVCR100.dll
+ 0002:000000dc       __imp___except_handler4_common 100190dc     MSVCRT:MSVCR100.dll
+ 0002:000000e0       __imp__abort               100190e0     MSVCRT:MSVCR100.dll
+ 0002:000000e4       __imp____iob_func          100190e4     MSVCRT:MSVCR100.dll
+ 0002:000000e8       __imp__vfprintf            100190e8     MSVCRT:MSVCR100.dll
+ 0002:000000ec       __imp__strncpy             100190ec     MSVCRT:MSVCR100.dll
+ 0002:000000f0       __imp__memset              100190f0     MSVCRT:MSVCR100.dll
+ 0002:000000f4       __imp__isprint             100190f4     MSVCRT:MSVCR100.dll
+ 0002:000000f8       __imp__memcpy              100190f8     MSVCRT:MSVCR100.dll
+ 0002:000000fc       __imp___errno              100190fc     MSVCRT:MSVCR100.dll
+ 0002:00000100       __imp__strdup              10019100     MSVCRT:MSVCR100.dll
+ 0002:00000100       __imp___strdup             10019100     MSVCRT:MSVCR100.dll
+ 0002:00000104       __imp___getpid             10019104     MSVCRT:MSVCR100.dll
+ 0002:00000104       __imp__getpid              10019104     MSVCRT:MSVCR100.dll
+ 0002:00000108       __imp___open               10019108     MSVCRT:MSVCR100.dll
+ 0002:00000108       __imp__open                10019108     MSVCRT:MSVCR100.dll
+ 0002:0000010c       __imp__read                1001910c     MSVCRT:MSVCR100.dll
+ 0002:0000010c       __imp___read               1001910c     MSVCRT:MSVCR100.dll
+ 0002:00000110       __imp___ctime64            10019110     MSVCRT:MSVCR100.dll
+ 0002:00000114       __imp___malloc_crt         10019114     MSVCRT:MSVCR100.dll
+ 0002:00000118       \177MSVCR100_NULL_THUNK_DATA 10019118     MSVCRT:MSVCR100.dll
+ 0002:0000011c       __imp__timeGetTime@0       1001911c     winmm:WINMM.dll
+ 0002:00000120       \177WINMM_NULL_THUNK_DATA  10019120     winmm:WINMM.dll
+ 0002:00000124       __imp__ntohl@4             10019124     wsock32:WSOCK32.dll
+ 0002:00000128       __imp__ntohs@4             10019128     wsock32:WSOCK32.dll
+ 0002:0000012c       __imp__htonl@4             1001912c     wsock32:WSOCK32.dll
+ 0002:00000130       __imp__WSAStartup@8        10019130     wsock32:WSOCK32.dll
+ 0002:00000134       __imp__WSACleanup@0        10019134     wsock32:WSOCK32.dll
+ 0002:00000138       __imp__send@16             10019138     wsock32:WSOCK32.dll
+ 0002:0000013c       __imp__closesocket@4       1001913c     wsock32:WSOCK32.dll
+ 0002:00000140       __imp__shutdown@8          10019140     wsock32:WSOCK32.dll
+ 0002:00000144       __imp__recv@16             10019144     wsock32:WSOCK32.dll
+ 0002:00000148       __imp__socket@12           10019148     wsock32:WSOCK32.dll
+ 0002:0000014c       __imp__gethostbyname@4     1001914c     wsock32:WSOCK32.dll
+ 0002:00000150       __imp__htons@4             10019150     wsock32:WSOCK32.dll
+ 0002:00000154       __imp__connect@12          10019154     wsock32:WSOCK32.dll
+ 0002:00000158       \177WSOCK32_NULL_THUNK_DATA 10019158     wsock32:WSOCK32.dll
+ 0002:0000015c       ___xc_a                    1001915c     MSVCRT:cinitexe.obj
+ 0002:00000160       ___xc_z                    10019160     MSVCRT:cinitexe.obj
+ 0002:00000164       ___xi_a                    10019164     MSVCRT:cinitexe.obj
+ 0002:0000016c       ___xi_z                    1001916c     MSVCRT:cinitexe.obj
+ 0002:0000018c       ??_C@_0DC@GCKFIHHD@?4?4?1?4?4?1?4?4?1src?1share?1demo?1jvmti?1hp@ 1001918c     hprof_check.obj
+ 0002:000001c0       ??_C@_0BG@PMKOMKAJ@System?5?$CFs?5failed?3?5?$CFs?6?$AA@ 100191c0     hprof_check.obj
+ 0002:000001d8       ??_C@_0BP@KAJEFMEH@Unknown?5system?5error?5condition?$AA@ 100191d8     hprof_check.obj
+ 0002:000001f8       ??_C@_0BO@PPCEHAJA@Only?5part?5of?5buffer?5processed?$AA@ 100191f8     hprof_check.obj
+ 0002:00000218       ??_C@_05NGFEDHGN@write?$AA@ 10019218     hprof_check.obj
+ 0002:00000220       ??_C@_0BA@OIHJAJFL@bad?5type?5number?$AA@ 10019220     hprof_check.obj
+ 0002:00000230       ??_C@_0L@FMEOCPGI@0x?$CF08x?$CF08x?$AA@ 10019230     hprof_check.obj
+ 0002:0000023c       ??_C@_0P@KPOFLCNF@0x?$CF08x?$CF08x?$CI?$CFf?$CJ?$AA@ 1001923c     hprof_check.obj
+ 0002:0000024c       ??_C@_0L@GJLCDNL@0x?$CF08x?$CI?$CFf?$CJ?$AA@ 1001924c     hprof_check.obj
+ 0002:00000258       ??_C@_06OAIHNJFH@?2u?$CF04x?$AA@ 10019258     hprof_check.obj
+ 0002:00000260       ??_C@_02HAOIJKIC@?$CFc?$AA@ 10019260     hprof_check.obj
+ 0002:00000264       ??_C@_06BAAPOMBI@0x?$CF04x?$AA@ 10019264     hprof_check.obj
+ 0002:0000026c       ??_C@_0L@MHPAILEE@0x?$CF04x?$CI?$CFc?$CJ?$AA@ 1001926c     hprof_check.obj
+ 0002:00000278       ??_C@_06BEICJAKK@0x?$CF02x?$AA@ 10019278     hprof_check.obj
+ 0002:00000280       ??_C@_06BJBFBFHM@0x?$CF08x?$AA@ 10019280     hprof_check.obj
+ 0002:00000288       ??_C@_06FIJELGDL@?2x?$CF02x?$AA@ 10019288     hprof_check.obj
+ 0002:00000290       ??_C@_01BJJEKLCA@?$CC?$AA@ 10019290     hprof_check.obj
+ 0002:00000294       ??_C@_06HPGEIPLA@?$DMnull?$DO?$AA@ 10019294     hprof_check.obj
+ 0002:0000029c       ??_C@_08GKKHHGPJ@?$CFs0x?$CFx?9?$DO?$AA@ 1001929c     hprof_check.obj
+ 0002:000002a8       ??_C@_06KEGKAONF@?$CFs0x?$CFx?$AA@ 100192a8     hprof_check.obj
+ 0002:000002b0       ??_C@_03OFAPEBGM@?$CFs?6?$AA@ 100192b0     hprof_check.obj
+ 0002:000002b4       ??_C@_02MBJIFMOJ@?$CC?6?$AA@ 100192b4     hprof_check.obj
+ 0002:000002b8       ??_C@_04GCLKCGOG@?5?5?$CFs?$AA@ 100192b8     hprof_check.obj
+ 0002:000002c0       ??_C@_08EKHGCGEE@?5?5val?$DN?$CFs?$AA@ 100192c0     hprof_check.obj
+ 0002:000002c9       ??_C@_00CNPNBAHC@?$AA@     100192c9     hprof_check.obj
+ 0002:000002cc       ??_C@_0DM@ELAFIGL@H?$CD?$CFd?$EA?$CFd?5?$CFs?3?5id?$DN0x?$CFx?0?5trace_seria@ 100192cc     hprof_check.obj
+ 0002:00000308       ??_C@_0BJ@CJBBPDCD@HPROF_GC_PRIM_ARRAY_DUMP?$AA@ 10019308     hprof_check.obj
+ 0002:00000324       ??_C@_0BB@GIMMJHDP@?5?5?$FL?$CFd?$FN?3?5id?$DN0x?$CFx?6?$AA@ 10019324     hprof_check.obj
+ 0002:00000338       ??_C@_0DP@KEJJKFNG@H?$CD?$CFd?$EA?$CFd?5?$CFs?3?5id?$DN0x?$CFx?0?5trace_seria@ 10019338     hprof_check.obj
+ 0002:00000378       ??_C@_0BI@NKGJEPHJ@HPROF_GC_OBJ_ARRAY_DUMP?$AA@ 10019378     hprof_check.obj
+ 0002:00000390       ??_C@_0N@CGKPMCKK@?5?5field?5?$CFd?3?5?$AA@ 10019390     hprof_check.obj
+ 0002:000003a0       ??_C@_0DP@EAMBCAF@H?$CD?$CFd?$EA?$CFd?5?$CFs?3?5id?$DN0x?$CFx?0?5trace_seria@ 100193a0     hprof_check.obj
+ 0002:000003e0       ??_C@_0BH@HIELBFJI@HPROF_GC_INSTANCE_DUMP?$AA@ 100193e0     hprof_check.obj
+ 0002:000003f8       ??_C@_08MLCDPIMM@?0?5ty?$DN?$CFd?6?$AA@ 100193f8     hprof_check.obj
+ 0002:00000404       ??_C@_0BG@LMBKGEEJ@?5?5instance_field?5?$CFd?3?5?$AA@ 10019404     hprof_check.obj
+ 0002:0000041c       ??_C@_0BL@MLBLOLIO@?5?5instance_field_count?$DN?$CFd?6?$AA@ 1001941c     hprof_check.obj
+ 0002:00000438       ??_C@_0O@INODLMN@?0?5ty?$DN?$CFd?0?5val?$DN?$AA@ 10019438     hprof_check.obj
+ 0002:00000448       ??_C@_03LNKDLDCI@id?$DN?$AA@ 10019448     hprof_check.obj
+ 0002:0000044c       ??_C@_0BE@BHOBLHPJ@?5?5static?5field?5?$CFd?3?5?$AA@ 1001944c     hprof_check.obj
+ 0002:00000460       ??_C@_0BJ@LJGJPBFI@?5?5static_field_count?$DN?$CFd?6?$AA@ 10019460     hprof_check.obj
+ 0002:0000047c       ??_C@_01EEMJAFIK@?6?$AA@   1001947c     hprof_check.obj
+ 0002:00000480       ??_C@_0CI@OPHKLNJG@?5?5constant_pool?5?$CFd?3?5cpi?$DN?$CFd?0?5ty?$DN?$CF@ 10019480     hprof_check.obj
+ 0002:000004a8       ??_C@_0BE@CFIFJJNL@?5?5instance_size?$DN?$CFd?6?$AA@ 100194a8     hprof_check.obj
+ 0002:000004bc       ??_C@_0DK@DLCBFCGK@?5?5su?$DN0x?$CFx?0?5ld?$DN0x?$CFx?0?5si?$DN0x?$CFx?0?5pr?$DN@ 100194bc     hprof_check.obj
+ 0002:000004f8       ??_C@_0CK@CHDPPEIG@H?$CD?$CFd?$EA?$CFd?5?$CFs?3?5id?$DN0x?$CFx?0?5trace_seria@ 100194f8     hprof_check.obj
+ 0002:00000524       ??_C@_0BE@GEIPHJMB@HPROF_GC_CLASS_DUMP?$AA@ 10019524     hprof_check.obj
+ 0002:00000538       ??_C@_0EA@IHJEIELE@H?$CD?$CFd?$EA?$CFd?5?$CFs?3?5id?$DN0x?$CFx?0?5thread_seri@ 10019538     hprof_check.obj
+ 0002:00000578       ??_C@_0BJ@BICPCHKK@HPROF_GC_ROOT_THREAD_OBJ?$AA@ 10019578     hprof_check.obj
+ 0002:00000598       ??_C@_0HC@LEKJFOKN@?$CItrace_serial_num?$CJ?5?$DO?$DN?5gdata?9?$DOtra@ 10019598     hprof_check.obj
+ 0002:0000060c       ??_C@_0BL@MMJBOEIG@HPROF_GC_ROOT_MONITOR_USED?$AA@ 1001960c     hprof_check.obj
+ 0002:00000628       ??_C@_0BL@KEMDABPN@HPROF_GC_ROOT_THREAD_BLOCK?$AA@ 10019628     hprof_check.obj
+ 0002:00000644       ??_C@_0BL@JHEFKFML@HPROF_GC_ROOT_STICKY_CLASS?$AA@ 10019644     hprof_check.obj
+ 0002:00000660       ??_C@_0CL@GNNONPMK@H?$CD?$CFd?$EA?$CFd?5?$CFs?3?5id?$DN0x?$CFx?0?5thread_seri@ 10019660     hprof_check.obj
+ 0002:0000068c       ??_C@_0BL@DJHFIEDF@HPROF_GC_ROOT_NATIVE_STACK?$AA@ 1001968c     hprof_check.obj
+ 0002:000006a8       ??_C@_0BJ@CPLOBCLD@HPROF_GC_ROOT_JAVA_FRAME?$AA@ 100196a8     hprof_check.obj
+ 0002:000006c4       ??_C@_0DE@GOLHEHCC@H?$CD?$CFd?$EA?$CFd?5?$CFs?3?5id?$DN0x?$CFx?0?5thread_seri@ 100196c4     hprof_check.obj
+ 0002:000006f8       ??_C@_0BI@ODPHJJBJ@HPROF_GC_ROOT_JNI_LOCAL?$AA@ 100196f8     hprof_check.obj
+ 0002:00000710       ??_C@_0BP@PGHBFNMB@H?$CD?$CFd?$EA?$CFd?5?$CFs?3?5id?$DN0x?$CFx?0?5id2?$DN0x?$CFx?6?$AA@ 10019710     hprof_check.obj
+ 0002:00000730       ??_C@_0BJ@GDEKKILI@HPROF_GC_ROOT_JNI_GLOBAL?$AA@ 10019730     hprof_check.obj
+ 0002:0000074c       ??_C@_0BF@PECHNIEG@H?$CD?$CFd?$EA?$CFd?5?$CFs?3?5id?$DN0x?$CFx?6?$AA@ 1001974c     hprof_check.obj
+ 0002:00000764       ??_C@_0BG@PHBGGCBG@HPROF_GC_ROOT_UNKNOWN?$AA@ 10019764     hprof_check.obj
+ 0002:0000077c       ??_C@_0BB@PONDPCDE@p?$DN?$DNpstart?$CLnbytes?$AA@ 1001977c     hprof_check.obj
+ 0002:00000790       ??_C@_0BJ@BOMKGAMF@unknown?5heap?5record?5type?$AA@ 10019790     hprof_check.obj
+ 0002:000007ac       ??_C@_0BE@CBHNCPBK@H?$CD?$CFd?$EA?$CFd?5?$CFs?3?5ERROR?$CB?6?$AA@ 100197ac     hprof_check.obj
+ 0002:000007c0       ??_C@_07NFANNNEC@UNKNOWN?$AA@ 100197c0     hprof_check.obj
+ 0002:000007c8       ??_C@_09HBBIIEJD@temp?5ctab?$AA@ 100197c8     hprof_check.obj
+ 0002:000007d4       ??_C@_0BD@HFIJEDLL@p?$DN?$DN?$CIpstart?$CLnbytes?$CJ?$AA@ 100197d4     hprof_check.obj
+ 0002:000007e8       ??_C@_0BD@JKNLPFFK@p?$DM?$DN?$CIpstart?$CLnbytes?$CJ?$AA@ 100197e8     hprof_check.obj
+ 0002:000007fc       ??_C@_0BE@INEGKIJP@unknown?5record?5type?$AA@ 100197fc     hprof_check.obj
+ 0002:00000810       ??_C@_0BD@EHHNALKE@?$CD?$CFd?$EA?$CFd?3?5?$CFs?0?5sz?$DN?$CFd?6?$AA@ 10019810     hprof_check.obj
+ 0002:00000824       ??_C@_0CJ@BPPLJHCH@?$CD?$CFd?$EA?$CFd?3?5?$CFs?0?5sz?$DN?$CFd?0?5flags?$DN0x?$CFx?0?5d@ 10019824     hprof_check.obj
+ 0002:00000850       ??_C@_0BH@ODPBMLKE@HPROF_CONTROL_SETTINGS?$AA@ 10019850     hprof_check.obj
+ 0002:00000868       ??_C@_09FCKBIKDF@size?$DN?$DN4?$CL2?$AA@ 10019868     hprof_check.obj
+ 0002:00000874       ??_C@_0CH@MHBGMAD@?7?5?$CFd?3?5samples?$DN?$CFd?0?5trace_serial_n@ 10019874     hprof_check.obj
+ 0002:0000089c       ??_C@_0DF@MBJLKKLE@?$CD?$CFd?$EA?$CFd?3?5?$CFs?0?5sz?$DN?$CFd?0?5total_samples@ 1001989c     hprof_check.obj
+ 0002:000008d4       ??_C@_0BC@HALEJIJE@HPROF_CPU_SAMPLES?$AA@ 100198d4     hprof_check.obj
+ 0002:000008e8       ??_C@_09KGMGGKPG@size?$DO?$DN2?$CK4?$AA@ 100198e8     hprof_check.obj
+ 0002:000008f4       ??_C@_0CA@KNKMCKAJ@?$CD?$CFd?$EA?$CFd?3?5SEGMENT?5END?3?5?$CFs?0?5sz?$DN?$CFd?6?$AA@ 100198f4     hprof_check.obj
+ 0002:00000914       ??_C@_0BE@KNNEDFKH@HPROF_HEAP_DUMP_END?$AA@ 10019914     hprof_check.obj
+ 0002:00000928       ??_C@_0CP@LFLJPIIL@?$CD?$CFd?$EA?$CFd?3?5END?5SEGMENT?3?5?$CFs?0?5sz?$DN?$CFd?0?5@ 10019928     hprof_check.obj
+ 0002:00000958       ??_C@_0CC@ENEOELFC@?$CD?$CFd?$EA?$CFd?3?5BEGIN?5SEGMENT?3?5?$CFs?0?5sz?$DN?$CFd@ 10019958     hprof_check.obj
+ 0002:0000097c       ??_C@_0BI@CJBCMLBM@HPROF_HEAP_DUMP_SEGMENT?$AA@ 1001997c     hprof_check.obj
+ 0002:00000994       ??_C@_0CH@BHHAOIML@?$CD?$CFd?$EA?$CFd?3?5END?3?5?$CFs?0?5sz?$DN?$CFd?0?5nheap_re@ 10019994     hprof_check.obj
+ 0002:000009bc       ??_C@_0BK@ODPLGPKN@?$CD?$CFd?$EA?$CFd?3?5BEGIN?3?5?$CFs?0?5sz?$DN?$CFd?6?$AA@ 100199bc     hprof_check.obj
+ 0002:000009d8       ??_C@_0BA@BJDLJLFF@HPROF_HEAP_DUMP?$AA@ 100199d8     hprof_check.obj
+ 0002:000009e8       ??_C@_0CJ@DGLABODG@?$CD?$CFd?$EA?$CFd?3?5?$CFs?0?5sz?$DN?$CFd?0?5thread_serial@ 100199e8     hprof_check.obj
+ 0002:00000a14       ??_C@_0BB@DAHLFMML@HPROF_END_THREAD?$AA@ 10019a14     hprof_check.obj
+ 0002:00000a28       ??_C@_0DB@GIJCGCMI@?5trace_serial_num?$DN?$CFu?0?5nm?$DN0x?$CFx?0?5g@ 10019a28     hprof_check.obj
+ 0002:00000a5c       ??_C@_03CPKFLABO@nm?$DN?$AA@ 10019a5c     hprof_check.obj
+ 0002:00000a60       ??_C@_0EI@BIDIBGAO@?$CD?$CFd?$EA?$CFd?3?5?$CFs?0?5sz?$DN?$CFd?0?5thread_serial@ 10019a60     hprof_check.obj
+ 0002:00000aa8       ??_C@_0BD@OPDGIBFO@HPROF_START_THREAD?$AA@ 10019aa8     hprof_check.obj
+ 0002:00000ac0       ??_C@_0HG@HCKHMBNJ@?$CIthread_serial_num?$CJ?5?$DO?$DN?5gdata?9?$DOth@ 10019ac0     hprof_check.obj
+ 0002:00000b38       ??_C@_0EJ@MDCGLMNB@?$CD?$CFd?$EA?$CFd?3?5?$CFs?0?5sz?$DN?$CFd?0?5nblive?$DN?$CFd?0?5ni@ 10019b38     hprof_check.obj
+ 0002:00000b84       ??_C@_0BD@IACOBOCN@HPROF_HEAP_SUMMARY?$AA@ 10019b84     hprof_check.obj
+ 0002:00000b98       ??_C@_0O@GBBJJLGJ@size?$DN?$DN2?$CK4?$CL2?$CK8?$AA@ 10019b98     hprof_check.obj
+ 0002:00000ba8       ??_C@_0GD@PEPAGFCM@?7?5?$CFd?3?5ty?$DN?$CFd?0?5class_serial_num?$DN?$CFu@ 10019ba8     hprof_check.obj
+ 0002:00000c10       ??_C@_0HB@HLMKAPIB@?$CD?$CFd?$EA?$CFd?3?5?$CFs?0?5sz?$DN?$CFd?0?5flags?$DN0x?$CFx?0?5c@ 10019c10     hprof_check.obj
+ 0002:00000c84       ??_C@_0BC@MFMDIHIE@HPROF_ALLOC_SITES?$AA@ 10019c84     hprof_check.obj
+ 0002:00000c98       ??_C@_0BA@LDLBGDDI@size?$DO?$DN2?$CL4?$CK4?$CL2?$CK8?$AA@ 10019c98     hprof_check.obj
+ 0002:00000ca8       ??_C@_02JODFHDIE@?$FN?6?$AA@ 10019ca8     hprof_check.obj
+ 0002:00000cac       ??_C@_05HHNKPPLF@0x?$CFx?0?$AA@ 10019cac     hprof_check.obj
+ 0002:00000cb8       ??_C@_0EK@KCINGAKO@?$CD?$CFd?$EA?$CFd?3?5?$CFs?0?5sz?$DN?$CFd?0?5trace_serial_@ 10019cb8     hprof_check.obj
+ 0002:00000d04       ??_C@_0M@EFOIIMOG@HPROF_TRACE?$AA@ 10019d04     hprof_check.obj
+ 0002:00000d10       ??_C@_09BOHKANJD@size?$DO?$DN3?$CK4?$AA@ 10019d10     hprof_check.obj
+ 0002:00000d20       ??_C@_0EM@NEDCOPAK@?5name_id?$DN0x?$CFx?0?5sig_id?$DN0x?$CFx?0?5sour@ 10019d20     hprof_check.obj
+ 0002:00000d6c       ??_C@_0BE@HILIAEAK@?$CD?$CFd?$EA?$CFd?3?5?$CFs?0?5sz?$DN?$CFd?0?5?$AA@ 10019d6c     hprof_check.obj
+ 0002:00000d80       ??_C@_0M@BGIACHM@HPROF_FRAME?$AA@ 10019d80     hprof_check.obj
+ 0002:00000d8c       ??_C@_0CB@MNFOFHIB@size?$DN?$DN2?$CK4?$CL4?$CK?$CIint?$CJsizeof?$CIHprofId?$CJ@ 10019d8c     hprof_check.obj
+ 0002:00000db0       ??_C@_0CI@NCKLBDKC@?$CD?$CFd?$EA?$CFd?3?5?$CFs?0?5sz?$DN?$CFd?0?5class_serial_@ 10019db0     hprof_check.obj
+ 0002:00000dd8       ??_C@_0BD@FFONNPAH@HPROF_UNLOAD_CLASS?$AA@ 10019dd8     hprof_check.obj
+ 0002:00000dec       ??_C@_07MIJPMMAB@size?$DN?$DN4?$AA@ 10019dec     hprof_check.obj
+ 0002:00000df8       ??_C@_0FE@JEHKEEOG@?$CD?$CFd?$EA?$CFd?3?5?$CFs?0?5sz?$DN?$CFd?0?5class_serial_@ 10019df8     hprof_check.obj
+ 0002:00000e4c       ??_C@_0BB@ONOBIIEH@HPROF_LOAD_CLASS?$AA@ 10019e4c     hprof_check.obj
+ 0002:00000e60       ??_C@_0HC@MDOFHCCM@?$CIclass_serial_num?$CJ?5?$DO?$DN?5gdata?9?$DOcla@ 10019e60     hprof_check.obj
+ 0002:00000ed4       ??_C@_0CB@CAJECFPL@size?$DN?$DN2?$CK4?$CL2?$CK?$CIint?$CJsizeof?$CIHprofId?$CJ@ 10019ed4     hprof_check.obj
+ 0002:00000ef8       ??_C@_0CD@LIJOGBPJ@?$CD?$CFd?$EA?$CFd?3?5?$CFs?0?5sz?$DN?$CFd?0?5name_id?$DN0x?$CFx?0@ 10019ef8     hprof_check.obj
+ 0002:00000f1c       ??_C@_0L@OAOJOGOG@HPROF_UTF8?$AA@ 10019f1c     hprof_check.obj
+ 0002:00000f28       ??_C@_0BL@PNFGFEBJ@size?$DO?$DN?$CIint?$CJsizeof?$CIHprofId?$CJ?$AA@ 10019f28     hprof_check.obj
+ 0002:00000f44       ??_C@_0O@DFBPNCDK@temp?5utf8?5map?$AA@ 10019f44     hprof_check.obj
+ 0002:00000f54       ??_C@_0BH@ODMGPLND@?6CHECK?5TAGS?3?5starting?6?$AA@ 10019f54     hprof_check.obj
+ 0002:00000f6c       ??_C@_0BG@NCGAHKKE@?$CI?$CIjint?$CJnbytes?$CJ?$DN?$DNnread?$AA@ 10019f6c     hprof_check.obj
+ 0002:00000f84       ??_C@_0BE@IJINFLIE@System?5read?5failed?4?$AA@ 10019f84     hprof_check.obj
+ 0002:00000f98       ??_C@_0M@NLMPNCIE@image?$CB?$DNNULL?$AA@ 10019f98     hprof_check.obj
+ 0002:00000fa4       ??_C@_0CC@MAKDCKBA@Cannot?5md_seek?$CI?$CJ?5to?5start?5of?5fil@ 10019fa4     hprof_check.obj
+ 0002:00000fc8       ??_C@_0BD@JHIOCJLH@?$CI?$CIjint?$CJnbytes?$CJ?$DO512?$AA@ 10019fc8     hprof_check.obj
+ 0002:00000fdc       ??_C@_0CA@MEEEFNIN@Cannot?5md_seek?$CI?$CJ?5to?5end?5of?5file?$AA@ 10019fdc     hprof_check.obj
+ 0002:00000ffc       ??_C@_05BPCDKMDE@fd?$DO?$DN0?$AA@ 10019ffc     hprof_check.obj
+ 0002:00001004       ??_C@_0CF@FLGMMMCA@?$CD?$CFd?5total?5records?5found?5in?5?$CFd?5by@ 1001a004     hprof_check.obj
+ 0002:0000102c       ??_C@_0BI@FKBBDLDN@idsize?$DN?$DNsizeof?$CIHprofId?$CJ?$AA@ 1001a02c     hprof_check.obj
+ 0002:00001044       ??_C@_0CF@GKEPBKCI@Filename?$DN?$CFs?0?5nbytes?$DN?$CFd?0?5header?$DN?$CC@ 1001a044     hprof_check.obj
+ 0002:0000106c       ??_C@_0CD@CAODCGCP@strcmp?$CI?$CIchar?$CK?$CJp?0?5gdata?9?$DOheader?$CJ?$DN@ 1001a06c     hprof_check.obj
+ 0002:00001090       ??_C@_0BD@CIGAJKII@No?5file?5image?3?5?$CFs?6?$AA@ 1001a090     hprof_check.obj
+ 0002:000010a4       ??_C@_0BI@FKDHDBJA@Ljava?1lang?1ThreadGroup?$DL?$AA@ 1001a0a4     hprof_class.obj
+ 0002:000010bc       ??_C@_0BD@KAGNMIPJ@Ljava?1lang?1Thread?$DL?$AA@ 1001a0bc     hprof_class.obj
+ 0002:000010d0       ??_C@_0BD@HNGOJHNF@Ljava?1lang?1System?$DL?$AA@ 1001a0d0     hprof_class.obj
+ 0002:000010e4       ??_C@_0BI@HIBJFPDC@Ljava?1lang?1ClassLoader?$DL?$AA@ 1001a0e4     hprof_class.obj
+ 0002:000010fc       ??_C@_0BC@JPHKFLAG@Ljava?1lang?1Class?$DL?$AA@ 1001a0fc     hprof_class.obj
+ 0002:00001110       ??_C@_0BD@JFADHEFE@Ljava?1lang?1String?$DL?$AA@ 1001a110     hprof_class.obj
+ 0002:00001124       ??_C@_0BH@PNGNOPN@Ljava?1io?1Serializable?$DL?$AA@ 1001a124     hprof_class.obj
+ 0002:0000113c       ??_C@_0BD@HMGGFBMH@Ljava?1lang?1Object?$DL?$AA@ 1001a13c     hprof_class.obj
+ 0002:00001150       ??_C@_0CK@FBBIMDGA@?5?5?5?5Method?5?$CFd?3?5?$CC?$CFs?$CC?0?5sig?$DN?$CC?$CFs?$CC?0?5m@ 1001a150     hprof_class.obj
+ 0002:00001180       ??_C@_0EB@DKDIJBO@0x?$CF08x?3?5Class?5?$CFs?0?5SN?$DN?$CFu?0?5status?$DN@ 1001a180     hprof_class.obj
+ 0002:000011c4       ??_C@_05EKAMNAII@Class?$AA@ 1001a1c4     hprof_class.obj
+ 0002:000011cc       ??_C@_0DM@LEMGKOFF@?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9@ 1001a1cc     hprof_class.obj
+ 0002:00001208       ??_C@_0DM@BIDCIPNB@?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?5Class?5Tabl@ 1001a208     hprof_class.obj
+ 0002:00001244       ??_C@_0CB@JLPJMIA@Cannot?5load?5class?5with?5findClass@ 1001a244     hprof_class.obj
+ 0002:00001268       ??_C@_0DC@PIDGAJIE@?4?4?1?4?4?1?4?4?1src?1share?1demo?1jvmti?1hp@ 1001a268     hprof_class.obj
+ 0002:0000129c       ??_C@_0CC@DOCAILJH@Missing?5jclass?5when?5fields?5neede@ 1001a29c     hprof_class.obj
+ 0002:000012c0       ??_C@_0BK@LKHEFACO@HPROF?5cpu?5sampling?5thread?$AA@ 1001a2c0     hprof_cpu.obj
+ 0002:000012dc       ??_C@_0BG@GHMBKHOC@HPROF?5cpu?5sample?5lock?$AA@ 1001a2dc     hprof_cpu.obj
+ 0002:000012f4       ??_C@_0BE@NAHLKNGG@HPROF?5cpu?5loop?5lock?$AA@ 1001a2f4     hprof_cpu.obj
+ 0002:00001308       ??_C@_0BE@EFFKDDFJ@HPROF?5DUMPING?5CORE?6?$AA@ 1001a308     hprof_error.obj
+ 0002:0000131c       ??_C@_0CE@PHHBOMGP@HPROF?5SIGNAL?5?$CFd?5TERMINATED?5PROCE@ 1001a31c     hprof_error.obj
+ 0002:00001340       ??_C@_0DB@GFACMNAF@?6?5HPROF?5pause?5got?5tired?5of?5waiti@ 1001a340     hprof_error.obj
+ 0002:00001374       ??_C@_0BJ@ILCNEEPF@?6HPROF?5pause?5for?5PID?5?$CFd?6?$AA@ 1001a374     hprof_error.obj
+ 0002:00001390       ??_C@_0BC@HFMHFDPE@UnknownSourceFile?$AA@ 1001a390     hprof_error.obj
+ 0002:000013a4       ??_C@_0BK@LNMNOBI@HPROF?5TERMINATED?5PROCESS?6?$AA@ 1001a3a4     hprof_error.obj
+ 0002:000013c0       ??_C@_0BJ@LNCNBLGB@HPROF?5ERROR?3?5?$CFs?5?$FL?$CFs?3?$CFd?$FN?6?$AA@ 1001a3c0     hprof_error.obj
+ 0002:000013dc       ??_C@_0CO@GDCCKAJE@HPROF?5ERROR?3?5?$CFs?5?$CIJVMTI?5Error?5?$CFs?$CI@ 1001a3dc     hprof_error.obj
+ 0002:0000140c       ??_C@_01OGPIMHDM@?$DP?$AA@ 1001a40c     hprof_error.obj
+ 0002:00001410       ??_C@_0EB@LGKGKPDH@Frame?50x?$CF08x?3?5method?$DN?$CFp?0?5locatio@ 1001a410     hprof_frame.obj
+ 0002:00001454       ??_C@_05MPDBFDHF@Frame?$AA@ 1001a454     hprof_frame.obj
+ 0002:0000145c       ??_C@_0DM@HDIBGAFB@?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?5Frame?5Tabl@ 1001a45c     hprof_frame.obj
+ 0002:00001498       ??_C@_0BM@IDNEBGDK@_java_crw_demo_classname?$EA12?$AA@ 1001a498     hprof_init.obj
+ 0002:000014b4       ??_C@_0BI@NAKGBGBO@java_crw_demo_classname?$AA@ 1001a4b4     hprof_init.obj
+ 0002:000014cc       ??_C@_0BC@GGCMOAGM@_java_crw_demo?$EA76?$AA@ 1001a4cc     hprof_init.obj
+ 0002:000014e0       ??_C@_0O@CMFFOGNE@java_crw_demo?$AA@ 1001a4e0     hprof_init.obj
+ 0002:000014f0       __real@3f1a36e2eb1c432d    1001a4f0     hprof_init.obj
+ 0002:000014f8       ??_C@_0DB@OFLANMKJ@?4?4?1?4?4?1?4?4?1src?1share?1demo?1jvmti?1hp@ 1001a4f8     hprof_init.obj
+ 0002:0000152c       ??_C@_0L@NIPFOILE@?$CFs?5?$FL?$CFs?3?$CFd?$FN?$AA@ 1001a52c     hprof_init.obj
+ 0002:00001538       ??_C@_0BE@FAJHFJE@invalid?5port?5number?$AA@ 1001a538     hprof_init.obj
+ 0002:0000154c       ??_C@_0BB@LCOFAJMA@hostname?5is?5NULL?$AA@ 1001a54c     hprof_init.obj
+ 0002:00001560       ??_C@_07EMJMIMEK@?$CFs?4?$CFd?$CFs?$AA@ 1001a560     hprof_init.obj
+ 0002:00001568       ??_C@_04LCMACLFG@?4txt?$AA@ 1001a568     hprof_init.obj
+ 0002:00001570       ??_C@_01EFFIKLCJ@n?$AA@    1001a570     hprof_init.obj
+ 0002:00001574       ??_C@_01EANLCPLP@y?$AA@    1001a574     hprof_init.obj
+ 0002:00001578       ??_C@_0IDI@PKCEHLKG@?6?5?5?5?5?5HPROF?3?5Heap?5and?5CPU?5Profil@ 1001a578     hprof_init.obj
+ 0002:00001db0       ??_C@_0BJ@NDAHLAI@?$CFs?5option?5error?3?5?$CFs?5?$CI?$CFs?$CJ?$AA@ 1001adb0     hprof_init.obj
+ 0002:00001dcc       ??_C@_05OCFCBLIP@hprof?$AA@ 1001adcc     hprof_init.obj
+ 0002:00001dd4       ??_C@_0BO@MBPIAAPH@can?8t?5create?5profile?5file?3?5?$CFs?$AA@ 1001add4     hprof_init.obj
+ 0002:00001df4       ??_C@_0BH@GNMJDGKG@can?8t?5connect?5to?5?$CFs?3?$CFu?$AA@ 1001adf4     hprof_init.obj
+ 0002:00001e0c       ??_C@_0CA@OKBAMGHH@can?8t?5create?5temp?5heap?5file?3?5?$CFs?$AA@ 1001ae0c     hprof_init.obj
+ 0002:00001e2c       ??_C@_0L@FGICFCIH@?4check?4txt?$AA@ 1001ae2c     hprof_init.obj
+ 0002:00001e38       ??_C@_04MBLKECLF@?4TMP?$AA@ 1001ae38     hprof_init.obj
+ 0002:00001e40       ??_C@_0P@JFGLGPBO@java?4hprof?4txt?$AA@ 1001ae40     hprof_init.obj
+ 0002:00001e50       ??_C@_0L@LEDDPCIJ@java?4hprof?$AA@ 1001ae50     hprof_init.obj
+ 0002:00001e5c       ??_C@_0CJ@GDLIPKLO@monitor?$DNy?5is?5not?5supported?5with?5@ 1001ae5c     hprof_init.obj
+ 0002:00001e88       ??_C@_0CN@DNEGEHLK@cpu?$DNtimes?$HMold?5is?5not?5supported?5w@ 1001ae88     hprof_init.obj
+ 0002:00001eb8       ??_C@_0BB@BKPNNECG@Unknown?5option?3?5?$AA@ 1001aeb8     hprof_init.obj
+ 0002:00001ecc       ??_C@_0BP@DMEMBFPB@X?5option?5value?5must?5be?5numeric?$AA@ 1001aecc     hprof_init.obj
+ 0002:00001eec       ??_C@_01MMEEDKFM@X?$AA@    1001aeec     hprof_init.obj
+ 0002:00001ef0       ??_C@_0ED@JHBHPMON@The?5precrash?5option?5was?5removed?0@ 1001aef0     hprof_init.obj
+ 0002:00001f34       ??_C@_08KLNFLELA@precrash?$AA@ 1001af34     hprof_init.obj
+ 0002:00001f40       ??_C@_0BP@OHLBFOK@debug?5option?5value?5must?5be?5y?$HMn?$AA@ 1001af40     hprof_init.obj
+ 0002:00001f60       ??_C@_05GFCDIDHO@debug?$AA@ 1001af60     hprof_init.obj
+ 0002:00001f68       ??_C@_0BP@IGBDALOK@pause?5option?5value?5must?5be?5y?$HMn?$AA@ 1001af68     hprof_init.obj
+ 0002:00001f88       ??_C@_05PDJBBECF@pause?$AA@ 1001af88     hprof_init.obj
+ 0002:00001f90       ??_C@_0CD@CBEHPELG@errorexit?5option?5value?5must?5be?5y@ 1001af90     hprof_init.obj
+ 0002:00001fb4       ??_C@_09NDIDIJNG@errorexit?$AA@ 1001afb4     hprof_init.obj
+ 0002:00001fc0       ??_C@_0DM@FNMJKPHI@The?5exitpause?5option?5was?5removed@ 1001afc0     hprof_init.obj
+ 0002:00001ffc       ??_C@_09KOPDMKB@exitpause?$AA@ 1001affc     hprof_init.obj
+ 0002:00002008       ??_C@_0CC@HFBDFNIP@coredump?5option?5value?5must?5be?5y?$HM@ 1001b008     hprof_init.obj
+ 0002:0000202c       ??_C@_08JHOBLGK@coredump?$AA@ 1001b02c     hprof_init.obj
+ 0002:00002038       ??_C@_0CI@IHAKJFIH@debugflags?5option?5value?5must?5be?5@ 1001b038     hprof_init.obj
+ 0002:00002060       ??_C@_0L@NDPADBNN@debugflags?$AA@ 1001b060     hprof_init.obj
+ 0002:0000206c       ??_C@_0CG@DPIOJAEB@logflags?5option?5value?5must?5be?5nu@ 1001b06c     hprof_init.obj
+ 0002:00002094       ??_C@_08KMAEEIGA@logflags?$AA@ 1001b094     hprof_init.obj
+ 0002:000020a0       ??_C@_0CB@JPJMDDAJ@gc_okay?5option?5value?5must?5be?5y?$HMn@ 1001b0a0     hprof_init.obj
+ 0002:000020c4       ??_C@_07EHNIJGFI@gc_okay?$AA@ 1001b0c4     hprof_init.obj
+ 0002:000020cc       ??_C@_0CB@MBCCNCCN@monitor?5option?5value?5must?5be?5y?$HMn@ 1001b0cc     hprof_init.obj
+ 0002:000020f0       ??_C@_07LAMOHCEE@monitor?$AA@ 1001b0f0     hprof_init.obj
+ 0002:000020f8       ??_C@_0CE@KKEDLIMN@primarrays?5option?5value?5must?5be?5@ 1001b0f8     hprof_init.obj
+ 0002:0000211c       ??_C@_0L@BHFJHKGI@primarrays?$AA@ 1001b11c     hprof_init.obj
+ 0002:00002128       ??_C@_0CE@NGFGIDIP@primfields?5option?5value?5must?5be?5@ 1001b128     hprof_init.obj
+ 0002:0000214c       ??_C@_0L@IPLLBFNC@primfields?$AA@ 1001b14c     hprof_init.obj
+ 0002:00002158       ??_C@_0CB@DLFJIIID@verbose?5option?5value?5must?5be?5y?$HMn@ 1001b158     hprof_init.obj
+ 0002:0000217c       ??_C@_07KBAMPNJK@verbose?$AA@ 1001b17c     hprof_init.obj
+ 0002:00002184       ??_C@_0BP@BGDAHIEA@force?5option?5value?5must?5be?5y?$HMn?$AA@ 1001b184     hprof_init.obj
+ 0002:000021a4       ??_C@_05BINPNAAL@force?$AA@ 1001b1a4     hprof_init.obj
+ 0002:000021ac       ??_C@_0BN@IOIIIFGI@msa?5option?5value?5must?5be?5y?$HMn?$AA@ 1001b1ac     hprof_init.obj
+ 0002:000021cc       ??_C@_03DNKGIDNC@msa?$AA@  1001b1cc     hprof_init.obj
+ 0002:000021d0       ??_C@_0BN@DCDFDPOH@doe?5option?5value?5must?5be?5y?$HMn?$AA@ 1001b1d0     hprof_init.obj
+ 0002:000021f0       ??_C@_03DBPOFDEI@doe?$AA@  1001b1f0     hprof_init.obj
+ 0002:000021f4       ??_C@_0CA@IIGIIPGO@thread?5option?5value?5must?5be?5y?$HMn?$AA@ 1001b1f4     hprof_init.obj
+ 0002:00002214       ??_C@_06FJHNOCKE@thread?$AA@ 1001b214     hprof_init.obj
+ 0002:0000221c       ??_C@_0CA@LJGLHDND@lineno?5option?5value?5must?5be?5y?$HMn?$AA@ 1001b21c     hprof_init.obj
+ 0002:0000223c       ??_C@_06ILKIAHNN@lineno?$AA@ 1001b23c     hprof_init.obj
+ 0002:00002244       ??_C@_0CJ@OPIHDONM@heap?5option?5value?5must?5be?5dump?$HMs@ 1001b244     hprof_init.obj
+ 0002:00002270       ??_C@_03NFKEKGGK@all?$AA@  1001b270     hprof_init.obj
+ 0002:00002274       ??_C@_05PJPKCADK@sites?$AA@ 1001b274     hprof_init.obj
+ 0002:0000227c       ??_C@_04GGLOKIEE@dump?$AA@ 1001b27c     hprof_init.obj
+ 0002:00002284       ??_C@_0CJ@KEHGOHEP@syntax?5error?5parsing?5heap?$DNdump?$HMs@ 1001b284     hprof_init.obj
+ 0002:000022b0       ??_C@_04PKENOLLO@heap?$AA@ 1001b2b0     hprof_init.obj
+ 0002:000022b8       ??_C@_0CN@KPFAPEKI@cpu?5option?5value?5must?5be?5y?$HMsampl@ 1001b2b8     hprof_init.obj
+ 0002:000022e8       ??_C@_03PNKCFLFB@old?$AA@  1001b2e8     hprof_init.obj
+ 0002:000022ec       ??_C@_05MJOOAIJH@times?$AA@ 1001b2ec     hprof_init.obj
+ 0002:000022f4       ??_C@_07ODIFGGLK@samples?$AA@ 1001b2f4     hprof_init.obj
+ 0002:000022fc       ??_C@_0CN@OJOLBMP@syntax?5error?5parsing?5cpu?$DNy?$HMsampl@ 1001b2fc     hprof_init.obj
+ 0002:0000232c       ??_C@_03PBJBJNON@cpu?$AA@  1001b32c     hprof_init.obj
+ 0002:00002330       ??_C@_0DE@MBFFIELL@cutoff?5option?5value?5must?5be?5floa@ 1001b330     hprof_init.obj
+ 0002:00002364       ??_C@_0CD@GGHCLFKF@syntax?5error?5parsing?5cutoff?$DNDOUB@ 1001b364     hprof_init.obj
+ 0002:00002388       ??_C@_06JDMIDAGC@cutoff?$AA@ 1001b388     hprof_init.obj
+ 0002:00002390       ??_C@_0CO@DBLCEEJA@interval?5option?5value?5must?5be?5de@ 1001b390     hprof_init.obj
+ 0002:000023c0       ??_C@_0CG@CJMKDEDE@syntax?5error?5parsing?5interval?$DNDE@ 1001b3c0     hprof_init.obj
+ 0002:000023e8       ??_C@_08CBFCMNKF@interval?$AA@ 1001b3e8     hprof_init.obj
+ 0002:000023f4       ??_C@_0CM@CDCAOLHJ@depth?5option?5value?5must?5be?5decim@ 1001b3f4     hprof_init.obj
+ 0002:00002420       ??_C@_0CD@JBGECNOM@syntax?5error?5parsing?5depth?$DNDECIM@ 1001b420     hprof_init.obj
+ 0002:00002444       ??_C@_05BJGJGKJC@depth?$AA@ 1001b444     hprof_init.obj
+ 0002:0000244c       ??_C@_0CA@EMPDCICO@format?5option?5value?5must?5be?5a?$HMb?$AA@ 1001b44c     hprof_init.obj
+ 0002:0000246c       ??_C@_01OJONOECF@b?$AA@    1001b46c     hprof_init.obj
+ 0002:00002470       ??_C@_01MCMALHOG@a?$AA@    1001b470     hprof_init.obj
+ 0002:00002474       ??_C@_0CA@EKAPMBCN@syntax?5error?5parsing?5format?$DNa?$HMb?$AA@ 1001b474     hprof_init.obj
+ 0002:00002494       ??_C@_06DLEPGFEF@format?$AA@ 1001b494     hprof_init.obj
+ 0002:0000249c       ??_C@_0BI@IDICBEF@net?5option?5missing?5port?$AA@ 1001b49c     hprof_init.obj
+ 0002:000024b4       ??_C@_0BH@PJBFKPDJ@net?5option?5missing?5?8?3?8?$AA@ 1001b4b4     hprof_init.obj
+ 0002:000024cc       ??_C@_03NBFOK@net?$AA@     1001b4cc     hprof_init.obj
+ 0002:000024d0       ??_C@_0CD@CGFHFHHF@syntax?5error?5parsing?5file?$DNfilena@ 1001b4d0     hprof_init.obj
+ 0002:000024f4       ??_C@_0CM@FEEIPGCP@file?5or?5net?5options?5should?5only?5@ 1001b4f4     hprof_init.obj
+ 0002:00002520       ??_C@_04DAMGJPCA@file?$AA@ 1001b520     hprof_init.obj
+ 0002:00002528       ??_C@_0CF@KCMIGIIF@general?5syntax?5error?5parsing?5opt@ 1001b528     hprof_init.obj
+ 0002:00002550       ??_C@_01IHBHIGKO@?0?$AA@   1001b550     hprof_init.obj
+ 0002:00002554       ??_C@_0BE@GCMJIEKN@_JAVA_HPROF_OPTIONS?$AA@ 1001b554     hprof_init.obj
+ 0002:00002568       ??_C@_04PCJFHION@help?$AA@ 1001b568     hprof_init.obj
+ 0002:00002570       ??_C@_0BI@OCGOOHFN@HPROF?5gc_finish?5watcher?$AA@ 1001b570     hprof_init.obj
+ 0002:00002588       ??_C@_0BD@PNIEAMII@JAVA?5PROFILE?51?40?42?$AA@ 1001b588     hprof_init.obj
+ 0002:0000259c       ??_C@_0BD@NGKJFPEL@JAVA?5PROFILE?51?40?41?$AA@ 1001b59c     hprof_init.obj
+ 0002:000025b0       ??_C@_0CD@OELEBCJC@Lcom?1sun?1demo?1jvmti?1hprof?1Tracke@ 1001b5b0     hprof_init.obj
+ 0002:000025d4       ??_C@_08KDGHMPPK@CallSite?$AA@ 1001b5d4     hprof_init.obj
+ 0002:000025e0       ??_C@_0L@PBHNBFDL@ReturnSite?$AA@ 1001b5e0     hprof_init.obj
+ 0002:000025ec       ??_C@_0L@PNDODNGI@ObjectInit?$AA@ 1001b5ec     hprof_init.obj
+ 0002:000025f8       ??_C@_08IPKKBCGH@NewArray?$AA@ 1001b5f8     hprof_init.obj
+ 0002:00002604       ??_C@_05MNEAHDDF@?$CIII?$CJV?$AA@ 1001b604     hprof_init.obj
+ 0002:0000260c       ??_C@_0BG@JLFLBLJI@?$CILjava?1lang?1Object?$DL?$CJV?$AA@ 1001b60c     hprof_init.obj
+ 0002:00002624       ??_C@_0CB@MLGJILKK@com?1sun?1demo?1jvmti?1hprof?1Tracker@ 1001b624     hprof_init.obj
+ 0002:00002648       ??_C@_0BK@CJJFDDOP@Ran?5out?5of?5malloc?$CI?$CJ?5space?$AA@ 1001b648     hprof_init.obj
+ 0002:00002664       ??_C@_0BK@PFEIMFJI@No?5classname?5in?5classfile?$AA@ 1001b664     hprof_init.obj
+ 0002:00002680       ??_C@_0BG@HAHGGNHO@sun?4boot?4library?4path?$AA@ 1001b680     hprof_init.obj
+ 0002:00002698       ??_C@_0CA@IAAIIKKH@Cannot?5find?5library?5symbol?5?8?$CFs?8?$AA@ 1001b698     hprof_init.obj
+ 0002:000026b8       ??_C@_07HDGNKME@?5done?4?6?$AA@ 1001b6b8     hprof_init.obj
+ 0002:000026c0       ??_C@_0CC@LHKHFDOC@?5CPU?5usage?5in?5old?5prof?5format?5?4?4@ 1001b6c0     hprof_init.obj
+ 0002:000026e4       ??_C@_0CB@PKCDBGOG@?5CPU?5usage?5by?5timing?5methods?5?4?4?4@ 1001b6e4     hprof_init.obj
+ 0002:00002708       ??_C@_0CL@JCIEPIKM@?5CPU?5usage?5by?5sampling?5running?5t@ 1001b708     hprof_init.obj
+ 0002:00002734       ??_C@_0BG@BLJMODIC@?5allocation?5sites?5?4?4?4?$AA@ 1001b734     hprof_init.obj
+ 0002:0000274c       ??_C@_0P@BENJNADH@?5Java?5heap?5?4?4?4?$AA@ 1001b74c     hprof_init.obj
+ 0002:0000275c       ??_C@_0BN@OCIBMNDP@?5contended?5monitor?5usage?5?4?4?4?$AA@ 1001b75c     hprof_init.obj
+ 0002:0000277c       ??_C@_07OKDJEMIF@Dumping?$AA@ 1001b77c     hprof_init.obj
+ 0002:00002784       ??_C@_0BJ@PGHAIEAL@VM?5Death?5more?5than?5once?$DP?$AA@ 1001b784     hprof_init.obj
+ 0002:000027a0       ??_C@_0BI@ILJEGKOI@VM?5Death?5before?5VM?5Init?$AA@ 1001b7a0     hprof_init.obj
+ 0002:000027b8       ??_C@_0BI@PEEGGNOL@VM?5Death?5during?5VM?5Init?$AA@ 1001b7b8     hprof_init.obj
+ 0002:000027d0       ??_C@_0BF@ILMDJCHH@HPROF?5gc_finish?5lock?$AA@ 1001b7d0     hprof_init.obj
+ 0002:000027e8       ??_C@_0BH@PHBLECPG@HPROF?5object?5free?5lock?$AA@ 1001b7e8     hprof_init.obj
+ 0002:00002800       ??_C@_0BF@GNHLLGIJ@HPROF?5callback?5block?$AA@ 1001b800     hprof_init.obj
+ 0002:00002818       ??_C@_0BE@BAHELICG@HPROF?5callback?5lock?$AA@ 1001b818     hprof_init.obj
+ 0002:0000282c       ??_C@_0BH@JAOAIHPM@HPROF?5data?5access?5lock?$AA@ 1001b82c     hprof_init.obj
+ 0002:00002844       ??_C@_0BA@PEOHBHKP@HPROF?5dump?5lock?$AA@ 1001b844     hprof_init.obj
+ 0002:00002854       ??_C@_0CE@MEIGLHJ@Cannot?5initialize?5npt?5utf?5functi@ 1001b854     hprof_init.obj
+ 0002:00002878       ??_C@_0BI@KDIGKBKK@Cannot?5load?5npt?5library?$AA@ 1001b878     hprof_init.obj
+ 0002:00002890       ??_C@_0BJ@BCAAKKFG@Cannot?5initialize?5NptEnv?$AA@ 1001b890     hprof_init.obj
+ 0002:000028ac       ??_C@_05CJAIGNCM@0?40?40?$AA@ 1001b8ac     hprof_init.obj
+ 0002:000028b4       ??_C@_0BK@HOJGHELP@Cannot?5find?5nptInitialize?$AA@ 1001b8b4     hprof_init.obj
+ 0002:000028d0       ??_C@_0O@MIMNKEMK@nptInitialize?$AA@ 1001b8d0     hprof_init.obj
+ 0002:000028e0       ??_C@_0BE@PIBOIGHP@Cannot?5open?5library?$AA@ 1001b8e0     hprof_init.obj
+ 0002:000028f4       ??_C@_07GBFHOKDN@npt?4dll?$AA@ 1001b8f4     hprof_init.obj
+ 0002:000028fc       ??_C@_04KAAOILJH@?2?4?4?2?$AA@ 1001b8fc     hprof_init.obj
+ 0002:00002904       ??_C@_0BE@JHKGKBJE@Cannot?5find?5jvm?4dll?$AA@ 1001b904     hprof_init.obj
+ 0002:00002918       ??_C@_07KCBEICKO@jvm?4dll?$AA@ 1001b918     hprof_init.obj
+ 0002:00002920       ??_C@_0P@KEJEBKCF@NPT?5ERROR?3?5?$CFs?6?$AA@ 1001b920     hprof_init.obj
+ 0002:00002930       ??_C@_0BA@GOCLFPKI@NptEnv?$CK?5is?5NULL?$AA@ 1001b930     hprof_init.obj
+ 0002:00002940       ??_C@_0FP@EEPNNOPI@Cannot?5load?5this?5JVM?5TI?5agent?5tw@ 1001b940     hprof_init.obj
+ 0002:000029a0       ??_C@_0O@IFNENBMK@Unknown_class?$AA@ 1001b9a0     hprof_io.obj
+ 0002:000029b0       ??_C@_07GOBOHMJA@boolean?$AA@ 1001b9b0     hprof_io.obj
+ 0002:000029b8       ??_C@_04GKJNKENE@void?$AA@ 1001b9b8     hprof_io.obj
+ 0002:000029c0       ??_C@_05BFKKPKCG@short?$AA@ 1001b9c0     hprof_io.obj
+ 0002:000029c8       ??_C@_04GOKPGOLB@long?$AA@ 1001b9c8     hprof_io.obj
+ 0002:000029d0       ??_C@_03JBIPMCLC@int?$AA@  1001b9d0     hprof_io.obj
+ 0002:000029d4       ??_C@_06BNJCAIGJ@double?$AA@ 1001b9d4     hprof_io.obj
+ 0002:000029dc       ??_C@_05KNFBNCOH@float?$AA@ 1001b9dc     hprof_io.obj
+ 0002:000029e4       ??_C@_04DBJPMPLO@enum?$AA@ 1001b9e4     hprof_io.obj
+ 0002:000029ec       ??_C@_04ENMBGAPA@char?$AA@ 1001b9ec     hprof_io.obj
+ 0002:000029f4       ??_C@_04IHGKJMLH@byte?$AA@ 1001b9f4     hprof_io.obj
+ 0002:000029fc       ??_C@_02HCKGKOFO@?$CI?$CJ?$AA@ 1001b9fc     hprof_io.obj
+ 0002:00002a00       ??_C@_0P@DHLBOJDB@Unknown_method?$AA@ 1001ba00     hprof_io.obj
+ 0002:00002a10       ??_C@_0CP@MGEBHOEC@?4?4?1?4?4?1?4?4?1src?1share?1demo?1jvmti?1hp@ 1001ba10     hprof_io.obj
+ 0002:00002a40       ??_C@_04MIIPNNEF@send?$AA@ 1001ba40     hprof_io.obj
+ 0002:00002a48       ??_C@_0BC@JODADJHG@?5?$DMunknown?5thread?$DO?$AA@ 1001ba48     hprof_io.obj
+ 0002:00002a5c       ??_C@_0BD@IAMJIPJO@?5?$DMunknown?5thread?$DO?0?$AA@ 1001ba5c     hprof_io.obj
+ 0002:00002a70       ??_C@_0L@NDJLKNB@?5thread?5?$CFd?$AA@ 1001ba70     hprof_io.obj
+ 0002:00002a7c       ??_C@_0M@MIOILAFG@?5thread?5?$CFd?0?$AA@ 1001ba7c     hprof_io.obj
+ 0002:00002a88       ??_C@_0M@BFCDGIM@?6?9?9?9?9?9?9?9?9?6?6?$AA@ 1001ba88     hprof_io.obj
+ 0002:00002a94       ??_C@_04POLDLDMI@read?$AA@ 1001ba94     hprof_io.obj
+ 0002:00002a9c       ??_C@_0BA@CADMPAOC@?$CFs?0?5created?5?$CFs?6?$AA@ 1001ba9c     hprof_io.obj
+ 0002:00002aac       ??_C@_0O@NCFAOBDD@Can?8t?5open?5?$CFs?$AA@ 1001baac     hprof_io.obj
+ 0002:00002abc       ??_C@_0O@PMAAFLKH@jvm?4hprof?4txt?$AA@ 1001babc     hprof_io.obj
+ 0002:00002acc       ??_C@_0DP@EOEKDJEO@?5rank?5?5?5self?5?5accum?5?5?5?5?5bytes?5ob@ 1001bacc     hprof_io.obj
+ 0002:00002b10       ??_C@_0EA@CFBHFKDL@?5?5?5?5?5?5?5?5?5?5percent?5?5?5?5?5?5?5?5?5?5live?5@ 1001bb10     hprof_io.obj
+ 0002:00002b50       ??_C@_0BP@CLCGNIMI@SITES?5BEGIN?5?$CIordered?5by?5?$CFs?$CJ?5?$CFs?$AA@ 1001bb50     hprof_io.obj
+ 0002:00002b70       ??_C@_0CM@CBLHKJFI@?$CF5u?5?$CF5?42f?$CF?$CF?5?$CF5?42f?$CF?$CF?5?$CF9u?5?$CF4u?5?$CF9u?5@ 1001bb70     hprof_io.obj
+ 0002:00002ba0       __real@4059000000000000    1001bba0     hprof_io.obj
+ 0002:00002ba8       ??_C@_0L@CKHNMGBC@SITES?5END?6?$AA@ 1001bba8     hprof_io.obj
+ 0002:00002bb4       ??_C@_0DH@NGILCPCO@THREAD?5START?5?$CIobj?$DN?$CFx?0?5id?5?$DN?5?$CFd?0?5n@ 1001bbb4     hprof_io.obj
+ 0002:00002bec       ??_C@_0BG@PIAADDAB@THREAD?5END?5?$CIid?5?$DN?5?$CFd?$CJ?6?$AA@ 1001bbec     hprof_io.obj
+ 0002:00002c04       ??_C@_09JPFCIILH@?7?$DMempty?$DO?6?$AA@ 1001bc04     hprof_io.obj
+ 0002:00002c10       ??_C@_0BI@FDDGHNEP@?5?$CIfrom?5?$CFs?5phase?5of?5JVM?$CJ?$AA@ 1001bc10     hprof_io.obj
+ 0002:00002c28       ??_C@_0N@OMDMKKMG@?5?$CIthread?$DN?$CFd?$CJ?$AA@ 1001bc28     hprof_io.obj
+ 0002:00002c38       ??_C@_09BONBOKMJ@TRACE?5?$CFu?3?$AA@ 1001bc38     hprof_io.obj
+ 0002:00002c44       ??_C@_0P@EGBEGAHH@?7?$CFs?4?$CFs?$CI?$CFs?3?$CFs?$CJ?6?$AA@ 1001bc44     hprof_io.obj
+ 0002:00002c54       ??_C@_0BB@CIKHEIJM@?$DMUnknown?5Source?$DO?$AA@ 1001bc54     hprof_io.obj
+ 0002:00002c68       ??_C@_0BB@EPPOLNMC@?$DMUnknown?5Method?$DO?$AA@ 1001bc68     hprof_io.obj
+ 0002:00002c7c       ??_C@_02DPKJAMEF@?$CFd?$AA@ 1001bc7c     hprof_io.obj
+ 0002:00002c80       ??_C@_0N@CANDBIMJ@Unknown?5line?$AA@ 1001bc80     hprof_io.obj
+ 0002:00002c90       ??_C@_0O@GNIBGOFH@Native?5method?$AA@ 1001bc90     hprof_io.obj
+ 0002:00002ca0       ??_C@_0BA@KBBHNEBH@Compiled?5method?$AA@ 1001bca0     hprof_io.obj
+ 0002:00002cb0       ??_C@_0CJ@FEPGPPDL@rank?5?5?5self?5?5accum?5?5?5count?5trace@ 1001bcb0     hprof_io.obj
+ 0002:00002cdc       ??_C@_0BJ@MCGJLPEC@?$CFs?5BEGIN?5?$CItotal?5?$DN?5?$CFd?$CJ?5?$CFs?$AA@ 1001bcdc     hprof_io.obj
+ 0002:00002cf8       ??_C@_0O@HDJHNIOL@CPU?5TIME?5?$CIms?$CJ?$AA@ 1001bcf8     hprof_io.obj
+ 0002:00002d08       ??_C@_0M@OCKALELD@CPU?5SAMPLES?$AA@ 1001bd08     hprof_io.obj
+ 0002:00002d14       ??_C@_0BA@LIKBLINJ@?5?$DMempty?5trace?$DO?6?$AA@ 1001bd14     hprof_io.obj
+ 0002:00002d24       ??_C@_07DGNNNLHO@?5?$CFs?4?$CFs?6?$AA@ 1001bd24     hprof_io.obj
+ 0002:00002d2c       ??_C@_0BM@MJAPPKNB@?$CF4u?5?$CF5?42f?$CF?$CF?5?$CF5?42f?$CF?$CF?5?$CF7u?5?$CF5u?$AA@ 1001bd2c     hprof_io.obj
+ 0002:00002d48       ??_C@_07JHMDLGIF@?$CFs?5END?6?$AA@ 1001bd48     hprof_io.obj
+ 0002:00002d50       ??_C@_0BK@IEECFLPB@count?5callee?5caller?5time?6?$AA@ 1001bd50     hprof_io.obj
+ 0002:00002d6c       ??_C@_03PMGGPEJJ@?$CFd?6?$AA@ 1001bd6c     hprof_io.obj
+ 0002:00002d70       ??_C@_0BB@CNGBILFI@?$DMunknown?5caller?$DO?$AA@ 1001bd70     hprof_io.obj
+ 0002:00002d84       ??_C@_03IKGEINEE@?$CFs?5?$AA@ 1001bd84     hprof_io.obj
+ 0002:00002d88       ??_C@_0BB@DEAIDOKN@?$DMunknown?5callee?$DO?$AA@ 1001bd88     hprof_io.obj
+ 0002:00002d9c       ??_C@_08NBABFLDC@?$CFs?4?$CFs?$CFs?5?$AA@ 1001bd9c     hprof_io.obj
+ 0002:00002da8       ??_C@_03JDANDILB@?$CFd?5?$AA@ 1001bda8     hprof_io.obj
+ 0002:00002dac       ??_C@_0CK@EIFBODMG@rank?5?5?5self?5?5accum?5?5?5count?5trace@ 1001bdac     hprof_io.obj
+ 0002:00002dd8       ??_C@_0CG@OEAEBDMP@MONITOR?5TIME?5BEGIN?5?$CItotal?5?$DN?5?$CFu?5m@ 1001bdd8     hprof_io.obj
+ 0002:00002e00       ??_C@_0CH@DCKBGDHE@?$CF4u?5?$CF5?42f?$CF?$CF?5?$CF5?42f?$CF?$CF?5?$CF7u?5?$CF5u?5?$CFs?5?$CI@ 1001be00     hprof_io.obj
+ 0002:00002e28       ??_C@_0BC@NJINABM@MONITOR?5TIME?5END?6?$AA@ 1001be28     hprof_io.obj
+ 0002:00002e3c       ??_C@_0BO@BIEEFEKH@SLEEP?3?5timeout?$DN?$CFd?0?5thread?5?$CFd?6?$AA@ 1001be3c     hprof_io.obj
+ 0002:00002e5c       ??_C@_0CF@GOKDFEGE@SLEEP?3?5timeout?$DN?$CFd?0?5?$DMunknown?5thre@ 1001be5c     hprof_io.obj
+ 0002:00002e84       ??_C@_0CJ@JDGFDGCO@WAIT?3?5MONITOR?5?$CFs?0?5timeout?$DN?$CFd?0?5th@ 1001be84     hprof_io.obj
+ 0002:00002eb0       ??_C@_0DA@PAOIGCJK@WAIT?3?5MONITOR?5?$CFs?0?5timeout?$DN?$CFd?0?5?$DMu@ 1001beb0     hprof_io.obj
+ 0002:00002ee0       ??_C@_0CP@KECIBELF@WAITED?3?5MONITOR?5?$CFs?0?5time_waited?$DN@ 1001bee0     hprof_io.obj
+ 0002:00002f10       ??_C@_0DG@JKNMLIIB@WAITED?3?5MONITOR?5?$CFs?0?5time_waited?$DN@ 1001bf10     hprof_io.obj
+ 0002:00002f48       ??_C@_0BE@MPINDFNB@MONITOR?5DUMP?5BEGIN?6?$AA@ 1001bf48     hprof_io.obj
+ 0002:00002f5c       ??_C@_0CF@EEKKPGCA@?5?5?5?5THREAD?5?$CFd?0?5trace?5?$CFd?0?5status?3@ 1001bf5c     hprof_io.obj
+ 0002:00002f84       ??_C@_02EDDKIDN@UN?$AA@    1001bf84     hprof_io.obj
+ 0002:00002f88       ??_C@_01DGKLNCNG@R?$AA@    1001bf88     hprof_io.obj
+ 0002:00002f8c       ??_C@_02IHJINOOH@CW?$AA@   1001bf8c     hprof_io.obj
+ 0002:00002f90       ??_C@_02INAGPDON@MW?$AA@   1001bf90     hprof_io.obj
+ 0002:00002f94       ??_C@_02DCIILGAN@SL?$AA@   1001bf94     hprof_io.obj
+ 0002:00002f98       ??_C@_02OLCMIILA@NS?$AA@   1001bf98     hprof_io.obj
+ 0002:00002f9c       ??_C@_02BGHENOEB@ZO?$AA@   1001bf9c     hprof_io.obj
+ 0002:00002fa0       ??_C@_07PFCOEPNE@native?$HM?$AA@ 1001bfa0     hprof_io.obj
+ 0002:00002fa8       ??_C@_05HHGGHEON@intr?$HM?$AA@ 1001bfa8     hprof_io.obj
+ 0002:00002fb0       ??_C@_02ONMOIAPO@S?$HM?$AA@ 1001bfb0     hprof_io.obj
+ 0002:00002fb4       ??_C@_0BJ@JNJDPIMA@?7waiting?5to?5be?5notified?3?$AA@ 1001bfb4     hprof_io.obj
+ 0002:00002fd0       ??_C@_0BD@FPGLBOLN@?7waiting?5to?5enter?3?$AA@ 1001bfd0     hprof_io.obj
+ 0002:00002fe4       ??_C@_0BI@HJHMLMLK@?5?5?5?5MONITOR?5?$CFs?5unowned?6?$AA@ 1001bfe4     hprof_io.obj
+ 0002:00002ffc       ??_C@_0CE@GMJCPGJB@?7owner?3?5thread?5?$CFd?0?5entry?5count?3?5@ 1001bffc     hprof_io.obj
+ 0002:00003020       ??_C@_0BA@DDIGAEMH@?5?5?5?5MONITOR?5?$CFs?6?$AA@ 1001c020     hprof_io.obj
+ 0002:00003030       ??_C@_0BC@FFCEFDPI@MONITOR?5DUMP?5END?6?$AA@ 1001c030     hprof_io.obj
+ 0002:00003044       ??_C@_0CK@EJNNGPCB@HEAP?5DUMP?5BEGIN?5?$CI?$CFu?5objects?0?5?$CFu?5@ 1001c044     hprof_io.obj
+ 0002:00003070       ??_C@_0CI@FAOICMFN@File?5size?5is?5smaller?5than?5bytes?5@ 1001c070     hprof_io.obj
+ 0002:00003098       ??_C@_0CL@FLNKDKBO@Cannot?5seek?5to?5beginning?5of?5heap@ 1001c098     hprof_io.obj
+ 0002:000030c4       ??_C@_0P@GNGJOCHE@HEAP?5DUMP?5END?6?$AA@ 1001c0c4     hprof_io.obj
+ 0002:000030d4       ??_C@_0CK@NFEGAEJI@ROOT?5?$CFx?5?$CIkind?$DN?$DMthread?$DO?0?5id?$DN?$CFu?0?5t@ 1001c0d4     hprof_io.obj
+ 0002:00003100       ??_C@_0BK@JNDLAOIB@ROOT?5?$CFx?5?$CIkind?$DN?$DMunknown?$DO?$CJ?6?$AA@ 1001c100     hprof_io.obj
+ 0002:0000311c       ??_C@_0DC@MOCOIGOI@ROOT?5?$CFx?5?$CIkind?$DN?$DMJNI?5global?5ref?$DO?0?5@ 1001c11c     hprof_io.obj
+ 0002:00003150       ??_C@_0DF@EHNMLMKL@ROOT?5?$CFx?5?$CIkind?$DN?$DMJNI?5local?5ref?$DO?0?5t@ 1001c150     hprof_io.obj
+ 0002:00003188       ??_C@_0CI@HPDPNKKD@ROOT?5?$CFx?5?$CIkind?$DN?$DMsystem?5class?$DO?0?5na@ 1001c188     hprof_io.obj
+ 0002:000031b0       ??_C@_0BP@DMJMIOPP@ROOT?5?$CFx?5?$CIkind?$DN?$DMbusy?5monitor?$DO?$CJ?6?$AA@ 1001c1b0     hprof_io.obj
+ 0002:000031d0       ??_C@_0CK@NCNELCJJ@ROOT?5?$CFx?5?$CIkind?$DN?$DMthread?5block?$DO?0?5th@ 1001c1d0     hprof_io.obj
+ 0002:000031fc       ??_C@_0DC@GMGLBKOF@ROOT?5?$CFx?5?$CIkind?$DN?$DMJava?5stack?$DO?0?5thre@ 1001c1fc     hprof_io.obj
+ 0002:00003230       ??_C@_0BM@BBCDPNOI@?7constant?5pool?5entry?5?$CFd?7?$CFx?6?$AA@ 1001c230     hprof_io.obj
+ 0002:0000324c       ??_C@_0P@NELJBPCL@?7static?5?$CFs?7?$CFx?6?$AA@ 1001c24c     hprof_io.obj
+ 0002:0000325c       ??_C@_0N@PJLEKNME@?7domain?7?7?$CFx?6?$AA@ 1001c25c     hprof_io.obj
+ 0002:0000326c       ??_C@_0O@LMOJKNLE@?7signers?7?7?$CFx?6?$AA@ 1001c26c     hprof_io.obj
+ 0002:0000327c       ??_C@_0N@FIMCJNAO@?7loader?7?7?$CFx?6?$AA@ 1001c27c     hprof_io.obj
+ 0002:0000328c       ??_C@_0M@GAICGIPA@?7super?7?7?$CFx?6?$AA@ 1001c28c     hprof_io.obj
+ 0002:00003298       ??_C@_0BM@LKLLFLPM@CLS?5?$CFx?5?$CIname?$DN?$CFs?0?5trace?$DN?$CFu?$CJ?6?$AA@ 1001c298     hprof_io.obj
+ 0002:000032b4       ??_C@_0CJ@BBCGEJMI@Mis?9match?5on?5instance?5size?5in?5cl@ 1001c2b4     hprof_io.obj
+ 0002:000032e0       ??_C@_09EBLDCIPL@?7?$CFs?7?$CFs?$CFx?6?$AA@ 1001c2e0     hprof_io.obj
+ 0002:000032ec       ??_C@_01GPOEFGEJ@?7?$AA@   1001c2ec     hprof_io.obj
+ 0002:000032f0       ??_C@_0CH@PDBDJJN@OBJ?5?$CFx?5?$CIsz?$DN?$CFu?0?5trace?$DN?$CFu?0?5class?$DN?$CF@ 1001c2f0     hprof_io.obj
+ 0002:00003318       ??_C@_0CM@FKBOPKCE@Mis?9match?5on?5instance?5size?5in?5in@ 1001c318     hprof_io.obj
+ 0002:00003344       ??_C@_0L@NNOLGAJB@?7?$FL?$CFu?$FN?7?7?$CFx?6?$AA@ 1001c344     hprof_io.obj
+ 0002:00003350       ??_C@_0DG@OEIOANKC@ARR?5?$CFx?5?$CIsz?$DN?$CFu?0?5trace?$DN?$CFu?0?5nelems?$DN@ 1001c350     hprof_io.obj
+ 0002:00003388       ??_C@_0DD@KCKFMPAB@ARR?5?$CFx?5?$CIsz?$DN?$CFu?0?5trace?$DN?$CFu?0?5nelems?$DN@ 1001c388     hprof_io.obj
+ 0002:000033bc       ??_C@_07MDLDPMJN@IoNames?$AA@ 1001c3bc     hprof_ioname.obj
+ 0002:000033c4       ??_C@_0DF@DMEFKMLJ@?4?4?1?4?4?1?4?4?1src?1share?1demo?1jvmti?1hp@ 1001c3c4     hprof_listener.obj
+ 0002:000033fc       ??_C@_0CG@FEEGFMIO@failed?5to?5recognize?5cmd?5?$CFd?0?5exit@ 1001c3fc     hprof_listener.obj
+ 0002:00003424       ??_C@_0CJ@HGLEALFG@HPROF?3?5received?5exit?5event?0?5exit@ 1001c424     hprof_listener.obj
+ 0002:00003450       ??_C@_0BG@MPNHEDPO@HPROF?5listener?5thread?$AA@ 1001c450     hprof_listener.obj
+ 0002:00003468       ??_C@_0BE@HPBGIMIM@HPROF?5listener?5lock?$AA@ 1001c468     hprof_listener.obj
+ 0002:0000347c       ??_C@_0CO@FNPLHOCK@Loader?50x?$CF08x?3?5globalref?$DN?$CFp?0?5obj@ 1001c47c     hprof_loader.obj
+ 0002:000034ac       ??_C@_06FLJJKOBF@Loader?$AA@ 1001c4ac     hprof_loader.obj
+ 0002:000034b4       ??_C@_0DN@EAGMNPFH@?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?5Loader?5Tab@ 1001c4b4     hprof_loader.obj
+ 0002:000034f4       ??_C@_08KBEMDEEE@?$CFs?$CFs?4dll?$AA@ 1001c4f4     hprof_md.obj
+ 0002:00003500       ??_C@_09CMKFMIAO@?$CFs?2?$CFs?4dll?$AA@ 1001c500     hprof_md.obj
+ 0002:0000350c       ??_C@_06DAJAKOAL@?$CFs?4dll?$AA@ 1001c50c     hprof_md.obj
+ 0002:00003514       ??_C@_0BP@KMBPCJLM@Can?8t?5find?5dependent?5libraries?$AA@ 1001c514     hprof_md.obj
+ 0002:00003534       ??_C@_09EFPGAEIO@?$CFs?2lib?2?$CFs?$AA@ 1001c534     hprof_md.obj
+ 0002:00003540       ??_C@_0EP@IMBLBEBH@Monitor?50x?$CF08x?3?5trace?$DN0x?$CF08x?0?5si@ 1001c540     hprof_monitor.obj
+ 0002:00003590       ??_C@_07EJLIBABC@Monitor?$AA@ 1001c590     hprof_monitor.obj
+ 0002:00003598       ??_C@_0DM@CDMHECPA@?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?5Monitor?5Tabl@ 1001c598     hprof_monitor.obj
+ 0002:000035d8       ??_C@_0EO@FJDPGHOM@Object?50x?$CF08x?3?5site?$DN0x?$CF08x?0?5SN?$DN?$CF@ 1001c5d8     hprof_object.obj
+ 0002:00003628       ??_C@_06ELFECKBG@Object?$AA@ 1001c628     hprof_object.obj
+ 0002:00003630       ??_C@_0DN@PGMDODNP@?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?5Object?5Tab@ 1001c630     hprof_object.obj
+ 0002:00003670       ??_C@_0FD@PFDMHJMO@?$FL?$CFd?$FN?3?5flavor?$DN?$CFd?0?5refKind?$DN?$CFd?0?5pri@ 1001c670     hprof_reference.obj
+ 0002:000036c4       ??_C@_0BO@HLFIJNLO@?6FOLLOW?5REFERENCES?5RETURNED?3?6?$AA@ 1001c6c4     hprof_reference.obj
+ 0002:000036e4       ??_C@_0CI@MODAHCDH@?5val?$DN?$FL0x?$CF08x?00x?$CF08x?$FN?5or?5?$FL0x?$CF08x?0@ 1001c6e4     hprof_reference.obj
+ 0002:0000370c       ??_C@_01PKGAHCOL@?$CJ?$AA@ 1001c70c     hprof_reference.obj
+ 0002:00003710       ??_C@_0N@KKCODGGO@?0?5got?5?$CFd?$CI?$CFc?$CJ?$AA@ 1001c710     hprof_reference.obj
+ 0002:00003720       ??_C@_0BC@DFPEGHHN@?5?$CIprimType?$DN?$CFd?$CI?$CFc?$CJ?$AA@ 1001c720     hprof_reference.obj
+ 0002:00003734       ??_C@_08BLCEBNNI@?$CIty?$DNOBJ?$CJ?$AA@ 1001c734     hprof_reference.obj
+ 0002:00003740       ??_C@_0BC@CBPNKGLB@?$FL?$CFd?$FN?5?$CFs?5?$CC?$CFs?$CC?5?$CC?$CFs?$CC?$AA@ 1001c740     hprof_reference.obj
+ 0002:00003754       ??_C@_0BM@PKNIEFFF@?6HPROF?5LIST?5OF?5ALL?5FIELDS?3?6?$AA@ 1001c754     hprof_reference.obj
+ 0002:00003770       ??_C@_0CC@KOEPIMAA@Trouble?5with?5fields?5and?5heap?5dat@ 1001c770     hprof_reference.obj
+ 0002:00003794       ??_C@_0DG@BODHCFMN@?4?4?1?4?4?1?4?4?1src?1share?1demo?1jvmti?1hp@ 1001c794     hprof_reference.obj
+ 0002:000037cc       ??_C@_0BA@BFMBFEDH@?6PROBLEM?5WITH?3?6?$AA@ 1001c7cc     hprof_reference.obj
+ 0002:000037dc       ??_C@_0CA@HDCNGDOI@Trouble?5with?5unprepared?5classes?$AA@ 1001c7dc     hprof_reference.obj
+ 0002:000037fc       ??_C@_0CG@LOGJKIDP@Unprepared?5class?5with?5references@ 1001c7fc     hprof_reference.obj
+ 0002:00003824       ??_C@_0CM@LCFNMMIH@Big?5Trouble?5with?5unprepared?5clas@ 1001c824     hprof_reference.obj
+ 0002:00003850       ??_C@_0CP@PGGCECJG@Instance?5of?5unprepared?5class?5wit@ 1001c850     hprof_reference.obj
+ 0002:00003880       ??_C@_0CM@KOJHGKPG@Instance?5of?5unprepared?5class?5wit@ 1001c880     hprof_reference.obj
+ 0002:000038ac       ??_C@_03MCAECCCA@Ref?$AA@  1001c8ac     hprof_reference.obj
+ 0002:000038b0       ??_C@_0GL@CKPFBEEL@Site?50x?$CF08x?3?5class?$DN0x?$CF08x?0?5trace@ 1001c8b0     hprof_site.obj
+ 0002:0000391c       ??_C@_04ELDCFKBO@Site?$AA@ 1001c91c     hprof_site.obj
+ 0002:00003924       ??_C@_0DL@GINFEJKL@?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?5Site?5Table@ 1001c924     hprof_site.obj
+ 0002:00003960       __real@41f0000000000000    1001c960     hprof_site.obj
+ 0002:00003968       ??_C@_0L@CIOGHAJA@live?5bytes?$AA@ 1001c968     hprof_site.obj
+ 0002:00003974       ??_C@_0BA@KPHMOMNK@allocated?5bytes?$AA@ 1001c974     hprof_site.obj
+ 0002:00003984       ??_C@_07NBCGADJA@Unknown?$AA@ 1001c984     hprof_site.obj
+ 0002:0000398c       ??_C@_07BJOIOONN@Strings?$AA@ 1001c98c     hprof_string.obj
+ 0002:00003994       ??_C@_0BF@CMBFGNJH@0x?$CF08x?3?5String?5?$CC?$CFs?$CC?6?$AA@ 1001c994     hprof_string.obj
+ 0002:000039ac       ??_C@_0DM@EIBMKCIH@?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?5String?5Tabl@ 1001c9ac     hprof_string.obj
+ 0002:000039e8       ??_C@_0CI@BKFDBKDO@SANITY?5IN?5QUESTION?3?5new_size?5?$DO?5o@ 1001c9e8     hprof_table.obj
+ 0002:00003a10       ??_C@_0DC@POMJCKMI@?4?4?1?4?4?1?4?4?1src?1share?1demo?1jvmti?1hp@ 1001ca10     hprof_table.obj
+ 0002:00003a44       ??_C@_0BE@HKNCGDI@HPROF?5?$CFs?5table?5lock?$AA@ 1001ca44     hprof_table.obj
+ 0002:00003a58       ??_C@_0DB@BICPHHBL@SANITY?5IN?5QUESTION?3?5?$CIindex?$CJ?5?$DM?5lt@ 1001ca58     hprof_table.obj
+ 0002:00003a90       ??_C@_0EB@ECOEHIOB@SANITY?5IN?5QUESTION?3?5SANITY_ADD_H@ 1001ca90     hprof_table.obj
+ 0002:00003ad4       ??_C@_0CP@CMIJBALN@JVMTI?5tag?5value?5is?5not?50?5and?5mis@ 1001cad4     hprof_tag.obj
+ 0002:00003b04       ??_C@_0DA@EIOCPPKG@?4?4?1?4?4?1?4?4?1src?1share?1demo?1jvmti?1hp@ 1001cb04     hprof_tag.obj
+ 0002:00003b38       ??_C@_0FN@BEJBEIPH@Tls?50x?$CF08x?3?5SN?$DN?$CFu?0?5sample_status@ 1001cb38     hprof_tls.obj
+ 0002:00003b98       ??_C@_0CE@FEDDBDEF@no?5frames?0?5method?5can?8t?5be?5on?5st@ 1001cb98     hprof_tls.obj
+ 0002:00003bbc       ??_C@_0DA@GPAJPLNP@?4?4?1?4?4?1?4?4?1src?1share?1demo?1jvmti?1hp@ 1001cbbc     hprof_tls.obj
+ 0002:00003bec       ??_C@_0CK@PCBPHOKB@method?5return?5tracked?0?5but?5stack@ 1001cbec     hprof_tls.obj
+ 0002:00003c18       ??_C@_03HCMCMCCF@TLS?$AA@  1001cc18     hprof_tls.obj
+ 0002:00003c1c       ??_C@_0DK@IDPJJJOO@?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?5TLS?5Table?5@ 1001cc1c     hprof_tls.obj
+ 0002:00003c58       ??_C@_0BK@CANKCPKH@exception?5pop?5stack?5empty?$AA@ 1001cc58     hprof_tls.obj
+ 0002:00003c74       ??_C@_0CA@GKPNPPJP@expection?5pop?0?5nothing?5on?5stack?$AA@ 1001cc74     hprof_tls.obj
+ 0002:00003c98       ??_C@_0FC@DNOAGMNM@?$CJ?0?5traceSN?$DN?$CFu?0?5num_hits?$DN?$CFd?0?5self@ 1001cc98     hprof_trace.obj
+ 0002:00003cec       ??_C@_08EKIEFACC@0x?$CF08x?0?5?$AA@ 1001ccec     hprof_trace.obj
+ 0002:00003cf8       ??_C@_0DI@GKCOFGK@Trace?50x?$CF08x?3?5SN?$DN?$CFu?0?5threadSN?$DN?$CFu@ 1001ccf8     hprof_trace.obj
+ 0002:00003d30       ??_C@_05ILLBNNOP@Trace?$AA@ 1001cd30     hprof_trace.obj
+ 0002:00003d38       ??_C@_0DM@MBLFMP@?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?5Trace?5Tabl@ 1001cd38     hprof_trace.obj
+ 0002:00003d74       ??_C@_0BB@PCLGJBAD@nativeReturnSite?$AA@ 1001cd74     hprof_tracker.obj
+ 0002:00003d88       ??_C@_0BI@HJMIOFJM@?$CILjava?1lang?1Object?$DLII?$CJV?$AA@ 1001cd88     hprof_tracker.obj
+ 0002:00003da0       ??_C@_0P@MCMNPMHF@nativeCallSite?$AA@ 1001cda0     hprof_tracker.obj
+ 0002:00003db0       ??_C@_0BB@POPFLJFA@nativeObjectInit?$AA@ 1001cdb0     hprof_tracker.obj
+ 0002:00003dc4       ??_C@_0CI@PCHNGLLD@?$CILjava?1lang?1Object?$DLLjava?1lang?1Ob@ 1001cdc4     hprof_tracker.obj
+ 0002:00003dec       ??_C@_0P@OOAACBOI@nativeNewArray?$AA@ 1001cdec     hprof_tracker.obj
+ 0002:00003dfc       ??_C@_0BM@NEBJJKBP@Problems?5tracking?5callbacks?$AA@ 1001cdfc     hprof_tracker.obj
+ 0002:00003e18       ??_C@_0DE@LEJNAILL@?4?4?1?4?4?1?4?4?1src?1share?1demo?1jvmti?1hp@ 1001ce18     hprof_tracker.obj
+ 0002:00003e4c       ??_C@_07IBIALADM@engaged?$AA@ 1001ce4c     hprof_tracker.obj
+ 0002:00003e54       ??_C@_01JPJNBJEM@I?$AA@    1001ce54     hprof_tracker.obj
+ 0002:00003e58       ??_C@_06FALKBLGB@?$DMinit?$DO?$AA@ 1001ce58     hprof_tracker.obj
+ 0002:00003e60       ??_C@_03GAEACAIP@?$CI?$CJV?$AA@ 1001ce60     hprof_tracker.obj
+ 0002:00003e64       ??_C@_0CF@PCFIAEGA@Unexpected?5Exception?5found?5after@ 1001ce64     hprof_tracker.obj
+ 0002:00003e8c       ??_C@_0CG@CBMHIAIE@Unexpected?5Exception?5found?5befor@ 1001ce8c     hprof_tracker.obj
+ 0002:00003eb4       ??_C@_0DB@HCCOHEJO@?4?4?1?4?4?1?4?4?1src?1share?1demo?1jvmti?1hp@ 1001ceb4     hprof_util.obj
+ 0002:00003ee8       ??_C@_0GL@KMNNLEBA@Unable?5to?5access?5JNI?5Version?51?42@ 1001cee8     hprof_util.obj
+ 0002:00003f54       ??_C@_0BN@JBCFKHE@Cannot?5allocate?5jvmti?5memory?$AA@ 1001cf54     hprof_util.obj
+ 0002:00003f74       ??_C@_0BP@MLLANJPH@Cannot?5deallocate?5jvmti?5memory?$AA@ 1001cf74     hprof_util.obj
+ 0002:00003f94       ??_C@_0BO@NJHGGBBD@Cannot?5allocate?5malloc?5memory?$AA@ 1001cf94     hprof_util.obj
+ 0002:00003fb4       ??_C@_0CA@JOBIPEPH@Cannot?5get?5jvmti?5version?5number?$AA@ 1001cfb4     hprof_util.obj
+ 0002:00003fd4       ??_C@_0BK@OAILAOGO@Cannot?5create?5raw?5monitor?$AA@ 1001cfd4     hprof_util.obj
+ 0002:00003ff0       ??_C@_0BO@HMGKMEHC@Cannot?5enter?5with?5raw?5monitor?$AA@ 1001cff0     hprof_util.obj
+ 0002:00004010       ??_C@_0BN@LFBKBPAF@Cannot?5wait?5with?5raw?5monitor?$AA@ 1001d010     hprof_util.obj
+ 0002:00004030       ??_C@_0CD@GFHMPPID@Cannot?5notify?5all?5with?5raw?5monit@ 1001d030     hprof_util.obj
+ 0002:00004054       ??_C@_0BN@MDHBAEMA@Cannot?5exit?5with?5raw?5monitor?$AA@ 1001d054     hprof_util.obj
+ 0002:00004074       ??_C@_0BL@KDPPDKJE@Cannot?5destroy?5raw?5monitor?$AA@ 1001d074     hprof_util.obj
+ 0002:00004090       ??_C@_0BO@HBJLHGJI@Cannot?5set?5event?5notification?$AA@ 1001d090     hprof_util.obj
+ 0002:000040b0       ??_C@_0CF@ODOPAONB@JNI?5PushLocalFrame?5returned?5non?9@ 1001d0b0     hprof_util.obj
+ 0002:000040d8       ??_C@_0CI@GNJHOCCG@JNI?5PopLocalFrame?5returned?5wrong@ 1001d0d8     hprof_util.obj
+ 0002:00004100       ??_C@_0CG@INKKJECJ@JNI?5RegisterNatives?5returned?5non@ 1001d100     hprof_util.obj
+ 0002:00004128       ??_C@_07CIFAGBMG@unknown?$AA@ 1001d128     hprof_util.obj
+ 0002:00004130       ??_C@_04BBBDNBOK@dead?$AA@ 1001d130     hprof_util.obj
+ 0002:00004138       ??_C@_04GLMHKBCH@live?$AA@ 1001d138     hprof_util.obj
+ 0002:00004140       ??_C@_05FAGFPHJG@start?$AA@ 1001d140     hprof_util.obj
+ 0002:00004148       ??_C@_0L@LCBNLHKO@primordial?$AA@ 1001d148     hprof_util.obj
+ 0002:00004154       ??_C@_06FKJAAAAK@onload?$AA@ 1001d154     hprof_util.obj
+ 0002:0000415c       ??_C@_0BH@GGEPPPJA@Cannot?5get?5object?5size?$AA@ 1001d15c     hprof_util.obj
+ 0002:00004174       ??_C@_0BI@PBBMGKKM@Cannot?5call?5IsInterface?$AA@ 1001d174     hprof_util.obj
+ 0002:0000418c       ??_C@_0BI@DAHMAJNN@Cannot?5get?5class?5status?$AA@ 1001d18c     hprof_util.obj
+ 0002:000041a4       ??_C@_0BI@JNNPNCAM@Cannot?5get?5class?5loader?$AA@ 1001d1a4     hprof_util.obj
+ 0002:000041bc       ??_C@_0BG@BILEMKBA@Cannot?5get?5object?5tag?$AA@ 1001d1bc     hprof_util.obj
+ 0002:000041d4       ??_C@_0BG@NGKKDADM@Cannot?5set?5object?5tag?$AA@ 1001d1d4     hprof_util.obj
+ 0002:000041ec       ??_C@_0BO@KIPAKMFC@Cannot?5get?5monitor?5usage?5info?$AA@ 1001d1ec     hprof_util.obj
+ 0002:0000420c       ??_C@_0CF@PLCCHECM@Cannot?5get?5thread?5owned?5monitor?5@ 1001d20c     hprof_util.obj
+ 0002:00004234       ??_C@_0BL@NDMINGDE@Cannot?5get?5system?5property?$AA@ 1001d234     hprof_util.obj
+ 0002:00004250       ??_C@_0BL@GMBHKAMD@Cannot?5get?5class?5signature?$AA@ 1001d250     hprof_util.obj
+ 0002:0000426c       ??_C@_0BM@MJKLBGEI@Cannot?5get?5source?5file?5name?$AA@ 1001d26c     hprof_util.obj
+ 0002:00004288       ??_C@_0BM@MNEEOAMD@Cannot?5get?5class?5field?5list?$AA@ 1001d288     hprof_util.obj
+ 0002:000042a4       ??_C@_0CH@KOOPIIML@Class?5not?5prepared?5when?5needing?5@ 1001d2a4     hprof_util.obj
+ 0002:000042cc       ??_C@_0BL@BPDDELKG@Cannot?5get?5field?5modifiers?$AA@ 1001d2cc     hprof_util.obj
+ 0002:000042e8       ??_C@_0BG@LCHPHFJE@Cannot?5get?5field?5name?$AA@ 1001d2e8     hprof_util.obj
+ 0002:00004300       ??_C@_0CA@FINGKAAM@Cannot?5get?5class?5interface?5list?$AA@ 1001d300     hprof_util.obj
+ 0002:00004320       ??_C@_0CL@OFFNDEFG@Class?5not?5prepared?5when?5needing?5@ 1001d320     hprof_util.obj
+ 0002:0000434c       ??_C@_0BI@LGAMFNKM@Class?5signature?5is?3?5?$CFs?6?$AA@ 1001d34c     hprof_util.obj
+ 0002:00004364       ??_C@_0BI@CHMLIOLP@Cannot?5get?5method?5class?$AA@ 1001d364     hprof_util.obj
+ 0002:0000437c       ??_C@_0BO@PAPBMIBC@Cannot?5check?5is?5method?5native?$AA@ 1001d37c     hprof_util.obj
+ 0002:0000439c       ??_C@_0BH@BPLLGFCI@Cannot?5get?5method?5name?$AA@ 1001d39c     hprof_util.obj
+ 0002:000043b4       ??_C@_0CM@GKGAKFLL@Unable?5to?5get?5potential?5JVMTI?5ca@ 1001d3b4     hprof_util.obj
+ 0002:000043e0       ??_C@_0CM@GHHLBMIK@Unable?5to?5get?5necessary?5JVMTI?5ca@ 1001d3e0     hprof_util.obj
+ 0002:0000440c       ??_C@_0BL@IPIJPPGI@Cannot?5set?5jvmti?5callbacks?$AA@ 1001d40c     hprof_util.obj
+ 0002:00004428       ??_C@_0CA@IEJEDHCB@Cannot?5get?5thread?5local?5storage?$AA@ 1001d428     hprof_util.obj
+ 0002:00004448       ??_C@_0CA@CHDOFKLE@Cannot?5set?5thread?5local?5storage?$AA@ 1001d448     hprof_util.obj
+ 0002:00004468       ??_C@_0BI@BFOOMEII@Cannot?5get?5thread?5state?$AA@ 1001d468     hprof_util.obj
+ 0002:00004480       ??_C@_0BH@LALMLBEN@Cannot?5get?5thread?5info?$AA@ 1001d480     hprof_util.obj
+ 0002:00004498       ??_C@_0BN@CIIHGGBH@Cannot?5get?5thread?5group?5info?$AA@ 1001d498     hprof_util.obj
+ 0002:000044b8       ??_C@_0CB@OOIBEDA@Cannot?5get?5all?5loaded?5class?5list@ 1001d4b8     hprof_util.obj
+ 0002:000044dc       ??_C@_0BP@DPAIDJBG@Cannot?5get?5source?5line?5numbers?$AA@ 1001d4dc     hprof_util.obj
+ 0002:000044fc       ??_C@_09NKELKHPD@maxMemory?$AA@ 1001d4fc     hprof_util.obj
+ 0002:00004508       ??_C@_03IGDHHNNC@?$CI?$CJJ?$AA@ 1001d508     hprof_util.obj
+ 0002:0000450c       ??_C@_0L@POECMMEP@getRuntime?$AA@ 1001d50c     hprof_util.obj
+ 0002:00004518       ??_C@_0BG@JELJIEND@?$CI?$CJLjava?1lang?1Runtime?$DL?$AA@ 1001d518     hprof_util.obj
+ 0002:00004530       ??_C@_0BC@LHBANJHF@java?1lang?1Runtime?$AA@ 1001d530     hprof_util.obj
+ 0002:00004544       ??_C@_0BL@DNNDHALM@Cannot?5create?5agent?5thread?$AA@ 1001d544     hprof_util.obj
+ 0002:00004560       ??_C@_09GMGCGCNB@setDaemon?$AA@ 1001d560     hprof_util.obj
+ 0002:0000456c       ??_C@_04LHKBAEFM@?$CIZ?$CJV?$AA@ 1001d56c     hprof_util.obj
+ 0002:00004574       ??_C@_0CN@EFABAIOP@?$CILjava?1lang?1ThreadGroup?$DLLjava?1la@ 1001d574     hprof_util.obj
+ 0002:000045a4       ??_C@_0CC@KOBPHIDN@Cannot?5get?5thread?5list?5stack?5inf@ 1001d5a4     hprof_util.obj
+ 0002:000045c8       ??_C@_0BJ@KKFDNCKO@Cannot?5follow?5references?$AA@ 1001d5c8     hprof_util.obj
+ 0002:000045e4       ??_C@_0CA@HHGMNCL@Cannot?5force?5garbage?5collection?$AA@ 1001d5e4     hprof_util.obj
+ 0002:00004608       ??_C@_0GP@FALDBDHK@This?5hprof?5native?5library?5will?5n@ 1001d608     hprof_util.obj
+ 0002:00004678       ??_C@_0GL@PEBNFMGB@Unable?5to?5access?5JVMTI?5Version?51@ 1001d678     hprof_util.obj
+ 0002:000046e4       __pDefaultRawDllMain       1001d6e4     MSVCRT:crtdll.obj
+ 0002:000046e4       __pRawDllMain              1001d6e4     MSVCRT:crtdll.obj
+ 0002:000046f0       __load_config_used         1001d6f0     MSVCRT:loadcfg.obj
+ 0002:000047a0       ___safe_se_handler_table   1001d7a0     <linker-defined>
+ 0002:000047a4       ___rtc_iaa                 1001d7a4     MSVCRT:_initsect_.obj
+ 0002:000047a8       ___rtc_izz                 1001d7a8     MSVCRT:_initsect_.obj
+ 0002:000047ac       ___rtc_taa                 1001d7ac     MSVCRT:_initsect_.obj
+ 0002:000047b0       ___rtc_tzz                 1001d7b0     MSVCRT:_initsect_.obj
+ 0002:0000481c       __IMPORT_DESCRIPTOR_WSOCK32 1001d81c     wsock32:WSOCK32.dll
+ 0002:00004830       __IMPORT_DESCRIPTOR_WINMM  1001d830     winmm:WINMM.dll
+ 0002:00004844       __IMPORT_DESCRIPTOR_MSVCR100 1001d844     MSVCRT:MSVCR100.dll
+ 0002:00004858       __IMPORT_DESCRIPTOR_KERNEL32 1001d858     kernel32:KERNEL32.dll
+ 0002:0000486c       __NULL_IMPORT_DESCRIPTOR   1001d86c     wsock32:WSOCK32.dll
+ 0003:00000108       ___security_cookie         1001e108     MSVCRT:gs_cookie.obj
+ 0003:0000010c       ___security_cookie_complement 1001e10c     MSVCRT:gs_cookie.obj
+ 0003:00000110       ___native_dllmain_reason   1001e110     MSVCRT:natstart.obj
+ 0003:00000114       ___native_vcclrit_reason   1001e114     MSVCRT:natstart.obj
+ 0003:000007ec       ?__type_info_root_node@@3U__type_info_node@@A 1001e7ec     MSVCRT:tncleanup.obj
+ 0003:000007f4       _hJavaInst                 1001e7f4     <common>
+ 0003:000007f8       _gdata                     1001e7f8     <common>
+ 0003:000007fc       ___native_startup_state    1001e7fc     <common>
+ 0003:00000800       ___native_startup_lock     1001e800     <common>
+ 0003:00000804       ___onexitend               1001e804     <common>
+ 0003:00000808       ___onexitbegin             1001e808     <common>
+ 0003:0000080c       ___dyn_tls_init_callback   1001e80c     <common>
+
+ entry point at        0001:0001719f
+
+ Static symbols
+
+ 0001:00000000       _cleanup_item              10001000 f   debug_malloc.obj
+ 0001:00000000       _cleanup_item              10001000 f   debug_malloc.obj
+ 0001:00000010       _add_block                 10001010 f   hprof_blocks.obj
+ 0001:00000150       _read_u4                   10001150 f   hprof_check.obj
+ 0001:00000150       _read_id                   10001150 f   hprof_check.obj
+ 0001:00000190       _read_u8                   10001190 f   hprof_check.obj
+ 0001:00000210       _system_error              10001210 f   hprof_check.obj
+ 0001:000002e0       _system_write              100012e0 f   hprof_check.obj
+ 0001:00000320       _check_flush               10001320 f   hprof_check.obj
+ 0001:00000390       _read_val                  10001390 f   hprof_check.obj
+ 0001:00000490       _check_raw                 10001490 f   hprof_check.obj
+ 0001:00000500       _check_printf              10001500 f   hprof_check.obj
+ 0001:00000580       _check_printf_val          10001580 f   hprof_check.obj
+ 0001:00000700       _check_printf_str          10001700 f   hprof_check.obj
+ 0001:00000790       _check_print_utf8          10001790 f   hprof_check.obj
+ 0001:00000800       _cmap_cleanup              10001800 f   hprof_check.obj
+ 0001:00000830       _check_heap_tags           10001830 f   hprof_check.obj
+ 0001:00002780       _utab_cleanup              10003780 f   hprof_check.obj
+ 0001:000027a0       _check_tags                100037a0 f   hprof_check.obj
+ 0001:00003a90       _get_binary_file_image     10004a90 f   hprof_check.obj
+ 0001:00003d50       _fill_info                 10004d50 f   hprof_class.obj
+ 0001:00003e00       _delete_classref           10004e00 f   hprof_class.obj
+ 0001:00003e50       _cleanup_item              10004e50 f   hprof_class.obj
+ 0001:00003e90       _delete_ref_item           10004e90 f   hprof_class.obj
+ 0001:00003ed0       _list_item                 10004ed0 f   hprof_class.obj
+ 0001:00003f70       _all_status_remove         10004f70 f   hprof_class.obj
+ 0001:00003f80       _unload_walker             10004f80 f   hprof_class.obj
+ 0001:000047a0       _cpu_loop_function@12      100057a0 f   hprof_cpu.obj
+ 0001:00004be0       _error_message             10005be0 f   hprof_error.obj
+ 0001:00004c00       _signal_handler            10005c00 f   hprof_error.obj
+ 0001:00004e10       _get_super                 10005e10 f   hprof_event.obj
+ 0001:00004e80       _any_allocation            10005e80 f   hprof_event.obj
+ 0001:00005490       _list_item                 10006490 f   hprof_frame.obj
+ 0001:00005750       _get_gdata                 10006750 f   hprof_init.obj
+ 0001:00005850       _my_crw_fatal_error_handler 10006850 f   hprof_init.obj
+ 0001:000058d0       _list_all_tables           100068d0 f   hprof_init.obj
+ 0001:00005900       _connect_to_socket         10006900 f   hprof_init.obj
+ 0001:00005960       _make_unique_filename      10006960 f   hprof_init.obj
+ 0001:00005ac0       _get_tok                   10006ac0 f   hprof_init.obj
+ 0001:00005b40       _setBinarySwitch           10006b40 f   hprof_init.obj
+ 0001:00005c10       _option_error              10006c10 f   hprof_init.obj
+ 0001:00005ca0       _parse_options             10006ca0 f   hprof_init.obj
+ 0001:00007400       _reset_all_data            10008400 f   hprof_init.obj
+ 0001:00007480       _reset_class_load_status   10008480 f   hprof_init.obj
+ 0001:00007540       _gc_finish_watcher@12      10008540 f   hprof_init.obj
+ 0001:00007700       _setup_event_mode          10008700 f   hprof_init.obj
+ 0001:000077f0       _cbVMInit@12               100087f0 f   hprof_init.obj
+ 0001:00007a90       _cbThreadStart@12          10008a90 f   hprof_init.obj
+ 0001:00007b60       _cbThreadEnd@12            10008b60 f   hprof_init.obj
+ 0001:00007c30       _cbClassFileLoadHook@40    10008c30 f   hprof_init.obj
+ 0001:00007fe0       _cbClassLoad@16            10008fe0 f   hprof_init.obj
+ 0001:000080f0       _cbClassPrepare@16         100090f0 f   hprof_init.obj
+ 0001:00008200       _cbExceptionCatch@28       10009200 f   hprof_init.obj
+ 0001:00008320       _cbMonitorWait@24          10009320 f   hprof_init.obj
+ 0001:00008400       _cbMonitorWaited@20        10009400 f   hprof_init.obj
+ 0001:00008510       _cbMonitorContendedEnter@16 10009510 f   hprof_init.obj
+ 0001:00008620       _cbMonitorContendedEntered@16 10009620 f   hprof_init.obj
+ 0001:00008730       _cbGarbageCollectionStart@4 10009730 f   hprof_init.obj
+ 0001:00008750       _cbGarbageCollectionFinish@4 10009750 f   hprof_init.obj
+ 0001:00008800       _cbObjectFree@12           10009800 f   hprof_init.obj
+ 0001:00008890       _getCapabilities           10009890 f   hprof_init.obj
+ 0001:00008940       _load_library              10009940 f   hprof_init.obj
+ 0001:00008a10       _lookup_library_symbol     10009a10 f   hprof_init.obj
+ 0001:00008c50       _dump_all_data             10009c50 f   hprof_init.obj
+ 0001:00008d70       _cbVMDeath@8               10009d70 f   hprof_init.obj
+ 0001:00009100       _cbDataDumpRequest@4       1000a100 f   hprof_init.obj
+ 0001:000092a0       _set_callbacks             1000a2a0 f   hprof_init.obj
+ 0001:00009770       _signature_to_name         1000a770 f   hprof_io.obj
+ 0001:00009950       _type_from_signature       1000a950 f   hprof_io.obj
+ 0001:00009a50       _system_error              1000aa50 f   hprof_io.obj
+ 0001:00009b20       _system_write              1000ab20 f   hprof_io.obj
+ 0001:00009b90       _heap_flush                1000ab90 f   hprof_io.obj
+ 0001:00009c10       _write_raw                 1000ac10 f   hprof_io.obj
+ 0001:00009cb0       _write_header              1000acb0 f   hprof_io.obj
+ 0001:00009d10       _write_name_first          1000ad10 f   hprof_io.obj
+ 0001:00009d90       _write_printf              1000ad90 f   hprof_io.obj
+ 0001:00009e10       _heap_raw                  1000ae10 f   hprof_io.obj
+ 0001:00009ec0       _heap_u4                   1000aec0 f   hprof_io.obj
+ 0001:00009ee0       _heap_u8                   1000aee0 f   hprof_io.obj
+ 0001:00009f30       _heap_u2                   1000af30 f   hprof_io.obj
+ 0001:00009f60       _heap_printf               1000af60 f   hprof_io.obj
+ 0001:00009fe0       _heap_element              1000afe0 f   hprof_io.obj
+ 0001:0000a090       _heap_elements             1000b090 f   hprof_io.obj
+ 0001:0000bc60       _dump_instance_fields      1000cc60 f   hprof_io.obj
+ 0001:0000bd10       _write_raw_from_file       1000cd10 f   hprof_io.obj
+ 0001:0000bdc0       _dump_heap_segment_and_reset 1000cdc0 f   hprof_io.obj
+ 0001:0000bf20       _heap_tag                  1000cf20 f   hprof_io.obj
+ 0001:0000cf60       _recv_u2                   1000df60 f   hprof_listener.obj
+ 0001:0000cfc0       _recv_u4                   1000dfc0 f   hprof_listener.obj
+ 0001:0000d020       _recv_id                   1000e020 f   hprof_listener.obj
+ 0001:0000d070       _listener_loop_function@12 1000e070 f   hprof_listener.obj
+ 0001:0000d650       _delete_ref_item           1000e650 f   hprof_loader.obj
+ 0001:0000d680       _list_item                 1000e680 f   hprof_loader.obj
+ 0001:0000d6a0       _free_entry                1000e6a0 f   hprof_loader.obj
+ 0001:0000d6f0       _search_item               1000e6f0 f   hprof_loader.obj
+ 0001:0000ddc0       _get_last_error_string     1000edc0 f   hprof_md.obj
+ 0001:0000e030       _find_or_create_entry      1000f030 f   hprof_monitor.obj
+ 0001:0000e0c0       _list_item                 1000f0c0 f   hprof_monitor.obj
+ 0001:0000e100       _collect_iterator          1000f100 f   hprof_monitor.obj
+ 0001:0000e130       _qsort_compare             1000f130 f   hprof_monitor.obj
+ 0001:0000e1a0       _clear_item                1000f1a0 f   hprof_monitor.obj
+ 0001:0000e6c0       _list_item                 1000f6c0 f   hprof_object.obj
+ 0001:0000e700       _clear_references          1000f700 f   hprof_object.obj
+ 0001:0000e710       _dump_class_references     1000f710 f   hprof_object.obj
+ 0001:0000e730       _dump_instance_references  1000f730 f   hprof_object.obj
+ 0001:0000eaf0       _get_key_elements          1000faf0 f   hprof_reference.obj
+ 0001:0000ebc0       _dump_ref_list             1000fbc0 f   hprof_reference.obj
+ 0001:0000ec20       _dump_field                1000fc20 f   hprof_reference.obj
+ 0001:0000ed50       _dump_fields               1000fd50 f   hprof_reference.obj
+ 0001:0000edb0       _verify_field              1000fdb0 f   hprof_reference.obj
+ 0001:0000ee80       _fill_in_field_value       1000fe80 f   hprof_reference.obj
+ 0001:0000eec0       _dump_class_and_supers     1000fec0 f   hprof_reference.obj
+ 0001:0000f290       _dump_instance             10010290 f   hprof_reference.obj
+ 0001:0000fa10       _get_pkey                  10010a10 f   hprof_site.obj
+ 0001:0000faa0       _list_item                 10010aa0 f   hprof_site.obj
+ 0001:0000fb20       _collect_iterator          10010b20 f   hprof_site.obj
+ 0001:0000fb50       _mark_unchanged_iterator   10010b50 f   hprof_site.obj
+ 0001:0000fb60       _qsort_compare_allocated_bytes 10010b60 f   hprof_site.obj
+ 0001:0000fbb0       _qsort_compare_live_bytes  10010bb0 f   hprof_site.obj
+ 0001:00010050       _cbPrimArrayData@36        10011050 f   hprof_site.obj
+ 0001:000100b0       _cbPrimFieldData@36        100110b0 f   hprof_site.obj
+ 0001:00010120       _make_new_tag              10011120 f   hprof_site.obj
+ 0001:000101d0       _setup_tag_on_root         100111d0 f   hprof_site.obj
+ 0001:00010250       _localReference            10011250 f   hprof_site.obj
+ 0001:00010390       _objectReference           10011390 f   hprof_site.obj
+ 0001:000104a0       _cbReference@48            100114a0 f   hprof_site.obj
+ 0001:00010910       _resize                    10011910 f   hprof_stack.obj
+ 0001:00010af0       _list_item                 10011af0 f   hprof_string.obj
+ 0001:00010bd0       _hash_out                  10011bd0 f   hprof_table.obj
+ 0001:00010c50       _find_freed_entry          10011c50 f   hprof_table.obj
+ 0001:00010ce0       _free_entry                10011ce0 f   hprof_table.obj
+ 0001:00010d50       _hashcode                  10011d50 f   hprof_table.obj
+ 0001:00010e80       _resize_hash_buckets       10011e80 f   hprof_table.obj
+ 0001:00010fa0       _resize                    10011fa0 f   hprof_table.obj
+ 0001:00011080       _find_entry                10012080 f   hprof_table.obj
+ 0001:00011190       _setup_new_entry           10012190 f   hprof_table.obj
+ 0001:00011a90       _cleanup_item              10012a90 f   hprof_tls.obj
+ 0001:00011ae0       _delete_ref_item           10012ae0 f   hprof_tls.obj
+ 0001:00011b10       _list_item                 10012b10 f   hprof_tls.obj
+ 0001:00011b50       _search_item               10012b50 f   hprof_tls.obj
+ 0001:00011ba0       _garbage_collect_item      10012ba0 f   hprof_tls.obj
+ 0001:00011c90       _sum_sample_status_item    10012c90 f   hprof_tls.obj
+ 0001:00011cb0       _setup_trace_buffers       10012cb0 f   hprof_tls.obj
+ 0001:00011d10       _sample_setter             10012d10 f   hprof_tls.obj
+ 0001:00011d40       _get_thread_list           10012d40 f   hprof_tls.obj
+ 0001:00011db0       _insure_method_on_stack    10012db0 f   hprof_tls.obj
+ 0001:00011fb0       _pop_method                10012fb0 f   hprof_tls.obj
+ 0001:00012180       _dump_thread_state         10013180 f   hprof_tls.obj
+ 0001:00012a30       _update_all_last_traces    10013a30 f   hprof_tls.obj
+ 0001:00012d70       _clean_in_heap_dump        10013d70 f   hprof_tls.obj
+ 0001:00012dd0       _dump_monitor_state        10013dd0 f   hprof_tls.obj
+ 0001:000130f0       _find_or_create            100140f0 f   hprof_trace.obj
+ 0001:000131d0       _list_item                 100141d0 f   hprof_trace.obj
+ 0001:00013270       _clear_cost                10014270 f   hprof_trace.obj
+ 0001:00013290       _get_frame_details         10014290 f   hprof_trace.obj
+ 0001:00013390       _output_trace              10014390 f   hprof_trace.obj
+ 0001:00013550       _output_list               10014550 f   hprof_trace.obj
+ 0001:00013790       _collect_iterator          10014790 f   hprof_trace.obj
+ 0001:000137c0       _qsort_compare_cost        100147c0 f   hprof_trace.obj
+ 0001:00013810       _qsort_compare_num_hits    10014810 f   hprof_trace.obj
+ 0001:000139b0       _fill_frame_buffer         100149b0 f   hprof_trace.obj
+ 0001:000142b0       _Tracker_nativeNewArray@16 100152b0 f   hprof_tracker.obj
+ 0001:000143a0       _Tracker_nativeObjectInit@16 100153a0 f   hprof_tracker.obj
+ 0001:00014490       _Tracker_nativeCallSite@20 10015490 f   hprof_tracker.obj
+ 0001:00014590       _Tracker_nativeReturnSite@20 10015590 f   hprof_tracker.obj
+ 0001:00014690       _set_engaged               10015690 f   hprof_tracker.obj
+ 0001:00015100       _callStaticObjectMethod    10016100 f   hprof_util.obj
+ 0001:00015180       _callLongMethod            10016180 f   hprof_util.obj
+ 0001:00015210       _callVoidMethod            10016210 f   hprof_util.obj
+ 0001:00015290       _newStringUTF              10016290 f   hprof_util.obj
+ 0001:00015310       _newThreadObject           10016310 f   hprof_util.obj
+ 0001:00015920       _getClassFields            10016920 f   hprof_util.obj
+ 0001:000159d0       _get_cnum                  100169d0 f   hprof_util.obj
+ 0001:00015c00       _add_class_fields          10016c00 f   hprof_util.obj
+ 0001:000166b0       _map_loc2line              100176b0 f   hprof_util.obj
+ 0001:00016e31       _pre_c_init                10017e31 f   MSVCRT:crtdll.obj
+ 0001:00017089       ___DllMainCRTStartup       10018089 f   MSVCRT:crtdll.obj
