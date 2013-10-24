@@ -1,44 +1,47 @@
+The base application's source code is available from the portable app's
+homepage listed in the help.html file (if applicable).
 
-BlueJ version 3.0.4       --        README.TXT
+Details of most other things are available there as well.
 
-Information about BlueJ
------------------------
-Information about BlueJ, including system documentation is available at
+LICENSE
+=======
 
-  http://www.bluej.org/
+This package's installer and launcher are released under the GPL. The launcher
+is the PortableApps.com Launcher, available with full source and documentation
+from http://portableapps.com/development. We request that developers using the
+PortableApps.com Launcher please leave this directory intact and unchanged.
 
-If you are new to BlueJ, we recommend that you read the tutorial at
+USER CONFIGURATION
+==================
 
-  http://www.bluej.org/tutorial/tutorial.pdf
+Some configuration in the PortableApps.com Launcher can be overridden by the
+user in an INI file next to **AppID**Portable.exe called **AppID**Portable.ini.
+If you are happy with the default options, it is not necessary, though.  There
+is an example INI included with this package to get you started.  To use it,
+copy AppNamePortable.ini from this directory to **AppID**Portable.ini next to
+**AppID**Portable.exe. The options in the INI file are as follows:
 
-If you have problems with installing or running BlueJ, please read
+   AdditionalParameters=
+   DisableSplashScreen=false
+   RunLocally=false
 
-  http://www.bluej.org/help/ask-help.html
+(There is no need for an INI header in this file; if you have one, though, it
+won't damage anything.)
 
-New in this version
--------------------
-A history of changes in this and earlier BlueJ versions is at
+The AdditionalParameters entry allows you to pass additional command-line
+parameters to the application.
 
-  http://www.bluej.org/help/changes.html
+The DisableSplashScreen entry allows you to run the launcher without the splash
+screen showing up.  The default is false.
 
-The BlueJ Team
---------------
-BlueJ is being developed by:
-La Trobe University: John Rosenberg, Davin McCall, Marion Zalk
-University of Kent at Canterbury: Ian Utting, Michael Kolling, Neil Brown, Phil Stevens
+The RunLocally entry allows you to run the portable application from a read-
+only medium. This is known as Live mode. It copies what it needs to to a
+temporary directory on the host computer, runs the application, and then
+deletes it afterwards, leaving nothing behind. This can be useful for running
+the application from a CD or if you work on a computer that may have spyware or
+viruses and you'd like to keep your device set to read-only. As a consequence
+of this technique, any changes you make during the Live mode session aren't
+saved back to your device.  The default is false.
 
-The BlueJ License
------------------
-The BlueJ system and the tutorial are available under the GNU General Public License version 2
-with the Classpath Exception.
-
-For the full license text, please see the file LICENSE.TXT.
-
-The copyright © for BlueJ is held by M. Kölling and J. Rosenberg.
-
-Third Party Libraries
----------------------
-BlueJ makes use of, and distributes with it, several third party libraries which
-are made available under different license conditions.
-
-Please see the THIRDPARTYLICENSE.TXT file for more information.
+There may be other values also permitted in the user configuration file by the
+portable application; refer to help.html for any details of them.
