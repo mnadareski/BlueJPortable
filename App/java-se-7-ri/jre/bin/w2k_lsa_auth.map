@@ -1,0 +1,265 @@
+ w2k_lsa_auth
+
+ Timestamp is 4dff5e50 (Mon Jun 20 07:50:56 2011)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000176eH .text                   CODE
+ 0002:00000000 000000e0H .idata$5                DATA
+ 0002:000000e0 00000004H .CRT$XCA                DATA
+ 0002:000000e4 00000004H .CRT$XCZ                DATA
+ 0002:000000e8 00000004H .CRT$XIA                DATA
+ 0002:000000ec 00000004H .CRT$XIAA               DATA
+ 0002:000000f0 00000004H .CRT$XIZ                DATA
+ 0002:00000100 00000a90H .rdata                  DATA
+ 0002:00000b90 00000073H .rdata$debug            DATA
+ 0002:00000c10 00000004H .rdata$sxdata           DATA
+ 0002:00000c14 00000004H .rtc$IAA                DATA
+ 0002:00000c18 00000004H .rtc$IZZ                DATA
+ 0002:00000c1c 00000004H .rtc$TAA                DATA
+ 0002:00000c20 00000004H .rtc$TZZ                DATA
+ 0002:00000c28 00000064H .xdata$x                DATA
+ 0002:00000c8c 00000064H .idata$2                DATA
+ 0002:00000cf0 00000014H .idata$3                DATA
+ 0002:00000d04 000000e0H .idata$4                DATA
+ 0002:00000de4 000003feH .idata$6                DATA
+ 0002:000011f0 000000f5H .edata                  DATA
+ 0003:00000000 00000010H .data                   DATA
+ 0003:00000010 00000588H .bss                    DATA
+ 0004:00000000 00000058H .rsrc$01                DATA
+ 0004:00000060 00000318H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000001       ___safe_se_handler_count   00000001     <absolute>
+ 0000:00000000       ___ImageBase               10000000     <linker-defined>
+ 0001:0000001d       _JNI_OnLoad@8              1000101d f   NativeCreds.obj
+ 0001:000004bb       _JNI_OnUnload@8            100014bb f   NativeCreds.obj
+ 0001:00000576       _ConcatenateUnicodeStrings 10001576 f   NativeCreds.obj
+ 0001:000005c2       _ShowLastError             100015c2 f   NativeCreds.obj
+ 0001:0000062c       _ShowNTError               1000162c f   NativeCreds.obj
+ 0001:00000642       _BuildTicket               10001642 f   NativeCreds.obj
+ 0001:000006ef       _BuildPrincipal            100016ef f   NativeCreds.obj
+ 0001:00000818       _BuildEncryptionKey        10001818 f   NativeCreds.obj
+ 0001:000008ae       _BuildTicketFlags          100018ae f   NativeCreds.obj
+ 0001:00000916       _BuildKerberosTime         10001916 f   NativeCreds.obj
+ 0001:00000aac       _PackageConnectLookup      10001aac f   NativeCreds.obj
+ 0001:00000b0b       _Java_sun_security_krb5_Credentials_acquireDefaultNativeCreds@8 10001b0b f   NativeCreds.obj
+ 0001:00000e4d       _Java_sun_security_krb5_Config_getWindowsDirectory@12 10001e4d f   WindowsDirectory.obj
+ 0001:00000eac       _LsaNtStatusToWinError@4   10001eac f   advapi32:ADVAPI32.dll
+ 0001:00000eb2       _LsaLookupAuthenticationPackage@12 10001eb2 f   Secur32:Secur32.dll
+ 0001:00000eb8       _LsaConnectUntrusted@4     10001eb8 f   Secur32:Secur32.dll
+ 0001:00000ebe       _LsaFreeReturnBuffer@4     10001ebe f   Secur32:Secur32.dll
+ 0001:00000ec4       _LsaCallAuthenticationPackage@28 10001ec4 f   Secur32:Secur32.dll
+ 0001:00000eca       _htonl@4                   10001eca f   wsock32:WSOCK32.dll
+ 0001:00000ed0       _memcpy                    10001ed0 f   MSVCRT:MSVCR100.dll
+ 0001:00000ed6       @__security_check_cookie@4 10001ed6 f   MSVCRT:secchk.obj
+ 0001:00000ee6       _strlen                    10001ee6 f   MSVCRT:MSVCR100.dll
+ 0001:00000f3d       __CRT_INIT@12              10001f3d f   MSVCRT:crtdll.obj
+ 0001:0000125d       __DllMainCRTStartup@12     1000225d f   MSVCRT:crtdll.obj
+ 0001:00001280       ___report_gsfailure        10002280 f   MSVCRT:gs_report.obj
+ 0001:00001386       ___clean_type_info_names   10002386 f   MSVCRT:tncleanup.obj
+ 0001:00001392       __onexit                   10002392 f   MSVCRT:atonexit.obj
+ 0001:00001433       _atexit                    10002433 f   MSVCRT:atonexit.obj
+ 0001:0000144a       __RTC_Initialize           1000244a f   MSVCRT:_initsect_.obj
+ 0001:00001470       __RTC_Terminate            10002470 f   MSVCRT:_initsect_.obj
+ 0001:000014a0       __ValidateImageBase        100024a0 f   MSVCRT:pesect.obj
+ 0001:000014e0       __FindPESection            100024e0 f   MSVCRT:pesect.obj
+ 0001:00001530       __IsNonwritableInCurrentImage 10002530 f   MSVCRT:pesect.obj
+ 0001:000015ec       __initterm                 100025ec f   MSVCRT:MSVCR100.dll
+ 0001:000015f2       __initterm_e               100025f2 f   MSVCRT:MSVCR100.dll
+ 0001:000015f8       __amsg_exit                100025f8 f   MSVCRT:MSVCR100.dll
+ 0001:000015fe       ___CppXcptFilter           100025fe f   MSVCRT:MSVCR100.dll
+ 0001:00001604       _DllMain@12                10002604 f   MSVCRT:dllmain.obj
+ 0001:00001630       __SEH_prolog4              10002630 f   MSVCRT:sehprolg4.obj
+ 0001:00001675       __SEH_epilog4              10002675 f   MSVCRT:sehprolg4.obj
+ 0001:00001689       __except_handler4          10002689 f   MSVCRT:chandler4gs.obj
+ 0001:000016ae       ___security_init_cookie    100026ae f   MSVCRT:gs_support.obj
+ 0001:0000174a       __crt_debugger_hook        1000274a f   MSVCRT:MSVCR100.dll
+ 0001:00001750       ___clean_type_info_names_internal 10002750 f   MSVCRT:MSVCR100.dll
+ 0001:00001756       __unlock                   10002756 f   MSVCRT:MSVCR100.dll
+ 0001:0000175c       ___dllonexit               1000275c f   MSVCRT:MSVCR100.dll
+ 0001:00001762       __lock                     10002762 f   MSVCRT:MSVCR100.dll
+ 0001:00001768       __except_handler4_common   10002768 f   MSVCRT:MSVCR100.dll
+ 0002:00000000       __imp__LsaNtStatusToWinError@4 10003000     advapi32:ADVAPI32.dll
+ 0002:00000004       \177ADVAPI32_NULL_THUNK_DATA 10003004     advapi32:ADVAPI32.dll
+ 0002:00000008       __imp__GetCurrentThreadId@0 10003008     kernel32:KERNEL32.dll
+ 0002:0000000c       __imp__GetTickCount@0      1000300c     kernel32:KERNEL32.dll
+ 0002:00000010       __imp__QueryPerformanceCounter@4 10003010     kernel32:KERNEL32.dll
+ 0002:00000014       __imp__DisableThreadLibraryCalls@4 10003014     kernel32:KERNEL32.dll
+ 0002:00000018       __imp__IsDebuggerPresent@0 10003018     kernel32:KERNEL32.dll
+ 0002:0000001c       __imp__GetLastError@0      1000301c     kernel32:KERNEL32.dll
+ 0002:00000020       __imp__FormatMessageW@28   10003020     kernel32:KERNEL32.dll
+ 0002:00000024       __imp__LocalFree@4         10003024     kernel32:KERNEL32.dll
+ 0002:00000028       __imp__LocalAlloc@8        10003028     kernel32:KERNEL32.dll
+ 0002:0000002c       __imp__FileTimeToSystemTime@8 1000302c     kernel32:KERNEL32.dll
+ 0002:00000030       __imp__CompareFileTime@8   10003030     kernel32:KERNEL32.dll
+ 0002:00000034       __imp__FileTimeToLocalFileTime@8 10003034     kernel32:KERNEL32.dll
+ 0002:00000038       __imp__GetSystemTimeAsFileTime@4 10003038     kernel32:KERNEL32.dll
+ 0002:0000003c       __imp__GetWindowsDirectoryW@8 1000303c     kernel32:KERNEL32.dll
+ 0002:00000040       __imp__GetSystemWindowsDirectoryW@8 10003040     kernel32:KERNEL32.dll
+ 0002:00000044       __imp__SetUnhandledExceptionFilter@4 10003044     kernel32:KERNEL32.dll
+ 0002:00000048       __imp__UnhandledExceptionFilter@4 10003048     kernel32:KERNEL32.dll
+ 0002:0000004c       __imp__GetCurrentProcess@0 1000304c     kernel32:KERNEL32.dll
+ 0002:00000050       __imp__TerminateProcess@8  10003050     kernel32:KERNEL32.dll
+ 0002:00000054       __imp__InterlockedCompareExchange@12 10003054     kernel32:KERNEL32.dll
+ 0002:00000058       __imp__Sleep@4             10003058     kernel32:KERNEL32.dll
+ 0002:0000005c       __imp__InterlockedExchange@8 1000305c     kernel32:KERNEL32.dll
+ 0002:00000060       __imp__DecodePointer@4     10003060     kernel32:KERNEL32.dll
+ 0002:00000064       __imp__EncodePointer@4     10003064     kernel32:KERNEL32.dll
+ 0002:00000068       __imp__GetCurrentProcessId@0 10003068     kernel32:KERNEL32.dll
+ 0002:0000006c       \177KERNEL32_NULL_THUNK_DATA 1000306c     kernel32:KERNEL32.dll
+ 0002:00000070       __imp__free                10003070     MSVCRT:MSVCR100.dll
+ 0002:00000074       __imp___initterm           10003074     MSVCRT:MSVCR100.dll
+ 0002:00000078       __imp___initterm_e         10003078     MSVCRT:MSVCR100.dll
+ 0002:0000007c       __imp___amsg_exit          1000307c     MSVCRT:MSVCR100.dll
+ 0002:00000080       __imp____CppXcptFilter     10003080     MSVCRT:MSVCR100.dll
+ 0002:00000084       __imp___crt_debugger_hook  10003084     MSVCRT:MSVCR100.dll
+ 0002:00000088       __imp____clean_type_info_names_internal 10003088     MSVCRT:MSVCR100.dll
+ 0002:0000008c       __imp___unlock             1000308c     MSVCRT:MSVCR100.dll
+ 0002:00000090       __imp____dllonexit         10003090     MSVCRT:MSVCR100.dll
+ 0002:00000094       __imp___lock               10003094     MSVCRT:MSVCR100.dll
+ 0002:00000098       __imp___onexit             10003098     MSVCRT:MSVCR100.dll
+ 0002:0000009c       __imp___except_handler4_common 1000309c     MSVCRT:MSVCR100.dll
+ 0002:000000a0       __imp___malloc_crt         100030a0     MSVCRT:MSVCR100.dll
+ 0002:000000a4       __imp__strlen              100030a4     MSVCRT:MSVCR100.dll
+ 0002:000000a8       __imp__wcsncpy             100030a8     MSVCRT:MSVCR100.dll
+ 0002:000000ac       __imp__wcslen              100030ac     MSVCRT:MSVCR100.dll
+ 0002:000000b0       __imp__memcpy              100030b0     MSVCRT:MSVCR100.dll
+ 0002:000000b4       __imp__printf              100030b4     MSVCRT:MSVCR100.dll
+ 0002:000000b8       __imp___vswprintf_c_l      100030b8     MSVCRT:MSVCR100.dll
+ 0002:000000bc       __imp___encoded_null       100030bc     MSVCRT:MSVCR100.dll
+ 0002:000000c0       \177MSVCR100_NULL_THUNK_DATA 100030c0     MSVCRT:MSVCR100.dll
+ 0002:000000c4       __imp__LsaCallAuthenticationPackage@28 100030c4     Secur32:Secur32.dll
+ 0002:000000c8       __imp__LsaFreeReturnBuffer@4 100030c8     Secur32:Secur32.dll
+ 0002:000000cc       __imp__LsaConnectUntrusted@4 100030cc     Secur32:Secur32.dll
+ 0002:000000d0       __imp__LsaLookupAuthenticationPackage@12 100030d0     Secur32:Secur32.dll
+ 0002:000000d4       \177Secur32_NULL_THUNK_DATA 100030d4     Secur32:Secur32.dll
+ 0002:000000d8       __imp__htonl@4             100030d8     wsock32:WSOCK32.dll
+ 0002:000000dc       \177WSOCK32_NULL_THUNK_DATA 100030dc     wsock32:WSOCK32.dll
+ 0002:000000e0       ___xc_a                    100030e0     MSVCRT:cinitexe.obj
+ 0002:000000e4       ___xc_z                    100030e4     MSVCRT:cinitexe.obj
+ 0002:000000e8       ___xi_a                    100030e8     MSVCRT:cinitexe.obj
+ 0002:000000f0       ___xi_z                    100030f0     MSVCRT:cinitexe.obj
+ 0002:0000011c       ??_C@_0CB@CGFFPHE@LSA?3?5Finished?5OnLoad?5processing?6@ 1000311c     NativeCreds.obj
+ 0002:00000140       ??_C@_0CO@FNNPNJGE@LSA?3?5Couldn?8t?5find?5setRealm?5in?5P@ 10003140     NativeCreds.obj
+ 0002:00000170       ??_C@_08FCGEKIKP@setRealm?$AA@ 10003170     NativeCreds.obj
+ 0002:0000017c       ??_C@_0CF@OPPEPPMH@LSA?3?5Found?5KerberosTime?5construc@ 1000317c     NativeCreds.obj
+ 0002:000001a4       ??_C@_0CN@FGFKFHHG@LSA?3?5Couldn?8t?5find?5KerberosTime?5@ 100031a4     NativeCreds.obj
+ 0002:000001d4       ??_C@_0BG@IKDDPPGD@?$CILjava?1lang?1String?$DL?$CJV?$AA@ 100031d4     NativeCreds.obj
+ 0002:000001ec       ??_C@_0CE@NDIPGHBE@LSA?3?5Found?5TicketFlags?5construct@ 100031ec     NativeCreds.obj
+ 0002:00000210       ??_C@_0CM@BLPDNPGC@LSA?3?5Couldn?8t?5find?5TicketFlags?5c@ 10003210     NativeCreds.obj
+ 0002:0000023c       ??_C@_0CG@BBPHBDKG@LSA?3?5Found?5EncryptionKey?5constru@ 1000323c     NativeCreds.obj
+ 0002:00000264       ??_C@_0CO@KNCIDOBE@LSA?3?5Couldn?8t?5find?5EncryptionKey@ 10003264     NativeCreds.obj
+ 0002:00000294       ??_C@_06BDDFOFAP@?$CII?$FLB?$CJV?$AA@ 10003294     NativeCreds.obj
+ 0002:0000029c       ??_C@_0CG@BJFEPGAO@LSA?3?5Found?5PrincipalName?5constru@ 1000329c     NativeCreds.obj
+ 0002:000002c4       ??_C@_0CO@KFILNLLM@LSA?3?5Couldn?8t?5find?5PrincipalName@ 100032c4     NativeCreds.obj
+ 0002:000002f4       ??_C@_0BH@IALIHDHM@?$CI?$FLLjava?1lang?1String?$DL?$CJV?$AA@ 100032f4     NativeCreds.obj
+ 0002:0000030c       ??_C@_0BP@ONIFIACG@LSA?3?5Found?5Ticket?5constructor?6?$AA@ 1000330c     NativeCreds.obj
+ 0002:0000032c       ??_C@_0CH@CEEKCGJO@LSA?3?5Couldn?8t?5find?5Ticket?5constr@ 1000332c     NativeCreds.obj
+ 0002:00000354       ??_C@_0CA@ENJPEMDC@?$CILsun?1security?1util?1DerValue?$DL?$CJV?$AA@ 10003354     NativeCreds.obj
+ 0002:00000374       ??_C@_0CB@PPLABLED@LSA?3?5Found?5DerValue?5constructor?6@ 10003374     NativeCreds.obj
+ 0002:00000398       ??_C@_0CJ@OMBJPAOB@LSA?3?5Couldn?8t?5find?5DerValue?5cons@ 10003398     NativeCreds.obj
+ 0002:000003c4       ??_C@_06FALKBLGB@?$DMinit?$DO?$AA@ 100033c4     NativeCreds.obj
+ 0002:000003cc       ??_C@_05GBDANG@?$CI?$FLB?$CJV?$AA@ 100033cc     NativeCreds.obj
+ 0002:000003d4       ??_C@_0BD@KIJGIGII@LSA?3?5Found?5String?6?$AA@ 100033d4     NativeCreds.obj
+ 0002:000003e8       ??_C@_0BL@BGKPEEPI@LSA?3?5Couldn?8t?5find?5String?6?$AA@ 100033e8     NativeCreds.obj
+ 0002:00000404       ??_C@_0BB@FLFAIHG@java?1lang?1String?$AA@ 10003404     NativeCreds.obj
+ 0002:00000418       ??_C@_0BJ@LJOALCIE@LSA?3?5Found?5KerberosTime?6?$AA@ 10003418     NativeCreds.obj
+ 0002:00000434       ??_C@_0CB@GDPEGAMP@LSA?3?5Couldn?8t?5find?5KerberosTime?6@ 10003434     NativeCreds.obj
+ 0002:00000458       ??_C@_0CI@JKANDJAE@sun?1security?1krb5?1internal?1Kerbe@ 10003458     NativeCreds.obj
+ 0002:00000480       ??_C@_0BI@HAKKBGJG@LSA?3?5Found?5TicketFlags?6?$AA@ 10003480     NativeCreds.obj
+ 0002:00000498       ??_C@_0CA@EMAINPN@LSA?3?5Couldn?8t?5find?5TicketFlags?6?$AA@ 10003498     NativeCreds.obj
+ 0002:000004b8       ??_C@_0CH@CHOCOAEA@sun?1security?1krb5?1internal?1Ticke@ 100034b8     NativeCreds.obj
+ 0002:000004e0       ??_C@_0BK@BLOBEEPJ@LSA?3?5Found?5EncryptionKey?6?$AA@ 100034e0     NativeCreds.obj
+ 0002:000004fc       ??_C@_0CC@PKDFMIDD@LSA?3?5Couldn?8t?5find?5EncryptionKey@ 100034fc     NativeCreds.obj
+ 0002:00000520       ??_C@_0CA@PAIDIBIN@sun?1security?1krb5?1EncryptionKey?$AA@ 10003520     NativeCreds.obj
+ 0002:00000540       ??_C@_0BF@NGEKFHJH@LSA?3?5Found?5DerValue?6?$AA@ 10003540     NativeCreds.obj
+ 0002:00000558       ??_C@_0BN@IMBPDDME@LSA?3?5Couldn?8t?5find?5DerValue?6?$AA@ 10003558     NativeCreds.obj
+ 0002:00000578       ??_C@_0BL@FEIPNCJB@sun?1security?1util?1DerValue?$AA@ 10003578     NativeCreds.obj
+ 0002:00000594       ??_C@_0BK@GHFICIAG@LSA?3?5Found?5PrincipalName?6?$AA@ 10003594     NativeCreds.obj
+ 0002:000005b0       ??_C@_0CC@IGIMKEMM@LSA?3?5Couldn?8t?5find?5PrincipalName@ 100035b0     NativeCreds.obj
+ 0002:000005d4       ??_C@_0CA@JFAAMJED@sun?1security?1krb5?1PrincipalName?$AA@ 100035d4     NativeCreds.obj
+ 0002:000005f4       ??_C@_0BM@FJBDPNKL@LSA?3?5Made?5NewWeakGlobalRef?6?$AA@ 100035f4     NativeCreds.obj
+ 0002:00000610       ??_C@_0BD@NPHBGKOJ@LSA?3?5Found?5Ticket?6?$AA@ 10003610     NativeCreds.obj
+ 0002:00000624       ??_C@_0BL@GBEIKIJJ@LSA?3?5Couldn?8t?5find?5Ticket?6?$AA@ 10003624     NativeCreds.obj
+ 0002:00000640       ??_C@_0CC@HHHDDMMJ@sun?1security?1krb5?1internal?1Ticke@ 10003640     NativeCreds.obj
+ 0002:00000664       ??_C@_0BO@HKKMKLPH@LSA?3?5Krb5?5has?5no?5DEBUG?5field?6?$AA@ 10003664     NativeCreds.obj
+ 0002:00000684       ??_C@_05KOLFGEDA@DEBUG?$AA@ 10003684     NativeCreds.obj
+ 0002:0000068c       ??_C@_01POHCFINO@Z?$AA@    1000368c     NativeCreds.obj
+ 0002:00000690       ??_C@_0BJ@ONBLC@LSA?3?5Couldn?8t?5find?5Krb5?6?$AA@ 10003690     NativeCreds.obj
+ 0002:000006ac       ??_C@_0CA@MAAHMEAA@sun?1security?1krb5?1internal?1Krb5?$AA@ 100036ac     NativeCreds.obj
+ 0002:000006cc       ??_C@_07NGGFFIFC@LSA?3?5?$CFS?$AA@ 100036cc     NativeCreds.obj
+ 0002:000006d4       ??_C@_0CD@FALAEFFE@LSA?3?5FormatMessage?5failed?5with?5?$CF@ 100036d4     NativeCreds.obj
+ 0002:000006f8       ??_C@_0CF@EDKDHEBD@LSA?3?5Error?5calling?5function?5?$CFs?3?5@ 100036f8     NativeCreds.obj
+ 0002:00000720       ??_C@_0DA@HIADNNPN@LSA?3?5Can?8t?5allocate?5String?5array@ 10003720     NativeCreds.obj
+ 0002:00000750       ??_C@_0BH@HBDBBNHO@LSA?3?5Name?5count?5is?5?$CFx?6?$AA@ 10003750     NativeCreds.obj
+ 0002:00000768       ??_C@_0BG@KJEAEOON@LSA?3?5Name?5type?5is?5?$CFx?6?$AA@ 10003768     NativeCreds.obj
+ 0002:00000780       ??_C@_0BN@GMKMIDMN@LSA?3?5Principal?5domain?5is?5?$CFS?6?$AA@ 10003780     NativeCreds.obj
+ 0002:000007a0       ??_C@_0CC@JPDKOOFK@LSA?3?5Session?5key?5all?5zero?4?5Stop?4@ 100037a0     NativeCreds.obj
+ 0002:000007c4       ??_C@_08HPFMLNAK@LSA?3?5?$CFS?6?$AA@ 100037c4     NativeCreds.obj
+ 0002:000007d0       ??_C@_1EG@KKOCIAIL@?$AA?$CF?$AAl?$AAd?$AA?$CF?$AA0?$AA2?$AA?4?$AA2?$AAs?$AA?$CF?$AA0?$AA2?$AA?4?$AA2?$AAs?$AA?$CF?$AA0?$AA2?$AA?4?$AA2?$AAs?$AA?$CF?$AA0?$AA2?$AA?4?$AA2?$AAs?$AA?$CF?$AA0?$AA2?$AA?4?$AA2@ 100037d0     NativeCreds.obj
+ 0002:00000818       ??_C@_1M@HJLEHBOL@?$AA?$CF?$AA2?$AA?4?$AA2?$AAd?$AA?$AA@ 10003818     NativeCreds.obj
+ 0002:00000824       ??_C@_1BA@PCNIOLBA@?$AAk?$AAr?$AAb?$AAt?$AAg?$AAt?$AA?1?$AA?$AA@ 10003824     NativeCreds.obj
+ 0002:00000834       ??_C@_0BP@OOIEHDKO@LsaLookupAuthenticationPackage?$AA@ 10003834     NativeCreds.obj
+ 0002:00000854       ??_C@_08DEIMIBAF@Kerberos?$AA@ 10003854     NativeCreds.obj
+ 0002:00000860       ??_C@_0BE@EAEONKAL@LsaConnectUntrusted?$AA@ 10003860     NativeCreds.obj
+ 0002:00000874       ??_C@_0BA@HOOKBKLM@Protocol?5status?$AA@ 10003874     NativeCreds.obj
+ 0002:00000884       ??_C@_0BN@HFCMCMJP@LsaCallAuthenticationPackage?$AA@ 10003884     NativeCreds.obj
+ 0002:000008a4       ??_C@_0BO@JMBJFFMC@ConstructTicketRequest?5status?$AA@ 100038a4     NativeCreds.obj
+ 0002:000008c8       ??_C@_0ED@ENPOMDNM@LSA?3?5MS?5TGT?5in?5cache?5is?5invalid?1@ 100038c8     NativeCreds.obj
+ 0002:0000090c       ??_C@_0BK@LHGHINFG@LSA?3?5Response?5size?5is?5?$CFd?6?$AA@ 1000390c     NativeCreds.obj
+ 0002:00000928       ??_C@_0CF@LMFMNKOO@LSA?3?5Got?5handle?5to?5Kerberos?5pack@ 10003928     NativeCreds.obj
+ 0002:00000950       ??_C@_0CB@EHGDGLDH@LSA?3?5Found?5KrbCreds?5constructor?6@ 10003950     NativeCreds.obj
+ 0002:00000974       ??_C@_0DO@EFFGMMEG@LSA?3?5Couldn?8t?5find?5sun?4security?4@ 10003974     NativeCreds.obj
+ 0002:000009b8       ??_C@_0BIA@JOPHBDPI@?$CILsun?1security?1krb5?1internal?1Tic@ 100039b8     NativeCreds.obj
+ 0002:00000b38       __pDefaultRawDllMain       10003b38     MSVCRT:crtdll.obj
+ 0002:00000b38       __pRawDllMain              10003b38     MSVCRT:crtdll.obj
+ 0002:00000b48       __load_config_used         10003b48     MSVCRT:loadcfg.obj
+ 0002:00000c10       ___safe_se_handler_table   10003c10     <linker-defined>
+ 0002:00000c14       ___rtc_iaa                 10003c14     MSVCRT:_initsect_.obj
+ 0002:00000c18       ___rtc_izz                 10003c18     MSVCRT:_initsect_.obj
+ 0002:00000c1c       ___rtc_taa                 10003c1c     MSVCRT:_initsect_.obj
+ 0002:00000c20       ___rtc_tzz                 10003c20     MSVCRT:_initsect_.obj
+ 0002:00000c8c       __IMPORT_DESCRIPTOR_ADVAPI32 10003c8c     advapi32:ADVAPI32.dll
+ 0002:00000ca0       __IMPORT_DESCRIPTOR_Secur32 10003ca0     Secur32:Secur32.dll
+ 0002:00000cb4       __IMPORT_DESCRIPTOR_KERNEL32 10003cb4     kernel32:KERNEL32.dll
+ 0002:00000cc8       __IMPORT_DESCRIPTOR_WSOCK32 10003cc8     wsock32:WSOCK32.dll
+ 0002:00000cdc       __IMPORT_DESCRIPTOR_MSVCR100 10003cdc     MSVCRT:MSVCR100.dll
+ 0002:00000cf0       __NULL_IMPORT_DESCRIPTOR   10003cf0     advapi32:ADVAPI32.dll
+ 0003:00000000       ___security_cookie         10005000     MSVCRT:gs_cookie.obj
+ 0003:00000004       ___security_cookie_complement 10005004     MSVCRT:gs_cookie.obj
+ 0003:00000008       ___native_dllmain_reason   10005008     MSVCRT:natstart.obj
+ 0003:0000000c       ___native_vcclrit_reason   1000500c     MSVCRT:natstart.obj
+ 0003:00000210       _derValueClass             10005210     NativeCreds.obj
+ 0003:00000214       _ticketClass               10005214     NativeCreds.obj
+ 0003:00000218       _principalNameClass        10005218     NativeCreds.obj
+ 0003:0000021c       _encryptionKeyClass        1000521c     NativeCreds.obj
+ 0003:00000220       _ticketFlagsClass          10005220     NativeCreds.obj
+ 0003:00000224       _kerberosTimeClass         10005224     NativeCreds.obj
+ 0003:00000228       _javaLangStringClass       10005228     NativeCreds.obj
+ 0003:0000022c       _derValueConstructor       1000522c     NativeCreds.obj
+ 0003:00000230       _ticketConstructor         10005230     NativeCreds.obj
+ 0003:00000234       _principalNameConstructor  10005234     NativeCreds.obj
+ 0003:00000238       _encryptionKeyConstructor  10005238     NativeCreds.obj
+ 0003:0000023c       _ticketFlagsConstructor    1000523c     NativeCreds.obj
+ 0003:00000240       _kerberosTimeConstructor   10005240     NativeCreds.obj
+ 0003:00000244       _krbcredsConstructor       10005244     NativeCreds.obj
+ 0003:00000248       _setRealmMethod            10005248     NativeCreds.obj
+ 0003:0000024c       _native_debug              1000524c     NativeCreds.obj
+ 0003:0000057c       ?__type_info_root_node@@3U__type_info_node@@A 1000557c     MSVCRT:tncleanup.obj
+ 0003:00000584       ___native_startup_state    10005584     <common>
+ 0003:00000588       ___native_startup_lock     10005588     <common>
+ 0003:0000058c       ___onexitend               1000558c     <common>
+ 0003:00000590       ___onexitbegin             10005590     <common>
+ 0003:00000594       ___dyn_tls_init_callback   10005594     <common>
+
+ entry point at        0001:0000125d
+
+ Static symbols
+
+ 0001:00000000       _swprintf                  10001000 f   NativeCreds.obj
+ 0001:00000a25       _ConstructTicketRequest    10001a25 f   NativeCreds.obj
+ 0001:00000eec       _pre_c_init                10001eec f   MSVCRT:crtdll.obj
+ 0001:00001147       ___DllMainCRTStartup       10002147 f   MSVCRT:crtdll.obj

@@ -262,7 +262,7 @@ bluej.macos.screenmenubar=true
 ## syntax used
 #####################################################################
 
-bluej.windows.vm=App\\openjdk-6.0.21
+bluej.windows.vm=App\\java-se-7-ri
 
 
 #######################################################################
