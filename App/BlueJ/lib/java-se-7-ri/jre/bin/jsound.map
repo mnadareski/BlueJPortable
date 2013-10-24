@@ -1,0 +1,372 @@
+ jsound
+
+ Timestamp is 4dff5e23 (Mon Jun 20 07:50:11 2011)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000035e6H .text                   CODE
+ 0001:000035e6 00000016H .text$yc                CODE
+ 0001:000035fc 0000000aH .text$yd                CODE
+ 0002:00000000 00000144H .idata$5                DATA
+ 0002:00000144 00000004H .CRT$XCA                DATA
+ 0002:00000148 00000004H .CRT$XCU                DATA
+ 0002:0000014c 00000004H .CRT$XCZ                DATA
+ 0002:00000150 00000004H .CRT$XIA                DATA
+ 0002:00000154 00000004H .CRT$XIAA               DATA
+ 0002:00000158 00000004H .CRT$XIC                DATA
+ 0002:0000015c 00000004H .CRT$XIZ                DATA
+ 0002:00000160 00000488H .rdata                  DATA
+ 0002:000005e8 0000006eH .rdata$debug            DATA
+ 0002:00000660 00000004H .rdata$sxdata           DATA
+ 0002:00000664 00000004H .rtc$IAA                DATA
+ 0002:00000668 00000004H .rtc$IZZ                DATA
+ 0002:0000066c 00000004H .rtc$TAA                DATA
+ 0002:00000670 00000004H .rtc$TZZ                DATA
+ 0002:00000678 00000064H .xdata$x                DATA
+ 0002:000006dc 0000003cH .idata$2                DATA
+ 0002:00000718 00000014H .idata$3                DATA
+ 0002:0000072c 00000144H .idata$4                DATA
+ 0002:00000870 000005c8H .idata$6                DATA
+ 0002:00000e40 000009d0H .edata                  DATA
+ 0003:00000000 00000018H .data                   DATA
+ 0003:00000018 0000050cH .bss                    DATA
+ 0004:00000000 00000058H .rsrc$01                DATA
+ 0004:00000060 00000300H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       __except_list              00000000     <absolute>
+ 0000:00000001       ___safe_se_handler_count   00000001     <absolute>
+ 0000:00009876       __ldused                   00009876     <absolute>
+ 0000:00009876       __fltused                  00009876     <absolute>
+ 0000:00000000       ___ImageBase               10000000     <linker-defined>
+ 0001:00000000       _UTIL_IsBigEndianPlatform  10001000 f   Utilities.obj
+ 0001:00000003       _ThrowJavaMessageException 10001003 f   Utilities.obj
+ 0001:00000023       _Java_com_sun_media_sound_Platform_nIsBigEndian@8 10001023 f   Platform.obj
+ 0001:0000002b       _Java_com_sun_media_sound_Platform_nIsSigned8@8 1000102b f   Platform.obj
+ 0001:00000030       _Java_com_sun_media_sound_Platform_nGetExtraLibraries@8 10001030 f   Platform.obj
+ 0001:00000045       _Java_com_sun_media_sound_Platform_nGetLibraryForFeature@12 10001045 f   Platform.obj
+ 0001:00000061       ?MIDI_IN_PutMessage@@YGXPAUHMIDIIN__@@IIII@Z 10001061 f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:0000010a       ??1Data@MidiIn_OpenHelper@@QAE@XZ 1000110a f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:00000141       ?ThreadProc@MidiIn_OpenHelper@@KGKPAX@Z 10001141 f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:00000196       ?midiInOpen@MidiIn_OpenHelper@@SAIHPAUtag_MidiDeviceHandle@@@Z 10001196 f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:000001f0       _MIDI_IN_GetErrorStr       100011f0 f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:00000211       _MIDI_IN_GetNumDevices     10001211 f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:00000217       ?getMidiInCaps@@YAHHPAUtagMIDIINCAPSA@@PAH@Z 10001217 f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:00000237       _MIDI_IN_GetDeviceName     10001237 f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:00000292       _MIDI_IN_GetDeviceVersion  10001292 f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:000002fd       ?prepareBuffers@@YAHPAUtag_MidiDeviceHandle@@@Z 100012fd f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:00000349       ?unprepareBuffers@@YAHPAUtag_MidiDeviceHandle@@@Z 10001349 f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:0000038a       _MIDI_IN_OpenDevice        1000138a f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:00000451       _MIDI_IN_CloseDevice       10001451 f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:000004a4       _MIDI_IN_StartDevice       100014a4 f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:000004f7       _MIDI_IN_StopDevice        100014f7 f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:00000542       _MIDI_IN_GetMessage        10001542 f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:00000588       _MIDI_IN_ReleaseMessage    10001588 f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:000005cf       ??0Data@MidiIn_OpenHelper@@QAE@XZ 100015cf f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:0000061f       _MIDI_OUT_GetErrorStr      1000161f f   PLATFORM_API_WinOS_MidiOut.obj
+ 0001:00000640       _MIDI_OUT_GetNumDevices    10001640 f   PLATFORM_API_WinOS_MidiOut.obj
+ 0001:00000648       _getMidiOutCaps            10001648 f   PLATFORM_API_WinOS_MidiOut.obj
+ 0001:00000673       _MIDI_OUT_GetDeviceName    10001673 f   PLATFORM_API_WinOS_MidiOut.obj
+ 0001:000006ce       _MIDI_IN_GetDeviceDescription 100016ce f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:000006ce       _MIDI_IN_GetDeviceVendor   100016ce f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:000006ce       _MIDI_OUT_GetDeviceVendor  100016ce f   PLATFORM_API_WinOS_MidiOut.obj
+ 0001:000006d4       _MIDI_OUT_GetDeviceDescription 100016d4 f   PLATFORM_API_WinOS_MidiOut.obj
+ 0001:00000772       _MIDI_OUT_GetDeviceVersion 10001772 f   PLATFORM_API_WinOS_MidiOut.obj
+ 0001:000007d6       _unprepareLongBuffers      100017d6 f   PLATFORM_API_WinOS_MidiOut.obj
+ 0001:0000081d       _freeLongBuffer            1000181d f   PLATFORM_API_WinOS_MidiOut.obj
+ 0001:00000879       _freeLongBuffers           10001879 f   PLATFORM_API_WinOS_MidiOut.obj
+ 0001:000008b8       _MIDI_OUT_OpenDevice       100018b8 f   PLATFORM_API_WinOS_MidiOut.obj
+ 0001:0000099c       _MIDI_OUT_CloseDevice      1000199c f   PLATFORM_API_WinOS_MidiOut.obj
+ 0001:00000a2c       _MIDI_OUT_GetTimeStamp     10001a2c f   PLATFORM_API_WinOS_MidiOut.obj
+ 0001:00000a2c       _MIDI_IN_GetTimeStamp      10001a2c f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:00000a31       _MIDI_OUT_SendShortMessage 10001a31 f   PLATFORM_API_WinOS_MidiOut.obj
+ 0001:00000a4c       _MIDI_OUT_SendLongMessage  10001a4c f   PLATFORM_API_WinOS_MidiOut.obj
+ 0001:00000b86       _MIDI_SetStartTime         10001b86 f   PLATFORM_API_WinOS_Util.obj
+ 0001:00000b9e       _MIDI_GetTimeStamp         10001b9e f   PLATFORM_API_WinOS_Util.obj
+ 0001:00000bdf       _MIDI_CreateLock           10001bdf f   PLATFORM_API_WinOS_Util.obj
+ 0001:00000bf6       _MIDI_DestroyLock          10001bf6 f   PLATFORM_API_WinOS_Util.obj
+ 0001:00000c10       _MIDI_Lock                 10001c10 f   PLATFORM_API_WinOS_Util.obj
+ 0001:00000c22       _MIDI_Unlock               10001c22 f   PLATFORM_API_WinOS_Util.obj
+ 0001:00000c34       _MIDI_WinCreateLongBufferQueue 10001c34 f   PLATFORM_API_WinOS_Util.obj
+ 0001:00000cc6       _MIDI_WinDestroyLongBufferQueue 10001cc6 f   PLATFORM_API_WinOS_Util.obj
+ 0001:00000cf5       _MIDI_WinCreateEmptyLongBufferQueue 10001cf5 f   PLATFORM_API_WinOS_Util.obj
+ 0001:00000d0a       _PORT_GetPortMixerCount    10001d0a f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00000d10       _getMixerLineByDestination 10001d10 f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00000d45       _getMixerLineBySource      10001d45 f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00000d81       _getControlInfo            10001d81 f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00000df7       _lineHasControls           10001df7 f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00000e73       _PORT_GetPortMixerDescription 10001e73 f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00000f00       _getDestinationCount       10001f00 f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00000f39       _PORT_Close                10001f39 f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00000fa9       _PORT_GetPortCount         10001fa9 f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00000fba       _componentType2type        10001fba f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00001014       _PORT_GetPortType          10002014 f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00001045       _PORT_GetPortName          10002045 f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00001091       _getControlCount           10002091 f   PLATFORM_API_WinOS_Ports.obj
+ 0001:0000113b       _findDestLine              1000213b f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00001172       _createMuxControl          10002172 f   PLATFORM_API_WinOS_Ports.obj
+ 0001:0000134d       _createPortControl         1000234d f   PLATFORM_API_WinOS_Ports.obj
+ 0001:000014df       _createLineControls        100024df f   PLATFORM_API_WinOS_Ports.obj
+ 0001:000015dc       _addCompoundControl        100025dc f   PLATFORM_API_WinOS_Ports.obj
+ 0001:0000160d       _addAllControls            1000260d f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00001637       _PORT_GetControls          10002637 f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00001828       _getControlValue           10002828 f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00001845       _setControlValue           10002845 f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00001862       _PORT_GetIntValue          10002862 f   PLATFORM_API_WinOS_Ports.obj
+ 0001:000018a6       _PORT_SetIntValue          100028a6 f   PLATFORM_API_WinOS_Ports.obj
+ 0001:0000191c       _getFakeBalance            1000291c f   PLATFORM_API_WinOS_Ports.obj
+ 0001:000019a6       _getFakeVolume             100029a6 f   PLATFORM_API_WinOS_Ports.obj
+ 0001:000019de       _setFakeVolume             100029de f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00001a5b       _PORT_GetFloatValue        10002a5b f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00001ace       _PORT_SetFloatValue        10002ace f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00001b70       _PORT_Open                 10002b70 f   PLATFORM_API_WinOS_Ports.obj
+ 0001:00001dd5       _Java_com_sun_media_sound_MidiInDevice_nOpen@12 10002dd5 f   MidiInDevice.obj
+ 0001:00001e19       _Java_com_sun_media_sound_MidiInDevice_nClose@16 10002e19 f   MidiInDevice.obj
+ 0001:00001e26       _Java_com_sun_media_sound_MidiInDevice_nStart@16 10002e26 f   MidiInDevice.obj
+ 0001:00001e4f       _Java_com_sun_media_sound_MidiInDevice_nStop@16 10002e4f f   MidiInDevice.obj
+ 0001:00001e5c       _Java_com_sun_media_sound_MidiOutDevice_nGetTimeStamp@16 10002e5c f   MidiOutDevice.obj
+ 0001:00001e5c       _Java_com_sun_media_sound_MidiInDevice_nGetTimeStamp@16 10002e5c f   MidiInDevice.obj
+ 0001:00001e7a       _Java_com_sun_media_sound_MidiInDevice_nGetMessages@16 10002e7a f   MidiInDevice.obj
+ 0001:00002033       _Java_com_sun_media_sound_MidiInDeviceProvider_nGetNumDevices@8 10003033 f   MidiInDeviceProvider.obj
+ 0001:0000203b       _Java_com_sun_media_sound_MidiInDeviceProvider_nGetName@12 1000303b f   MidiInDeviceProvider.obj
+ 0001:000020ab       _Java_com_sun_media_sound_MidiInDeviceProvider_nGetDescription@12 100030ab f   MidiInDeviceProvider.obj
+ 0001:0000211b       _Java_com_sun_media_sound_MidiInDeviceProvider_nGetVersion@12 1000311b f   MidiInDeviceProvider.obj
+ 0001:0000218b       _Java_com_sun_media_sound_MidiOutDevice_nOpen@12 1000318b f   MidiOutDevice.obj
+ 0001:000021c6       _Java_com_sun_media_sound_MidiOutDevice_nClose@16 100031c6 f   MidiOutDevice.obj
+ 0001:000021d3       _Java_com_sun_media_sound_MidiOutDevice_nSendShortMessage@28 100031d3 f   MidiOutDevice.obj
+ 0001:000021ea       _Java_com_sun_media_sound_MidiOutDevice_nSendLongMessage@32 100031ea f   MidiOutDevice.obj
+ 0001:00002236       _Java_com_sun_media_sound_MidiOutDeviceProvider_nGetNumDevices@8 10003236 f   MidiOutDeviceProvider.obj
+ 0001:0000223e       _Java_com_sun_media_sound_MidiOutDeviceProvider_nGetName@12 1000323e f   MidiOutDeviceProvider.obj
+ 0001:000022ae       _Java_com_sun_media_sound_MidiOutDeviceProvider_nGetVendor@12 100032ae f   MidiOutDeviceProvider.obj
+ 0001:000022ae       _Java_com_sun_media_sound_MidiInDeviceProvider_nGetVendor@12 100032ae f   MidiInDeviceProvider.obj
+ 0001:0000231e       _Java_com_sun_media_sound_MidiOutDeviceProvider_nGetDescription@12 1000331e f   MidiOutDeviceProvider.obj
+ 0001:0000238e       _Java_com_sun_media_sound_MidiOutDeviceProvider_nGetVersion@12 1000338e f   MidiOutDeviceProvider.obj
+ 0001:000023fe       _GetInternalErrorStr       100033fe f   PlatformMidi.obj
+ 0001:00002442       _MIDI_IN_InternalGetErrorString 10003442 f   PlatformMidi.obj
+ 0001:00002466       _MIDI_OUT_InternalGetErrorString 10003466 f   PlatformMidi.obj
+ 0001:0000248a       _MIDI_CreateQueue          1000348a f   PlatformMidi.obj
+ 0001:000024c2       _MIDI_DestroyQueue         100034c2 f   PlatformMidi.obj
+ 0001:000024ed       _MIDI_QueueAddShort        100034ed f   PlatformMidi.obj
+ 0001:00002576       _MIDI_QueueAddLong         10003576 f   PlatformMidi.obj
+ 0001:00002620       _MIDI_QueueRead            10003620 f   PlatformMidi.obj
+ 0001:00002657       _MIDI_QueueRemove          10003657 f   PlatformMidi.obj
+ 0001:000026a4       _MIDI_QueueClear           100036a4 f   PlatformMidi.obj
+ 0001:000026cb       _getPortMixerDescription   100036cb f   PortMixerProvider.obj
+ 0001:00002720       _Java_com_sun_media_sound_PortMixerProvider_nGetNumDevices@8 10003720 f   PortMixerProvider.obj
+ 0001:00002728       _Java_com_sun_media_sound_PortMixerProvider_nNewPortMixerInfo@12 10003728 f   PortMixerProvider.obj
+ 0001:00002805       _Java_com_sun_media_sound_PortMixer_nOpen@12 10003805 f   PortMixer.obj
+ 0001:00002813       _Java_com_sun_media_sound_PortMixer_nClose@16 10003813 f   PortMixer.obj
+ 0001:0000282a       _Java_com_sun_media_sound_PortMixer_nGetPortCount@16 1000382a f   PortMixer.obj
+ 0001:00002843       _Java_com_sun_media_sound_PortMixer_nGetPortType@20 10003843 f   PortMixer.obj
+ 0001:00002861       _Java_com_sun_media_sound_PortMixer_nGetPortName@20 10003861 f   PortMixer.obj
+ 0001:000028be       _Java_com_sun_media_sound_PortMixer_nControlSetIntValue@20 100038be f   PortMixer.obj
+ 0001:000028da       _Java_com_sun_media_sound_PortMixer_nControlGetIntValue@16 100038da f   PortMixer.obj
+ 0001:000028f3       _Java_com_sun_media_sound_PortMixer_nControlSetFloatValue@20 100038f3 f   PortMixer.obj
+ 0001:00002913       _Java_com_sun_media_sound_PortMixer_nControlGetFloatValue@16 10003913 f   PortMixer.obj
+ 0001:00002937       _PORT_NewBooleanControl    10003937 f   PortMixer.obj
+ 0001:000029c7       _PORT_NewCompoundControl   100039c7 f   PortMixer.obj
+ 0001:00002a94       _PORT_NewFloatControl      10003a94 f   PortMixer.obj
+ 0001:00002b97       _PORT_AddControl           10003b97 f   PortMixer.obj
+ 0001:00002bc3       _Java_com_sun_media_sound_PortMixer_nGetControls@24 10003bc3 f   PortMixer.obj
+ 0001:00002c49       @__security_check_cookie@4 10003c49 f   MSVCRT:secchk.obj
+ 0001:00002c58       _memset                    10003c58 f   MSVCRT:MSVCR100.dll
+ 0001:00002c5e       __onexit                   10003c5e f   MSVCRT:atonexit.obj
+ 0001:00002cff       _atexit                    10003cff f   MSVCRT:atonexit.obj
+ 0001:00002d16       _memcpy                    10003d16 f   MSVCRT:MSVCR100.dll
+ 0001:00002d20       __allmul                   10003d20 f   MSVCRT:llmul.obj
+ 0001:00002d60       __ftol2_sse                10003d60 f   MSVCRT:ftol2.obj
+ 0001:00002d69       __ftol2_pentium4           10003d69 f   MSVCRT:ftol2.obj
+ 0001:00002d7c       __ftol2_sse_excpt          10003d7c f   MSVCRT:ftol2.obj
+ 0001:00002d96       __ftol2                    10003d96 f   MSVCRT:ftol2.obj
+ 0001:00002e0c       _strcpy                    10003e0c f   MSVCRT:MSVCR100.dll
+ 0001:00002e60       __CRT_INIT@12              10003e60 f   MSVCRT:crtdll.obj
+ 0001:00003180       __DllMainCRTStartup@12     10004180 f   MSVCRT:crtdll.obj
+ 0001:000031a3       ___report_gsfailure        100041a3 f   MSVCRT:gs_report.obj
+ 0001:000032aa       __unlock                   100042aa f   MSVCRT:MSVCR100.dll
+ 0001:000032b0       ___dllonexit               100042b0 f   MSVCRT:MSVCR100.dll
+ 0001:000032b6       __lock                     100042b6 f   MSVCRT:MSVCR100.dll
+ 0001:000032c0       __SEH_prolog4              100042c0 f   MSVCRT:sehprolg4.obj
+ 0001:00003305       __SEH_epilog4              10004305 f   MSVCRT:sehprolg4.obj
+ 0001:00003319       __except_handler4          10004319 f   MSVCRT:chandler4gs.obj
+ 0001:0000333e       ___sse2_available_init     1000433e f   MSVCRT:cpu_disp.obj
+ 0001:0000334e       ___clean_type_info_names   1000434e f   MSVCRT:tncleanup.obj
+ 0001:0000335a       __RTC_Initialize           1000435a f   MSVCRT:_initsect_.obj
+ 0001:00003380       __RTC_Terminate            10004380 f   MSVCRT:_initsect_.obj
+ 0001:000033b0       __ValidateImageBase        100043b0 f   MSVCRT:pesect.obj
+ 0001:000033f0       __FindPESection            100043f0 f   MSVCRT:pesect.obj
+ 0001:00003440       __IsNonwritableInCurrentImage 10004440 f   MSVCRT:pesect.obj
+ 0001:000034fc       __initterm                 100044fc f   MSVCRT:MSVCR100.dll
+ 0001:00003502       __initterm_e               10004502 f   MSVCRT:MSVCR100.dll
+ 0001:00003508       __amsg_exit                10004508 f   MSVCRT:MSVCR100.dll
+ 0001:0000350e       ___CppXcptFilter           1000450e f   MSVCRT:MSVCR100.dll
+ 0001:00003514       _DllMain@12                10004514 f   MSVCRT:dllmain.obj
+ 0001:00003538       ___security_init_cookie    10004538 f   MSVCRT:gs_support.obj
+ 0001:000035d4       __crt_debugger_hook        100045d4 f   MSVCRT:MSVCR100.dll
+ 0001:000035da       __except_handler4_common   100045da f   MSVCRT:MSVCR100.dll
+ 0001:000035e0       ___clean_type_info_names_internal 100045e0 f   MSVCRT:MSVCR100.dll
+ 0002:00000000       __imp__GetSystemTimeAsFileTime@4 10005000     kernel32:KERNEL32.dll
+ 0002:00000004       __imp__GetCurrentProcessId@0 10005004     kernel32:KERNEL32.dll
+ 0002:00000008       __imp__GetCurrentThreadId@0 10005008     kernel32:KERNEL32.dll
+ 0002:0000000c       __imp__GetTickCount@0      1000500c     kernel32:KERNEL32.dll
+ 0002:00000010       __imp__QueryPerformanceCounter@4 10005010     kernel32:KERNEL32.dll
+ 0002:00000014       __imp__DisableThreadLibraryCalls@4 10005014     kernel32:KERNEL32.dll
+ 0002:00000018       __imp__IsProcessorFeaturePresent@4 10005018     kernel32:KERNEL32.dll
+ 0002:0000001c       __imp__IsDebuggerPresent@0 1000501c     kernel32:KERNEL32.dll
+ 0002:00000020       __imp__SetUnhandledExceptionFilter@4 10005020     kernel32:KERNEL32.dll
+ 0002:00000024       __imp__UnhandledExceptionFilter@4 10005024     kernel32:KERNEL32.dll
+ 0002:00000028       __imp__GetCurrentProcess@0 10005028     kernel32:KERNEL32.dll
+ 0002:0000002c       __imp__TerminateProcess@8  1000502c     kernel32:KERNEL32.dll
+ 0002:00000030       __imp__InterlockedCompareExchange@12 10005030     kernel32:KERNEL32.dll
+ 0002:00000034       __imp__InterlockedExchange@8 10005034     kernel32:KERNEL32.dll
+ 0002:00000038       __imp__DecodePointer@4     10005038     kernel32:KERNEL32.dll
+ 0002:0000003c       __imp__EncodePointer@4     1000503c     kernel32:KERNEL32.dll
+ 0002:00000040       __imp__DeleteCriticalSection@4 10005040     kernel32:KERNEL32.dll
+ 0002:00000044       __imp__InitializeCriticalSection@4 10005044     kernel32:KERNEL32.dll
+ 0002:00000048       __imp__CreateThread@24     10005048     kernel32:KERNEL32.dll
+ 0002:0000004c       __imp__Sleep@4             1000504c     kernel32:KERNEL32.dll
+ 0002:00000050       __imp__CreateEventA@16     10005050     kernel32:KERNEL32.dll
+ 0002:00000054       __imp__WaitForSingleObject@8 10005054     kernel32:KERNEL32.dll
+ 0002:00000058       __imp__EnterCriticalSection@4 10005058     kernel32:KERNEL32.dll
+ 0002:0000005c       __imp__CloseHandle@4       1000505c     kernel32:KERNEL32.dll
+ 0002:00000060       __imp__LeaveCriticalSection@4 10005060     kernel32:KERNEL32.dll
+ 0002:00000064       __imp__SetEvent@4          10005064     kernel32:KERNEL32.dll
+ 0002:00000068       \177KERNEL32_NULL_THUNK_DATA 10005068     kernel32:KERNEL32.dll
+ 0002:0000006c       __imp____clean_type_info_names_internal 1000506c     MSVCRT:MSVCR100.dll
+ 0002:00000070       __imp___except_handler4_common 10005070     MSVCRT:MSVCR100.dll
+ 0002:00000074       __imp___crt_debugger_hook  10005074     MSVCRT:MSVCR100.dll
+ 0002:00000078       __imp____CppXcptFilter     10005078     MSVCRT:MSVCR100.dll
+ 0002:0000007c       __imp___amsg_exit          1000507c     MSVCRT:MSVCR100.dll
+ 0002:00000080       __imp__strncpy             10005080     MSVCRT:MSVCR100.dll
+ 0002:00000084       __imp__sprintf             10005084     MSVCRT:MSVCR100.dll
+ 0002:00000088       __imp__free                10005088     MSVCRT:MSVCR100.dll
+ 0002:0000008c       __imp__memset              1000508c     MSVCRT:MSVCR100.dll
+ 0002:00000090       __imp__malloc              10005090     MSVCRT:MSVCR100.dll
+ 0002:00000094       __imp__memcpy              10005094     MSVCRT:MSVCR100.dll
+ 0002:00000098       __imp__strcpy              10005098     MSVCRT:MSVCR100.dll
+ 0002:0000009c       __imp___unlock             1000509c     MSVCRT:MSVCR100.dll
+ 0002:000000a0       __imp____dllonexit         100050a0     MSVCRT:MSVCR100.dll
+ 0002:000000a4       __imp___lock               100050a4     MSVCRT:MSVCR100.dll
+ 0002:000000a8       __imp___onexit             100050a8     MSVCRT:MSVCR100.dll
+ 0002:000000ac       __imp___malloc_crt         100050ac     MSVCRT:MSVCR100.dll
+ 0002:000000b0       __imp___encoded_null       100050b0     MSVCRT:MSVCR100.dll
+ 0002:000000b4       __imp___initterm           100050b4     MSVCRT:MSVCR100.dll
+ 0002:000000b8       __imp___initterm_e         100050b8     MSVCRT:MSVCR100.dll
+ 0002:000000bc       \177MSVCR100_NULL_THUNK_DATA 100050bc     MSVCRT:MSVCR100.dll
+ 0002:000000c0       __imp__mixerOpen@20        100050c0     winmm:WINMM.dll
+ 0002:000000c4       __imp__mixerSetControlDetails@12 100050c4     winmm:WINMM.dll
+ 0002:000000c8       __imp__mixerGetControlDetailsA@12 100050c8     winmm:WINMM.dll
+ 0002:000000cc       __imp__mixerClose@4        100050cc     winmm:WINMM.dll
+ 0002:000000d0       __imp__mixerGetDevCapsA@12 100050d0     winmm:WINMM.dll
+ 0002:000000d4       __imp__mixerGetLineControlsA@12 100050d4     winmm:WINMM.dll
+ 0002:000000d8       __imp__mixerGetLineInfoA@12 100050d8     winmm:WINMM.dll
+ 0002:000000dc       __imp__mixerGetNumDevs@0   100050dc     winmm:WINMM.dll
+ 0002:000000e0       __imp__timeGetTime@0       100050e0     winmm:WINMM.dll
+ 0002:000000e4       __imp__midiOutPrepareHeader@12 100050e4     winmm:WINMM.dll
+ 0002:000000e8       __imp__midiOutLongMsg@12   100050e8     winmm:WINMM.dll
+ 0002:000000ec       __imp__timeEndPeriod@4     100050ec     winmm:WINMM.dll
+ 0002:000000f0       __imp__midiOutReset@4      100050f0     winmm:WINMM.dll
+ 0002:000000f4       __imp__midiOutClose@4      100050f4     winmm:WINMM.dll
+ 0002:000000f8       __imp__midiOutOpen@20      100050f8     winmm:WINMM.dll
+ 0002:000000fc       __imp__midiOutShortMsg@8   100050fc     winmm:WINMM.dll
+ 0002:00000100       __imp__timeBeginPeriod@4   10005100     winmm:WINMM.dll
+ 0002:00000104       __imp__midiOutUnprepareHeader@12 10005104     winmm:WINMM.dll
+ 0002:00000108       __imp__midiOutGetDevCapsA@12 10005108     winmm:WINMM.dll
+ 0002:0000010c       __imp__midiOutGetNumDevs@0 1000510c     winmm:WINMM.dll
+ 0002:00000110       __imp__midiOutGetErrorTextA@12 10005110     winmm:WINMM.dll
+ 0002:00000114       __imp__midiInStop@4        10005114     winmm:WINMM.dll
+ 0002:00000118       __imp__midiInStart@4       10005118     winmm:WINMM.dll
+ 0002:0000011c       __imp__midiInReset@4       1000511c     winmm:WINMM.dll
+ 0002:00000120       __imp__midiInClose@4       10005120     winmm:WINMM.dll
+ 0002:00000124       __imp__midiInUnprepareHeader@12 10005124     winmm:WINMM.dll
+ 0002:00000128       __imp__midiInPrepareHeader@12 10005128     winmm:WINMM.dll
+ 0002:0000012c       __imp__midiInGetDevCapsA@12 1000512c     winmm:WINMM.dll
+ 0002:00000130       __imp__midiInGetNumDevs@0  10005130     winmm:WINMM.dll
+ 0002:00000134       __imp__midiInGetErrorTextA@12 10005134     winmm:WINMM.dll
+ 0002:00000138       __imp__midiInOpen@20       10005138     winmm:WINMM.dll
+ 0002:0000013c       __imp__midiInAddBuffer@12  1000513c     winmm:WINMM.dll
+ 0002:00000140       \177WINMM_NULL_THUNK_DATA  10005140     winmm:WINMM.dll
+ 0002:00000144       ___xc_a                    10005144     MSVCRT:cinitexe.obj
+ 0002:0000014c       ___xc_z                    1000514c     MSVCRT:cinitexe.obj
+ 0002:00000150       ___xi_a                    10005150     MSVCRT:cinitexe.obj
+ 0002:0000015c       ___xi_z                    1000515c     MSVCRT:cinitexe.obj
+ 0002:0000017c       ??_C@_09EHCBEJNP@?5jsoundds?$AA@ 1000517c     Platform.obj
+ 0002:00000188       ??_C@_05KBEOJPB@?$CFd?4?$CFd?$AA@ 10005188     PLATFORM_API_WinOS_MidiIn.obj
+ 0002:00000190       ??_C@_0BD@GIDICAOP@External?5MIDI?5Port?$AA@ 10005190     PLATFORM_API_WinOS_MidiOut.obj
+ 0002:000001a4       ??_C@_0BP@HFJPHHGA@Internal?5synthesizer?5?$CIgeneric?$CJ?$AA@ 100051a4     PLATFORM_API_WinOS_MidiOut.obj
+ 0002:000001c4       ??_C@_0CB@BKPHBOPD@Internal?5square?5wave?5synthesizer@ 100051c4     PLATFORM_API_WinOS_MidiOut.obj
+ 0002:000001e8       ??_C@_0BI@BENILECD@Internal?5FM?5synthesizer?$AA@ 100051e8     PLATFORM_API_WinOS_MidiOut.obj
+ 0002:00000200       ??_C@_0BE@GKHJJDH@Windows?5MIDI_MAPPER?$AA@ 10005200     PLATFORM_API_WinOS_MidiOut.obj
+ 0002:00000214       ??_C@_0BO@JHOFOEDM@Internal?5software?5synthesizer?$AA@ 10005214     PLATFORM_API_WinOS_MidiOut.obj
+ 0002:00000234       ??_C@_0L@CPKCBHCN@Port?5Mixer?$AA@ 10005234     PLATFORM_API_WinOS_Ports.obj
+ 0002:00000240       __real@4000000000000000    10005240     PLATFORM_API_WinOS_Ports.obj
+ 0002:00000248       __real@3ff0000000000000    10005248     PLATFORM_API_WinOS_Ports.obj
+ 0002:00000250       ??_C@_00CNPNBAHC@?$AA@     10005250     PLATFORM_API_WinOS_Ports.obj
+ 0002:00000254       __real@bf800000            10005254     PLATFORM_API_WinOS_Ports.obj
+ 0002:00000258       __real@4f800000            10005258     PLATFORM_API_WinOS_Ports.obj
+ 0002:00000260       __real@3fe0000000000000    10005260     PLATFORM_API_WinOS_Ports.obj
+ 0002:00000268       ??_C@_0CK@BNIEGIBB@javax?1sound?1midi?1MidiUnavailable@ 10005268     MidiInDevice.obj
+ 0002:00000294       ??_C@_0BE@CLHHHCK@callbackLongMessage?$AA@ 10005294     MidiInDevice.obj
+ 0002:000002a8       ??_C@_06PFGPJLID@?$CI?$FLBJ?$CJV?$AA@ 100052a8     MidiInDevice.obj
+ 0002:000002b0       ??_C@_0BF@LEBFAHIB@callbackShortMessage?$AA@ 100052b0     MidiInDevice.obj
+ 0002:000002c8       ??_C@_05NPPFNMNL@?$CIIJ?$CJV?$AA@ 100052c8     MidiInDevice.obj
+ 0002:000002d0       ??_C@_0N@JNOBNNBP@Unknown?5name?$AA@ 100052d0     MidiInDeviceProvider.obj
+ 0002:000002e0       ??_C@_0P@FLAGCHHF@Unknown?5vendor?$AA@ 100052e0     MidiInDeviceProvider.obj
+ 0002:000002f0       ??_C@_0BF@LIAFPILD@No?5details?5available?$AA@ 100052f0     MidiInDeviceProvider.obj
+ 0002:00000308       ??_C@_0BA@EMALCDDA@Unknown?5version?$AA@ 10005308     MidiInDeviceProvider.obj
+ 0002:00000318       ??_C@_0O@BNNCBLEN@out?5of?5memory?$AA@ 10005318     PlatformMidi.obj
+ 0002:00000328       ??_C@_0BP@CMLKCPDD@internal?5error?3?5invalid?5handle?$AA@ 10005328     PlatformMidi.obj
+ 0002:00000348       ??_C@_0BC@GOGOPKAK@invalid?5device?5ID?$AA@ 10005348     PlatformMidi.obj
+ 0002:0000035c       ??_C@_0BG@PNPJGPKL@feature?5not?5supported?$AA@ 1000535c     PlatformMidi.obj
+ 0002:00000374       ??_C@_0BA@LFHNEBGG@Unknown?5Version?$AA@ 10005374     PortMixerProvider.obj
+ 0002:00000384       ??_C@_0P@JELLBOOJ@Unknown?5Vendor?$AA@ 10005384     PortMixerProvider.obj
+ 0002:00000394       ??_C@_0N@FMCAPCBL@Unknown?5Name?$AA@ 10005394     PortMixerProvider.obj
+ 0002:000003a4       ??_C@_06FALKBLGB@?$DMinit?$DO?$AA@ 100053a4     PortMixerProvider.obj
+ 0002:000003b0       ??_C@_0EN@JGCFGEEO@?$CIILjava?1lang?1String?$DLLjava?1lang?1S@ 100053b0     PortMixerProvider.obj
+ 0002:00000400       ??_C@_0DE@HOKEHCEP@com?1sun?1media?1sound?1PortMixerPro@ 10005400     PortMixerProvider.obj
+ 0002:00000434       ??_C@_06HJGPBJLE@Select?$AA@ 10005434     PortMixer.obj
+ 0002:0000043c       ??_C@_04IOCNJLNK@Mute?$AA@ 1000543c     PortMixer.obj
+ 0002:00000444       ??_C@_0BH@DOGHFNPN@?$CIJLjava?1lang?1String?$DL?$CJV?$AA@ 10005444     PortMixer.obj
+ 0002:0000045c       ??_C@_0CH@PANCBAOC@com?1sun?1media?1sound?1PortMixer$Bo@ 1000545c     PortMixer.obj
+ 0002:00000484       ??_C@_0BM@GDMEENBL@javax?1sound?1sampled?1Control?$AA@ 10005484     PortMixer.obj
+ 0002:000004a0       ??_C@_0DE@OMOINGJL@?$CILjava?1lang?1String?$DL?$FLLjavax?1sound@ 100054a0     PortMixer.obj
+ 0002:000004d4       ??_C@_0CH@ECCNHGI@com?1sun?1media?1sound?1PortMixer$Co@ 100054d4     PortMixer.obj
+ 0002:000004fc       ??_C@_0BL@HJNALIL@?$CIJIFFFLjava?1lang?1String?$DL?$CJV?$AA@ 100054fc     PortMixer.obj
+ 0002:00000518       ??_C@_0CM@PEFBHGMP@?$CIJLjava?1lang?1String?$DLFFFLjava?1lan@ 10005518     PortMixer.obj
+ 0002:00000544       ??_C@_0CI@OPKAAKLF@com?1sun?1media?1sound?1PortMixer$Fl@ 10005544     PortMixer.obj
+ 0002:0000056c       ??_C@_0L@MNLDOJKN@addElement?$AA@ 1000556c     PortMixer.obj
+ 0002:00000578       ??_C@_0BG@JLFLBLJI@?$CILjava?1lang?1Object?$DL?$CJV?$AA@ 10005578     PortMixer.obj
+ 0002:00000590       __pRawDllMain              10005590     MSVCRT:crtdll.obj
+ 0002:00000590       __pDefaultRawDllMain       10005590     MSVCRT:crtdll.obj
+ 0002:000005a0       __load_config_used         100055a0     MSVCRT:loadcfg.obj
+ 0002:00000660       ___safe_se_handler_table   10005660     <linker-defined>
+ 0002:00000664       ___rtc_iaa                 10005664     MSVCRT:_initsect_.obj
+ 0002:00000668       ___rtc_izz                 10005668     MSVCRT:_initsect_.obj
+ 0002:0000066c       ___rtc_taa                 1000566c     MSVCRT:_initsect_.obj
+ 0002:00000670       ___rtc_tzz                 10005670     MSVCRT:_initsect_.obj
+ 0002:000006dc       __IMPORT_DESCRIPTOR_WINMM  100056dc     winmm:WINMM.dll
+ 0002:000006f0       __IMPORT_DESCRIPTOR_MSVCR100 100056f0     MSVCRT:MSVCR100.dll
+ 0002:00000704       __IMPORT_DESCRIPTOR_KERNEL32 10005704     kernel32:KERNEL32.dll
+ 0002:00000718       __NULL_IMPORT_DESCRIPTOR   10005718     winmm:WINMM.dll
+ 0003:00000000       ___security_cookie         10007000     MSVCRT:gs_cookie.obj
+ 0003:00000004       ___security_cookie_complement 10007004     MSVCRT:gs_cookie.obj
+ 0003:00000010       ___native_dllmain_reason   10007010     MSVCRT:natstart.obj
+ 0003:00000014       ___native_vcclrit_reason   10007014     MSVCRT:natstart.obj
+ 0003:000000e0       ?data@MidiIn_OpenHelper@@1VData@1@A 100070e0     PLATFORM_API_WinOS_MidiIn.obj
+ 0003:00000504       ?__type_info_root_node@@3U__type_info_node@@A 10007504     MSVCRT:tncleanup.obj
+ 0003:0000050c       ___native_startup_state    1000750c     <common>
+ 0003:00000510       ___native_startup_lock     10007510     <common>
+ 0003:00000514       ___sse2_available          10007514     <common>
+ 0003:00000518       ___dyn_tls_init_callback   10007518     <common>
+ 0003:0000051c       ___onexitend               1000751c     <common>
+ 0003:00000520       ___onexitbegin             10007520     <common>
+
+ entry point at        0001:00003180
+
+ Static symbols
+
+ 0001:00002e12       _pre_c_init                10003e12 f   MSVCRT:crtdll.obj
+ 0001:0000306a       ___DllMainCRTStartup       1000406a f   MSVCRT:crtdll.obj
+ 0001:000035e6       ??__E?data@MidiIn_OpenHelper@@1VData@1@A@@YAXXZ 100045e6 f   PLATFORM_API_WinOS_MidiIn.obj
+ 0001:000035fc       ??__F?data@MidiIn_OpenHelper@@1VData@1@A@@YAXXZ 100045fc f   PLATFORM_API_WinOS_MidiIn.obj

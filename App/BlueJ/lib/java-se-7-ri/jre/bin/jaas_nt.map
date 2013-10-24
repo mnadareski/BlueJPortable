@@ -1,0 +1,217 @@
+ jaas_nt
+
+ Timestamp is 4dff5f7c (Mon Jun 20 07:55:56 2011)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00001534H .text                   CODE
+ 0002:00000000 000000f0H .idata$5                DATA
+ 0002:000000f0 00000004H .CRT$XCA                DATA
+ 0002:000000f4 00000004H .CRT$XCZ                DATA
+ 0002:000000f8 00000004H .CRT$XIA                DATA
+ 0002:000000fc 00000004H .CRT$XIAA               DATA
+ 0002:00000100 00000004H .CRT$XIZ                DATA
+ 0002:00000110 00000640H .rdata                  DATA
+ 0002:00000750 0000007eH .rdata$debug            DATA
+ 0002:000007d0 00000004H .rdata$sxdata           DATA
+ 0002:000007d4 00000004H .rtc$IAA                DATA
+ 0002:000007d8 00000004H .rtc$IZZ                DATA
+ 0002:000007dc 00000004H .rtc$TAA                DATA
+ 0002:000007e0 00000004H .rtc$TZZ                DATA
+ 0002:000007e8 00000064H .xdata$x                DATA
+ 0002:0000084c 00000050H .idata$2                DATA
+ 0002:0000089c 00000014H .idata$3                DATA
+ 0002:000008b0 000000f0H .idata$4                DATA
+ 0002:000009a0 00000428H .idata$6                DATA
+ 0002:00000dd0 00000078H .edata                  DATA
+ 0003:00000000 00000018H .data                   DATA
+ 0003:00000018 00000348H .bss                    DATA
+ 0004:00000000 00000058H .rsrc$01                DATA
+ 0004:00000060 00000300H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000001       ___safe_se_handler_count   00000001     <absolute>
+ 0000:00000000       ___ImageBase               10000000     <linker-defined>
+ 0001:00000000       _getTextualSid             10001000 f   nt.obj
+ 0001:00000111       _DisplayErrorText          10001111 f   nt.obj
+ 0001:00000198       _getToken                  10001198 f   nt.obj
+ 0001:00000231       _getUser                   10001231 f   nt.obj
+ 0001:000004c6       _getPrimaryGroup           100014c6 f   nt.obj
+ 0001:000005c9       _getGroups                 100015c9 f   nt.obj
+ 0001:00000732       _getImpersonationToken     10001732 f   nt.obj
+ 0001:000007db       _Java_com_sun_security_auth_module_NTSystem_getCurrent@12 100017db f   nt.obj
+ 0001:00000ca6       _strcmp                    10001ca6 f   MSVCRT:MSVCR100.dll
+ 0001:00000cfa       __CRT_INIT@12              10001cfa f   MSVCRT:crtdll.obj
+ 0001:0000101a       __DllMainCRTStartup@12     1000201a f   MSVCRT:crtdll.obj
+ 0001:0000103d       ___clean_type_info_names   1000203d f   MSVCRT:tncleanup.obj
+ 0001:00001049       __onexit                   10002049 f   MSVCRT:atonexit.obj
+ 0001:000010ea       _atexit                    100020ea f   MSVCRT:atonexit.obj
+ 0001:00001101       __RTC_Initialize           10002101 f   MSVCRT:_initsect_.obj
+ 0001:00001127       __RTC_Terminate            10002127 f   MSVCRT:_initsect_.obj
+ 0001:00001150       __ValidateImageBase        10002150 f   MSVCRT:pesect.obj
+ 0001:00001190       __FindPESection            10002190 f   MSVCRT:pesect.obj
+ 0001:000011e0       __IsNonwritableInCurrentImage 100021e0 f   MSVCRT:pesect.obj
+ 0001:0000129c       __initterm                 1000229c f   MSVCRT:MSVCR100.dll
+ 0001:000012a2       __initterm_e               100022a2 f   MSVCRT:MSVCR100.dll
+ 0001:000012a8       __amsg_exit                100022a8 f   MSVCRT:MSVCR100.dll
+ 0001:000012ae       ___CppXcptFilter           100022ae f   MSVCRT:MSVCR100.dll
+ 0001:000012b4       _DllMain@12                100022b4 f   MSVCRT:dllmain.obj
+ 0001:000012e0       __SEH_prolog4              100022e0 f   MSVCRT:sehprolg4.obj
+ 0001:00001325       __SEH_epilog4              10002325 f   MSVCRT:sehprolg4.obj
+ 0001:00001339       __except_handler4          10002339 f   MSVCRT:chandler4gs.obj
+ 0001:0000135e       ___security_init_cookie    1000235e f   MSVCRT:gs_support.obj
+ 0001:000013fa       ___clean_type_info_names_internal 100023fa f   MSVCRT:MSVCR100.dll
+ 0001:00001400       __unlock                   10002400 f   MSVCRT:MSVCR100.dll
+ 0001:00001406       ___dllonexit               10002406 f   MSVCRT:MSVCR100.dll
+ 0001:0000140c       __lock                     1000240c f   MSVCRT:MSVCR100.dll
+ 0001:00001412       @__security_check_cookie@4 10002412 f   MSVCRT:secchk.obj
+ 0001:00001422       __except_handler4_common   10002422 f   MSVCRT:MSVCR100.dll
+ 0001:00001428       ___report_gsfailure        10002428 f   MSVCRT:gs_report.obj
+ 0001:0000152e       __crt_debugger_hook        1000252e f   MSVCRT:MSVCR100.dll
+ 0002:00000000       __imp__GetSidSubAuthority@8 10003000     advapi32:ADVAPI32.dll
+ 0002:00000004       __imp__GetSidSubAuthorityCount@4 10003004     advapi32:ADVAPI32.dll
+ 0002:00000008       __imp__GetSidIdentifierAuthority@4 10003008     advapi32:ADVAPI32.dll
+ 0002:0000000c       __imp__IsValidSid@4        1000300c     advapi32:ADVAPI32.dll
+ 0002:00000010       __imp__OpenProcessToken@12 10003010     advapi32:ADVAPI32.dll
+ 0002:00000014       __imp__OpenThreadToken@16  10003014     advapi32:ADVAPI32.dll
+ 0002:00000018       __imp__LookupAccountNameA@28 10003018     advapi32:ADVAPI32.dll
+ 0002:0000001c       __imp__LookupAccountSidA@28 1000301c     advapi32:ADVAPI32.dll
+ 0002:00000020       __imp__GetTokenInformation@20 10003020     advapi32:ADVAPI32.dll
+ 0002:00000024       __imp__DuplicateToken@12   10003024     advapi32:ADVAPI32.dll
+ 0002:00000028       \177ADVAPI32_NULL_THUNK_DATA 10003028     advapi32:ADVAPI32.dll
+ 0002:0000002c       __imp__IsDebuggerPresent@0 1000302c     kernel32:KERNEL32.dll
+ 0002:00000030       __imp__SetUnhandledExceptionFilter@4 10003030     kernel32:KERNEL32.dll
+ 0002:00000034       __imp__UnhandledExceptionFilter@4 10003034     kernel32:KERNEL32.dll
+ 0002:00000038       __imp__TerminateProcess@8  10003038     kernel32:KERNEL32.dll
+ 0002:0000003c       __imp__GetSystemTimeAsFileTime@4 1000303c     kernel32:KERNEL32.dll
+ 0002:00000040       __imp__GetCurrentProcessId@0 10003040     kernel32:KERNEL32.dll
+ 0002:00000044       __imp__GetCurrentThreadId@0 10003044     kernel32:KERNEL32.dll
+ 0002:00000048       __imp__GetTickCount@0      10003048     kernel32:KERNEL32.dll
+ 0002:0000004c       __imp__QueryPerformanceCounter@4 1000304c     kernel32:KERNEL32.dll
+ 0002:00000050       __imp__DisableThreadLibraryCalls@4 10003050     kernel32:KERNEL32.dll
+ 0002:00000054       __imp__InterlockedCompareExchange@12 10003054     kernel32:KERNEL32.dll
+ 0002:00000058       __imp__Sleep@4             10003058     kernel32:KERNEL32.dll
+ 0002:0000005c       __imp__InterlockedExchange@8 1000305c     kernel32:KERNEL32.dll
+ 0002:00000060       __imp__DecodePointer@4     10003060     kernel32:KERNEL32.dll
+ 0002:00000064       __imp__EncodePointer@4     10003064     kernel32:KERNEL32.dll
+ 0002:00000068       __imp__GetProcessHeap@0    10003068     kernel32:KERNEL32.dll
+ 0002:0000006c       __imp__HeapAlloc@12        1000306c     kernel32:KERNEL32.dll
+ 0002:00000070       __imp__HeapFree@12         10003070     kernel32:KERNEL32.dll
+ 0002:00000074       __imp__GetCurrentThread@0  10003074     kernel32:KERNEL32.dll
+ 0002:00000078       __imp__lstrlenA@4          10003078     kernel32:KERNEL32.dll
+ 0002:0000007c       __imp__SetLastError@4      1000307c     kernel32:KERNEL32.dll
+ 0002:00000080       __imp__FreeLibrary@4       10003080     kernel32:KERNEL32.dll
+ 0002:00000084       __imp__LocalFree@4         10003084     kernel32:KERNEL32.dll
+ 0002:00000088       __imp__WriteFile@20        10003088     kernel32:KERNEL32.dll
+ 0002:0000008c       __imp__GetStdHandle@4      1000308c     kernel32:KERNEL32.dll
+ 0002:00000090       __imp__FormatMessageA@28   10003090     kernel32:KERNEL32.dll
+ 0002:00000094       __imp__LoadLibraryExA@12   10003094     kernel32:KERNEL32.dll
+ 0002:00000098       __imp__GetCurrentProcess@0 10003098     kernel32:KERNEL32.dll
+ 0002:0000009c       __imp__GetLastError@0      1000309c     kernel32:KERNEL32.dll
+ 0002:000000a0       \177KERNEL32_NULL_THUNK_DATA 100030a0     kernel32:KERNEL32.dll
+ 0002:000000a4       __imp___except_handler4_common 100030a4     MSVCRT:MSVCR100.dll
+ 0002:000000a8       __imp___onexit             100030a8     MSVCRT:MSVCR100.dll
+ 0002:000000ac       __imp___lock               100030ac     MSVCRT:MSVCR100.dll
+ 0002:000000b0       __imp____dllonexit         100030b0     MSVCRT:MSVCR100.dll
+ 0002:000000b4       __imp___unlock             100030b4     MSVCRT:MSVCR100.dll
+ 0002:000000b8       __imp____clean_type_info_names_internal 100030b8     MSVCRT:MSVCR100.dll
+ 0002:000000bc       __imp____CppXcptFilter     100030bc     MSVCRT:MSVCR100.dll
+ 0002:000000c0       __imp___amsg_exit          100030c0     MSVCRT:MSVCR100.dll
+ 0002:000000c4       __imp___initterm_e         100030c4     MSVCRT:MSVCR100.dll
+ 0002:000000c8       __imp___initterm           100030c8     MSVCRT:MSVCR100.dll
+ 0002:000000cc       __imp___encoded_null       100030cc     MSVCRT:MSVCR100.dll
+ 0002:000000d0       __imp__free                100030d0     MSVCRT:MSVCR100.dll
+ 0002:000000d4       __imp___malloc_crt         100030d4     MSVCRT:MSVCR100.dll
+ 0002:000000d8       __imp__strcmp              100030d8     MSVCRT:MSVCR100.dll
+ 0002:000000dc       __imp__printf              100030dc     MSVCRT:MSVCR100.dll
+ 0002:000000e0       __imp___crt_debugger_hook  100030e0     MSVCRT:MSVCR100.dll
+ 0002:000000e4       \177MSVCR100_NULL_THUNK_DATA 100030e4     MSVCRT:MSVCR100.dll
+ 0002:000000e8       __imp__wsprintfA           100030e8     user32:USER32.dll
+ 0002:000000ec       \177USER32_NULL_THUNK_DATA 100030ec     user32:USER32.dll
+ 0002:000000f0       ___xc_a                    100030f0     MSVCRT:cinitexe.obj
+ 0002:000000f4       ___xc_z                    100030f4     MSVCRT:cinitexe.obj
+ 0002:000000f8       ___xi_a                    100030f8     MSVCRT:cinitexe.obj
+ 0002:00000100       ___xi_z                    10003100     MSVCRT:cinitexe.obj
+ 0002:0000012c       ??_C@_04IEOFADKM@?9?$CFlu?$AA@ 1000312c     nt.obj
+ 0002:00000134       ??_C@_0CB@MDHFPNJI@0x?$CF02hx?$CF02hx?$CF02hx?$CF02hx?$CF02hx?$CF02hx@ 10003134     nt.obj
+ 0002:00000158       ??_C@_03FKNCMABI@?$CFlu?$AA@ 10003158     nt.obj
+ 0002:0000015c       ??_C@_06MBFNNNNI@S?9?$CFlu?9?$AA@ 1000315c     nt.obj
+ 0002:00000164       ??_C@_0L@MNPEAJCA@netmsg?4dll?$AA@ 10003164     nt.obj
+ 0002:00000170       ??_C@_0CE@MANFABCH@?5?5?$FLgetToken?$FN?5got?5user?5access?5tok@ 10003170     nt.obj
+ 0002:00000194       ??_C@_0CL@FFMGMHML@?5?5?$FLgetToken?$FN?5OpenProcessToken?5er@ 10003194     nt.obj
+ 0002:000001c0       ??_C@_0CK@ODGJBHJI@?5?5?$FLgetToken?$FN?5OpenThreadToken?5err@ 100031c0     nt.obj
+ 0002:000001ec       ??_C@_0BL@MCBDAMKE@?5?5?$FLgetUser?$FN?5domainSid?3?5?$CFs?6?$AA@ 100031ec     nt.obj
+ 0002:00000208       ??_C@_0CL@PGNKOEDG@?5?5?$FLgetUser?$FN?5LookupAccountName?5er@ 10003208     nt.obj
+ 0002:00000234       ??_C@_0BJ@MCHHJDON@?5?5?$FLgetUser?$FN?5userSid?3?5?$CFs?6?$AA@ 10003234     nt.obj
+ 0002:00000250       ??_C@_0CL@KPDBLNBL@?5?5?$FLgetUser?$FN?5userName?3?5?$CFs?0?5domain@ 10003250     nt.obj
+ 0002:0000027c       ??_C@_0CK@BHIEBCAM@?5?5?$FLgetUser?$FN?5LookupAccountSid?5err@ 1000327c     nt.obj
+ 0002:000002a8       ??_C@_0CA@HOEJGPMK@?5?5?$FLgetUser?$FN?5Got?5TokenUser?5info?6?$AA@ 100032a8     nt.obj
+ 0002:000002c8       ??_C@_0CN@PHPENJEJ@?5?5?$FLgetUser?$FN?5GetTokenInformation?5@ 100032c8     nt.obj
+ 0002:000002f8       ??_C@_0CG@ICNNFOPL@?5?5?$FLgetPrimaryGroup?$FN?5primaryGroup@ 100032f8     nt.obj
+ 0002:00000320       ??_C@_0DA@CFHCIELA@?5?5?$FLgetPrimaryGroup?$FN?5Got?5TokenPri@ 10003320     nt.obj
+ 0002:00000350       ??_C@_0DF@CIDMPGGF@?5?5?$FLgetPrimaryGroup?$FN?5GetTokenInfo@ 10003350     nt.obj
+ 0002:00000388       ??_C@_0BM@NMNJCIM@?5?5?$FLgetGroups?$FN?5group?5?$CFd?3?5?$CFs?6?$AA@ 10003388     nt.obj
+ 0002:000003a4       ??_C@_0CE@JPKNCMJK@?5?5?$FLgetGroups?$FN?5Got?5TokenGroups?5in@ 100033a4     nt.obj
+ 0002:000003c8       ??_C@_0CP@BGLEIJKD@?5?5?$FLgetGroups?$FN?5GetTokenInformatio@ 100033c8     nt.obj
+ 0002:000003f8       ??_C@_0CG@PIKDAFIE@?5?5?$FLgetImpersonationToken?$FN?5token?5@ 100033f8     nt.obj
+ 0002:00000420       ??_C@_0DG@EJPBEEFD@?5?5?$FLgetImpersonationToken?$FN?5Duplic@ 10003420     nt.obj
+ 0002:00000458       ??_C@_0DI@EOOHHDDA@?5?5?$FLgetImpersonationToken?$FN?5OpenPr@ 10003458     nt.obj
+ 0002:00000490       ??_C@_0CP@HCBLCEDF@unable?5to?5find?5IllegalArgumentEx@ 10003490     nt.obj
+ 0002:000004c0       ??_C@_0BO@IJEMADPD@?5?5?$FLgetCurrent?$FN?5System?5Error?3?5?$AA@ 100034c0     nt.obj
+ 0002:000004e0       ??_C@_0CC@GNEAEOEK@invalid?5field?3?5impersonationToke@ 100034e0     nt.obj
+ 0002:00000504       ??_C@_0BD@OKICKOCB@impersonationToken?$AA@ 10003504     nt.obj
+ 0002:00000518       ??_C@_01LELAEKIP@J?$AA@    10003518     nt.obj
+ 0002:0000051c       ??_C@_0BF@GDKOEMCM@no?5secondary?5groups?6?$AA@ 1000351c     nt.obj
+ 0002:00000534       ??_C@_0BB@FLFAIHG@java?1lang?1String?$AA@ 10003534     nt.obj
+ 0002:00000548       ??_C@_0BI@CDBHLACK@invalid?5field?3?5groupIDs?$AA@ 10003548     nt.obj
+ 0002:00000560       ??_C@_08IFNPMJPO@groupIDs?$AA@ 10003560     nt.obj
+ 0002:0000056c       ??_C@_0BE@KHJCLGPN@?$FLLjava?1lang?1String?$DL?$AA@ 1000356c     nt.obj
+ 0002:00000580       ??_C@_0BO@KOPGMEOJ@invalid?5field?3?5PrimaryGroupID?$AA@ 10003580     nt.obj
+ 0002:000005a0       ??_C@_0P@DFFCMBML@primaryGroupID?$AA@ 100035a0     nt.obj
+ 0002:000005b0       ??_C@_0BJ@JLILFKMF@invalid?5field?3?5domainSID?$AA@ 100035b0     nt.obj
+ 0002:000005cc       ??_C@_09BKJDIEHB@domainSID?$AA@ 100035cc     nt.obj
+ 0002:000005d8       ??_C@_0BG@CFOJFPGH@invalid?5field?3?5domain?$AA@ 100035d8     nt.obj
+ 0002:000005f0       ??_C@_06LKIIGAOE@domain?$AA@ 100035f0     nt.obj
+ 0002:000005f8       ??_C@_0BH@DOAOHHDF@invalid?5field?3?5userSID?$AA@ 100035f8     nt.obj
+ 0002:00000610       ??_C@_07EKCAMEJA@userSID?$AA@ 10003610     nt.obj
+ 0002:00000618       ??_C@_0BI@IEGNPMDL@invalid?5field?3?5userName?$AA@ 10003618     nt.obj
+ 0002:00000630       ??_C@_0CD@MOHADDFA@java?1lang?1IllegalArgumentExcepti@ 10003630     nt.obj
+ 0002:00000654       ??_C@_08CCKFIFOP@userName?$AA@ 10003654     nt.obj
+ 0002:00000660       ??_C@_0BD@JFADHEFE@Ljava?1lang?1String?$DL?$AA@ 10003660     nt.obj
+ 0002:00000674       ??_C@_0BN@NEPHBBOA@getting?5impersonation?5token?6?$AA@ 10003674     nt.obj
+ 0002:00000694       ??_C@_0BO@ONJGKKAF@getting?5supplementary?5groups?6?$AA@ 10003694     nt.obj
+ 0002:000006b4       ??_C@_0BH@FENLKGLO@getting?5primary?5group?6?$AA@ 100036b4     nt.obj
+ 0002:000006cc       ??_C@_0BD@IMDOHOP@getting?5user?5info?6?$AA@ 100036cc     nt.obj
+ 0002:000006e0       ??_C@_0BG@KFJCPPEB@getting?5access?5token?6?$AA@ 100036e0     nt.obj
+ 0002:000006f8       __pDefaultRawDllMain       100036f8     MSVCRT:crtdll.obj
+ 0002:000006f8       __pRawDllMain              100036f8     MSVCRT:crtdll.obj
+ 0002:00000708       __load_config_used         10003708     MSVCRT:loadcfg.obj
+ 0002:000007d0       ___safe_se_handler_table   100037d0     <linker-defined>
+ 0002:000007d4       ___rtc_iaa                 100037d4     MSVCRT:_initsect_.obj
+ 0002:000007d8       ___rtc_izz                 100037d8     MSVCRT:_initsect_.obj
+ 0002:000007dc       ___rtc_taa                 100037dc     MSVCRT:_initsect_.obj
+ 0002:000007e0       ___rtc_tzz                 100037e0     MSVCRT:_initsect_.obj
+ 0002:0000084c       __IMPORT_DESCRIPTOR_ADVAPI32 1000384c     advapi32:ADVAPI32.dll
+ 0002:00000860       __IMPORT_DESCRIPTOR_USER32 10003860     user32:USER32.dll
+ 0002:00000874       __IMPORT_DESCRIPTOR_MSVCR100 10003874     MSVCRT:MSVCR100.dll
+ 0002:00000888       __IMPORT_DESCRIPTOR_KERNEL32 10003888     kernel32:KERNEL32.dll
+ 0002:0000089c       __NULL_IMPORT_DESCRIPTOR   1000389c     advapi32:ADVAPI32.dll
+ 0003:00000000       ___native_dllmain_reason   10004000     MSVCRT:natstart.obj
+ 0003:00000004       ___native_vcclrit_reason   10004004     MSVCRT:natstart.obj
+ 0003:00000010       ___security_cookie         10004010     MSVCRT:gs_cookie.obj
+ 0003:00000014       ___security_cookie_complement 10004014     MSVCRT:gs_cookie.obj
+ 0003:00000020       ?__type_info_root_node@@3U__type_info_node@@A 10004020     MSVCRT:tncleanup.obj
+ 0003:0000034c       ___native_startup_state    1000434c     <common>
+ 0003:00000350       ___native_startup_lock     10004350     <common>
+ 0003:00000354       ___onexitend               10004354     <common>
+ 0003:00000358       ___onexitbegin             10004358     <common>
+ 0003:0000035c       ___dyn_tls_init_callback   1000435c     <common>
+
+ entry point at        0001:0000101a
+
+ Static symbols
+
+ 0001:00000cac       _pre_c_init                10001cac f   MSVCRT:crtdll.obj
+ 0001:00000f04       ___DllMainCRTStartup       10001f04 f   MSVCRT:crtdll.obj
