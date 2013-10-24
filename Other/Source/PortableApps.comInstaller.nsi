@@ -1,4 +1,4 @@
-﻿;Copyright 2007-2010 John T. Haller of PortableApps.com
+﻿;Copyright 2007-2011 John T. Haller of PortableApps.com
 ;Website: http://PortableApps.com/
 
 ;This software is OSI Certified Open Source Software.
@@ -24,7 +24,7 @@
 ;as published at PortableApps.com/development. It may also be used with commercial
 ;software by contacting PortableApps.com.
 
-!define PORTABLEAPPSINSTALLERVERSION "2.0.8.0"
+!define PORTABLEAPPSINSTALLERVERSION "2.0.9.0"
 !define PORTABLEAPPS.COMFORMATVERSION "2.0"
 
 !if ${__FILE__} == "PortableApps.comInstallerPlugin.nsi"
@@ -52,7 +52,7 @@ VIProductVersion "${VERSION}"
 VIAddVersionKey ProductName "${PORTABLEAPPNAME}"
 VIAddVersionKey Comments "${INSTALLERCOMMENTS}"
 VIAddVersionKey CompanyName "PortableApps.com"
-VIAddVersionKey LegalCopyright "PortableApps.com Installer Copyright 2007-2010 PortableApps.com."
+VIAddVersionKey LegalCopyright "PortableApps.com Installer Copyright 2007-2011 PortableApps.com."
 VIAddVersionKey FileDescription "${PORTABLEAPPNAME}"
 VIAddVersionKey FileVersion "${VERSION}"
 VIAddVersionKey ProductVersion "${VERSION}"
@@ -350,6 +350,9 @@ Function .onInit
 
 		;=== Check for PortableApps.com Platform
 		${GetParent} $INSTDIR $0
+		!ifdef COMMONFILESPLUGIN
+			${GetParent} $0 $0
+		!endif
 
 		;=== Check that it exists at the right location
 		DetailPrint '$(checkforplatform)'
@@ -422,6 +425,23 @@ Function .onInit
 												IntOp $3 $3 - $4 ;=== Remove the plugins directory from the free space calculation
 										${EndIf}
 									${EndIf}
+								!else
+									!ifdef COMMONFILESPLUGIN ;Duplicate code for now, to do above for CommonFiles as well
+										${If} ${FileExists} $INSTDIR
+										${GetSize} `$INSTDIR` "/M=*.* /S=0K /G=0" $4 $5 $6 ;=== Current installation size
+										IntOp $3 $3 + $4 ;=== Space Free + Current Root Install Size
+										${GetSize} `$INSTDIR\App` "/M=*.* /S=0K /G=1" $4 $5 $6 ;=== Current installation size
+										IntOp $3 $3 + $4 ;=== Space Free + Current App Install Size
+										${GetSize} `$INSTDIR\Other` "/M=*.* /S=0K /G=1" $4 $5 $6 ;=== Current installation size
+										IntOp $3 $3 + $4 ;=== Space Free + Current Other Install Size
+
+										${If} `${ADDONSDIRECTORYPRESERVE}` != "NONE"
+										${AndIf} ${FileExists} `$INSTDIR\${ADDONSDIRECTORYPRESERVE}`
+												${GetSize} `$INSTDIR\${ADDONSDIRECTORYPRESERVE}` "/M=*.* /S=0K /G=1" $4 $5 $6 ;=== Size of Data directory
+												IntOp $3 $3 - $4 ;=== Remove the plugins directory from the free space calculation
+										${EndIf}
+									${EndIf}
+									!endif
 								!endif
 							${EndIf}
 
