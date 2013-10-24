@@ -1,4 +1,4 @@
-﻿;Copyright 2007-2011 John T. Haller of PortableApps.com
+﻿;Copyright 2007-2012 John T. Haller of PortableApps.com
 ;Website: http://PortableApps.com/
 
 ;This software is OSI Certified Open Source Software.
@@ -24,8 +24,8 @@
 ;as published at PortableApps.com/development. It may also be used with commercial
 ;software by contacting PortableApps.com.
 
-!define PORTABLEAPPSINSTALLERVERSION "2.0.9.0"
-!define PORTABLEAPPS.COMFORMATVERSION "2.0"
+!define PORTABLEAPPSINSTALLERVERSION "3.0.3.0"
+!define PORTABLEAPPS.COMFORMATVERSION "3.0.3"
 
 !if ${__FILE__} == "PortableApps.comInstallerPlugin.nsi"
 	!include PortableApps.comInstallerPluginConfig.nsh
@@ -52,7 +52,7 @@ VIProductVersion "${VERSION}"
 VIAddVersionKey ProductName "${PORTABLEAPPNAME}"
 VIAddVersionKey Comments "${INSTALLERCOMMENTS}"
 VIAddVersionKey CompanyName "PortableApps.com"
-VIAddVersionKey LegalCopyright "PortableApps.com Installer Copyright 2007-2011 PortableApps.com."
+VIAddVersionKey LegalCopyright "PortableApps.com Installer Copyright 2007-2012 PortableApps.com."
 VIAddVersionKey FileDescription "${PORTABLEAPPNAME}"
 VIAddVersionKey FileVersion "${VERSION}"
 VIAddVersionKey ProductVersion "${VERSION}"
@@ -77,6 +77,7 @@ SetDatablockOptimize On
 CRCCheck on
 AutoCloseWindow True
 RequestExecutionLevel user
+AllowRootDirInstall true
 
 ;=== Include
 !include MUI.nsh
@@ -90,6 +91,8 @@ RequestExecutionLevel user
 !endif
 !include TextFunc.nsh
 !include WordFunc.nsh
+!include PortableApps.comInstallerDumpLogToFile.nsh
+!include PortableApps.comInstallerTBProgress.nsh
 
 ;=== Program Icon
 Icon "PortableApps.comInstaller.ico"
@@ -101,9 +104,14 @@ Icon "PortableApps.comInstaller.ico"
 !define MUI_HEADERIMAGE_RIGHT
 
 ;=== Icon & Stye ===
-BrandingText "PortableApps.com - Your Digital Life, Anywhere®"
+BrandingText "PortableApps.com®"
 
 ;=== Pages
+!ifdef COPYLOCALFILES
+	!define MUI_CUSTOMFUNCTION_ABORT CustomAbortFunction
+!endif
+!define MUI_LANGDLL_WINDOWTITLE "${PORTABLEAPPNAME}"
+!define MUI_LANGDLL_INFO "Please select a language for the installer."
 !define MUI_WELCOMEFINISHPAGE_BITMAP "PortableApps.comInstaller.bmp"
 !ifdef PLUGINNAME
 	!define MUI_WELCOMEPAGE_TITLE "${PORTABLEAPPNAMEDOUBLEDAMPERSANDS}"
@@ -115,9 +123,11 @@ BrandingText "PortableApps.com - Your Digital Life, Anywhere®"
 !define MUI_COMPONENTSPAGE_SMALLDESC
 !insertmacro MUI_PAGE_WELCOME
 !ifdef LICENSEAGREEMENT
-	!define MUI_LICENSEPAGE_CHECKBOX
+	;!define MUI_LICENSEPAGE_CHECKBOX
 	!define MUI_PAGE_CUSTOMFUNCTION_PRE PreLicense
-	!insertmacro MUI_PAGE_LICENSE "${LICENSEAGREEMENT}"
+	!define MUI_PAGE_CUSTOMFUNCTION_SHOW ShowLicense
+	!define MUI_PAGE_CUSTOMFUNCTION_LEAVE LeaveLicense
+	!insertmacro MUI_PAGE_LICENSE "..\..\App\AppInfo\${LICENSEAGREEMENT}"
 !endif
 !ifdef MAINSECTIONTITLE
 	!define MUI_PAGE_CUSTOMFUNCTION_PRE PreComponents
@@ -132,6 +142,11 @@ BrandingText "PortableApps.com - Your Digital Life, Anywhere®"
 !define MUI_FINISHPAGE_TEXT "$(finish)"
 !define MUI_PAGE_CUSTOMFUNCTION_PRE PreFinish
 !define MUI_FINISHPAGE_TITLE_3LINES
+!define MUI_FINISHPAGE_CANCEL_ENABLED
+!ifndef PLUGINNAME
+	!define MUI_FINISHPAGE_RUN_NOTCHECKED
+	!define MUI_FINISHPAGE_RUN "$INSTDIR\${FINISHPAGERUN}"
+!endif
 !insertmacro MUI_PAGE_FINISH
 
 ;=== Languages
@@ -268,6 +283,7 @@ Var MINIMIZEINSTALLER
 Var INTERNALEULAVERSION
 Var InstallingStatusString
 Var bolAppUpgrade
+Var bolLogFile
 
 ;=== Custom Code
 !ifdef USESCUSTOMCODE
@@ -323,14 +339,29 @@ Function .onInit
 		${EndSwitch}
 	!endif
 
+	;=== Check for logging mode
+	${GetOptions} $CMDLINE "/LOG=" $0
+	
+	${IfNot} ${Errors}
+	${AndIf} $0 == "true"
+		StrCpy $bolLogFile true
+	${Else}
+		ClearErrors
+	${EndIf}
+	
 	;=== Check for a specified installation directory
-	${GetOptions} $CMDLINE "/DESTINATION=" $R0
+	${GetOptions} $CMDLINE "/DESTINATION=" $0
 
 	${IfNot} ${Errors}
 		!ifdef COMMONFILESPLUGIN
-			StrCpy $INSTDIR "$R0CommonFiles\${APPID}"
+			StrCpy $INSTDIR "$0CommonFiles\${APPID}"
 		!else
-			StrCpy $INSTDIR "$R0${APPID}"
+			${GetOptions} $CMDLINE "/COPYNUMBER=" $1
+			${IfNot} ${Errors}
+				StrCpy $INSTDIR "$0${APPID}_Copy_$1"
+			${Else}
+				StrCpy $INSTDIR "$0${APPID}"
+			${EndIf}
 		!endif
 
 		!ifdef LICENSEAGREEMENT
@@ -407,9 +438,13 @@ Function .onInit
 								${EndIf}
 							!endif
 							${GetRoot} $INSTDIR $2
-							${DriveSpace} `$2\` "/D=F /S=K" $3 ;=== Space Free on Device
+							${DriveSpace} `$2\` "/D=F /S=M" $3 ;=== Space Free on Device
+							
+							IntOp $1 $1 / 1024
 
 							${If} $3 <= $1
+								IntOp $1 $1 * 1024
+								IntOp $3 $3 * 1024
 								!ifndef PLUGININSTALLER ;=== If not a plugin installer, add the current install size to free space
 									${If} ${FileExists} $INSTDIR
 										${GetSize} `$INSTDIR` "/M=*.* /S=0K /G=0" $4 $5 $6 ;=== Current installation size
@@ -428,26 +463,15 @@ Function .onInit
 								!else
 									!ifdef COMMONFILESPLUGIN ;Duplicate code for now, to do above for CommonFiles as well
 										${If} ${FileExists} $INSTDIR
-										${GetSize} `$INSTDIR` "/M=*.* /S=0K /G=0" $4 $5 $6 ;=== Current installation size
-										IntOp $3 $3 + $4 ;=== Space Free + Current Root Install Size
-										${GetSize} `$INSTDIR\App` "/M=*.* /S=0K /G=1" $4 $5 $6 ;=== Current installation size
-										IntOp $3 $3 + $4 ;=== Space Free + Current App Install Size
-										${GetSize} `$INSTDIR\Other` "/M=*.* /S=0K /G=1" $4 $5 $6 ;=== Current installation size
-										IntOp $3 $3 + $4 ;=== Space Free + Current Other Install Size
-
-										${If} `${ADDONSDIRECTORYPRESERVE}` != "NONE"
-										${AndIf} ${FileExists} `$INSTDIR\${ADDONSDIRECTORYPRESERVE}`
-												${GetSize} `$INSTDIR\${ADDONSDIRECTORYPRESERVE}` "/M=*.* /S=0K /G=1" $4 $5 $6 ;=== Size of Data directory
-												IntOp $3 $3 - $4 ;=== Remove the plugins directory from the free space calculation
+											${GetSize} `$INSTDIR` "/M=*.* /S=0K /G=1" $4 $5 $6 ;=== Current installation size
+											IntOp $3 $3 + $4 ;=== Space Free + Current Install Size
 										${EndIf}
-									${EndIf}
 									!endif
 								!endif
+								${If} $3 <= $1
+									MessageBox MB_OK|MB_ICONEXCLAMATION $(notenoughspace)
+									Abort
 							${EndIf}
-
-							${If} $3 <= $1
-								MessageBox MB_OK|MB_ICONEXCLAMATION $(notenoughspace)
-								Abort
 							${EndIf}
 
 							!ifdef LICENSEAGREEMENT
@@ -490,7 +514,11 @@ Function .onInit
 		${Else}
 			;=== No installation directory found
 			ClearErrors
-			${GetDrives} "HDD+FDD" GetDrivesCallBack
+			${If} ${FileExists}	"$PROFILE\PortableApps\*.*"
+				StrCpy $FOUNDPORTABLEAPPSPATH "$Profile\PortableApps"
+			${Else}
+				${GetDrives} "HDD+FDD" GetDrivesCallBack
+			${EndIf}
 			${If} $FOUNDPORTABLEAPPSPATH != ""
 				!ifdef COMMONFILESPLUGIN
 					StrCpy $INSTDIR "$FOUNDPORTABLEAPPSPATH\CommonFiles\${APPID}"
@@ -499,9 +527,9 @@ Function .onInit
 				!endif
 			${Else}
 				!ifdef COMMONFILESPLUGIN
-					StrCpy $INSTDIR "\CommonFiles\${APPID}"
+					StrCpy $INSTDIR "$EXEDIR\CommonFiles\${APPID}"
 				!else
-					StrCpy $INSTDIR "\${APPID}"
+					StrCpy $INSTDIR "$EXEDIR\${APPID}"
 				!endif
 			${EndIf}
 		${EndIf}
@@ -623,7 +651,17 @@ Function PreLicense
 			Abort
 		${EndIf}
 	${EndIf}
-
+FunctionEnd
+Function ShowLicense
+	${If} $AUTOMATEDINSTALL == "true"
+		${TBProgress} 20
+		${TBProgress_State} Paused
+	${EndIf}
+FunctionEnd
+Function LeaveLicense
+	${If} $AUTOMATEDINSTALL == "true"
+		${TBProgress_State} NoProgress
+	${EndIf}
 FunctionEnd
 !endif
 
@@ -666,29 +704,43 @@ Function PreDirectory
 		${EndIf}
 	!endif
 	${GetRoot} $INSTDIR $2
-	${DriveSpace} `$2\` "/D=F /S=K" $3 ;=== Space Free on Device
-
-	!ifndef PLUGININSTALLER ;=== If not a plugin installer, add the current install size to free space
-		${If} ${FileExists} $INSTDIR
-			${GetSize} $INSTDIR "/M=*.* /S=0K /G=1" $4 $5 $6 ;=== Current installation size
-			IntOp $3 $3 + $4 ;=== Space Free + Current Install Size
-
-			${If} ${FileExists} `$INSTDIR\Data`
-				${GetSize} `$INSTDIR\Data` "/M=*.* /S=0K /G=1" $4 $5 $6 ;=== Size of Data directory
-				IntOp $3 $3 - $4 ;=== Remove the data directory from the free space calculation
-			${EndIf}
-
-			${If} `${ADDONSDIRECTORYPRESERVE}` != "NONE"
-			${AndIf} ${FileExists} `$INSTDIR\${ADDONSDIRECTORYPRESERVE}`
-					${GetSize} `$INSTDIR\${ADDONSDIRECTORYPRESERVE}` "/M=*.* /S=0K /G=1" $4 $5 $6 ;=== Size of Data directory
-					IntOp $3 $3 - $4 ;=== Remove the plugins directory from the free space calculation
-			${EndIf}
-		${EndIf}
-	!endif
+	${DriveSpace} `$2\` "/D=F /S=M" $3 ;=== Space Free on Device
+							
+	IntOp $1 $1 / 1024
 
 	${If} $3 <= $1
-		MessageBox MB_OK|MB_ICONEXCLAMATION $(notenoughspace)
-		Return
+		IntOp $1 $1 * 1024
+		IntOp $3 $3 * 1024
+
+		!ifndef PLUGININSTALLER ;=== If not a plugin installer, add the current install size to free space
+			${If} ${FileExists} $INSTDIR
+				${GetSize} $INSTDIR "/M=*.* /S=0K /G=1" $4 $5 $6 ;=== Current installation size
+				IntOp $3 $3 + $4 ;=== Space Free + Current Install Size
+
+				${If} ${FileExists} `$INSTDIR\Data`
+					${GetSize} `$INSTDIR\Data` "/M=*.* /S=0K /G=1" $4 $5 $6 ;=== Size of Data directory
+					IntOp $3 $3 - $4 ;=== Remove the data directory from the free space calculation
+				${EndIf}
+
+				${If} `${ADDONSDIRECTORYPRESERVE}` != "NONE"
+				${AndIf} ${FileExists} `$INSTDIR\${ADDONSDIRECTORYPRESERVE}`
+						${GetSize} `$INSTDIR\${ADDONSDIRECTORYPRESERVE}` "/M=*.* /S=0K /G=1" $4 $5 $6 ;=== Size of Data directory
+						IntOp $3 $3 - $4 ;=== Remove the plugins directory from the free space calculation
+				${EndIf}
+			${EndIf}
+		!else
+			!ifdef COMMONFILESPLUGIN ;Duplicate code for now, to do above for CommonFiles as well
+				${If} ${FileExists} $INSTDIR
+					${GetSize} `$INSTDIR` "/M=*.* /S=0K /G=1" $4 $5 $6 ;=== Current installation size
+					IntOp $3 $3 + $4 ;=== Space Free + Current Install Size
+				${EndIf}
+			!endif
+		!endif
+
+		${If} $3 <= $1
+			MessageBox MB_OK|MB_ICONEXCLAMATION "$(notenoughspace)"
+			Return
+		${EndIf}
 	${EndIf}
 
 	;=== Check if app is running?
@@ -736,6 +788,7 @@ Function LeaveDirectory
 			${GetRoot} $INSTDIR $2
 			${DriveSpace} `$2\` "/D=F /S=K" $3 ;=== Space Free on Device
 
+			
 			!ifndef PLUGININSTALLER ;=== If not a plugin installer, add the current install size to free space
 				${GetSize} `$INSTDIR` "/M=*.* /S=0K /G=0" $4 $5 $6 ;=== Current installation size
 				IntOp $3 $3 + $4 ;=== Space Free + Current Root Install Size
@@ -746,16 +799,36 @@ Function LeaveDirectory
 
 				${If} `${ADDONSDIRECTORYPRESERVE}` != "NONE"
 				${AndIf} ${FileExists} `$INSTDIR\${ADDONSDIRECTORYPRESERVE}`
-					${GetSize} `$INSTDIR\${ADDONSDIRECTORYPRESERVE}` "/M=*.* /S=0K /G=1" $4 $5 $6 ;=== Size of Data directory
-					IntOp $3 $3 - $4 ;=== Remove the plugins directory from the free space calculation
+						${GetSize} `$INSTDIR\${ADDONSDIRECTORYPRESERVE}` "/M=*.* /S=0K /G=1" $4 $5 $6 ;=== Size of Data directory
+						IntOp $3 $3 - $4 ;=== Remove the plugins directory from the free space calculation
 				${EndIf}
+			!else
+				!ifdef COMMONFILESPLUGIN ;Duplicate code for now, to do above for CommonFiles as well
+					${GetSize} `$INSTDIR` "/M=*.* /S=0K /G=1" $4 $5 $6 ;=== Current installation size
+					IntOp $3 $3 + $4 ;=== Space Free + Current Install Size
+				!endif
 			!endif
 
 			${If} $3 <= $1
-				MessageBox MB_OK|MB_ICONEXCLAMATION $(notenoughspace)
+				MessageBox MB_OK|MB_ICONEXCLAMATION "$(notenoughspace)"
 				Abort
 			${EndIf}
 	${EndSelect}
+	
+	;Check for Program Files
+	ReadEnvStr $0 IPromiseNotToComplainWhenPortableAppsDontWorkRightInProgramFiles
+	${If} $0 != "I understand that this may not work and that I can not ask for help with any of my apps when operating in this fashion."
+		${WordFind} "$INSTDIR" "$PROGRAMFILES" "*" $R0
+		${If} $R0 > 0
+			MessageBox MB_OK|MB_ICONINFORMATION "$(invaliddirectory) [$PROGRAMFILES or sub-directories]"
+			Abort
+		${EndIf}
+		${WordFind} "$INSTDIR" "$PROGRAMFILES64" "*" $R0
+		${If} $R0 > 0
+			MessageBox MB_OK|MB_ICONINFORMATION "$(invaliddirectory) [$PROGRAMFILES64 or sub-directories]"
+			Abort
+		${EndIf}
+	${EndIf}
 FunctionEnd
 
 Function PreFinish
@@ -815,6 +888,102 @@ FunctionEnd
 		DetailPrint $InstallingStatusString
 	${EndIf}
 	SetDetailsPrint ListOnly
+	
+	;=== Download Files
+!ifdef DownloadURL
+	${If} ${FileExists} `$EXEDIR\${DownloadFileName}`
+		!ifdef DownloadMD5
+			md5dll::GetMD5File "$EXEDIR\${DownloadFileName}"
+			Pop $R0
+			${If} $R0 == ${DownloadMD5}
+				StrCpy $DOWNLOADALREADYEXISTED "true"
+				StrCpy $DOWNLOADRESULT "OK"
+			${EndIf}
+		!else
+			StrCpy $DOWNLOADALREADYEXISTED "true"
+			StrCpy $DOWNLOADRESULT "OK"
+		!endif
+	${EndIf}
+	
+	${If} $DOWNLOADALREADYEXISTED == "true"
+		StrCpy $DOWNLOADEDFILE "$EXEDIR\${DownloadFileName}"
+	${Else}
+		DownloadTheFile:
+		CreateDirectory `$PLUGINSDIR\Downloaded`
+		SetDetailsPrint both
+		${If} $(downloading) != ""
+			DetailPrint $(downloading)
+		${Else}
+			DetailPrint "Downloading ${DownloadName}..."
+		${EndIf}
+
+		SetDetailsPrint none
+		Delete "$PLUGINSDIR\Downloaded\${DownloadName}"
+		Delete "$PLUGINSDIR\Downloaded\${DownloadFilename}"
+		
+		${If} $(downloading) != ""
+			inetc::get /CONNECTTIMEOUT 30 /NOCOOKIES /TRANSLATE $(downloading) $(downloadconnecting) $(downloadsecond) $(downloadminute) $(downloadhour) $(downloadplural) "%dkB (%d%%) of %dkB @ %d.%01dkB/s" " (%d %s%s $(downloadremaining))" "${DownloadURL}" "$PLUGINSDIR\Downloaded\${DownloadName}" /END
+		${Else}
+			inetc::get /CONNECTTIMEOUT 30 /NOCOOKIES /TRANSLATE "Downloading %s..." "Connecting..." second minute hour s "%dkB (%d%%) of %dkB @ %d.%01dkB/s" " (%d %s%s remaining)" "${DownloadURL}" "$PLUGINSDIR\Downloaded\${DownloadName}" /END
+		${EndIf}
+		SetDetailsPrint both
+		DetailPrint $InstallingStatusString
+		SetDetailsPrint ListOnly
+		Pop $DOWNLOADRESULT
+		${If} $DOWNLOADRESULT == "OK"
+			Rename "$PLUGINSDIR\Downloaded\${DownloadName}" "$PLUGINSDIR\Downloaded\${DownloadFilename}"
+			StrCpy $DOWNLOADEDFILE "$PLUGINSDIR\Downloaded\${DownloadFilename}"
+			!ifdef DownloadMD5
+				md5dll::GetMD5File "$DOWNLOADEDFILE"
+				Pop $R0
+				${If} $R0 != ${DownloadMD5}
+					${If} $SECONDDOWNLOADATTEMPT != true
+						StrCpy $SECONDDOWNLOADATTEMPT true
+						Goto DownloadTheFile
+					${EndIf}
+					StrCpy $MD5MISMATCH "true"
+
+					Delete "$INTERNET_CACHE\${DownloadFileName}"
+					Delete "$PLUGINSDIR\Downloaded\${DownloadFilename}"
+					SetDetailsPrint textonly
+					DetailPrint ""
+					SetDetailsPrint listonly
+					${TBProgress_State} Error
+					${If} $(downloadfilemismatch) != ""
+						MessageBox MB_OK|MB_ICONEXCLAMATION $(downloadfilemismatch)
+						DetailPrint $(downloadfilemismatch)
+					${Else}
+						MessageBox MB_OK|MB_ICONEXCLAMATION `The downloaded copy of ${DownloadName} is not valid and can not be installed.  Please try installing again.`
+						DetailPrint `The downloaded copy of ${DownloadName} is not valid and can not be installed.  Please try installing again.`
+					${EndIf}
+					${TBProgress_State} NoProgress
+					Abort
+				${EndIf}
+			!endif
+		${Else}
+			${If} $SECONDDOWNLOADATTEMPT != true
+			${AndIf} $DOWNLOADRESULT != "Cancelled"
+				StrCpy $SECONDDOWNLOADATTEMPT true
+				Goto DownloadTheFile
+			${EndIf}
+			Delete "$INTERNET_CACHE\${DownloadFileName}"
+			Delete "$PLUGINSDIR\Downloaded\${DownloadFilename}"
+			SetDetailsPrint textonly
+				DetailPrint ""
+			SetDetailsPrint listonly
+			${TBProgress_State} Error
+			${If} $(downloadfailed) != ""
+				MessageBox MB_OK|MB_ICONEXCLAMATION $(downloadfailed)
+				DetailPrint $(downloadfailed)
+			${Else}
+				MessageBox MB_OK|MB_ICONEXCLAMATION `The installer was unable to download ${DownloadName}.  The installation of the portable app will be incomplete without it. Please try installing again. (ERROR: $DOWNLOADRESULT)`
+				DetailPrint `The installer was unable to download ${DownloadName}.  The installation of the portable app will be incomplete without it. Please try installing again. (ERROR: $DOWNLOADRESULT)`
+			${EndIf}
+			${TBProgress_State} NoProgress
+			Abort
+		${EndIf}
+	${EndIf}
+!endif
 
 !ifdef MAINSECTIONTITLE
 	SectionGetFlags 1 $0
@@ -958,178 +1127,102 @@ FunctionEnd
 		File /r /x PortableApps.comInstallerCustom.nsh /x PortableApps.comInstallerPluginCustom.nsh "..\..\Other\Source\PortableApps.comInstaller*.*"
 	!endif
 
-	;=== Download Files
+	;=== Extract Download Files
 	!ifdef DownloadURL
-		${If} ${FileExists} `$EXEDIR\${DownloadFileName}`
-			!ifdef DownloadMD5
-				md5dll::GetMD5File "$EXEDIR\${DownloadFileName}"
-				Pop $R0
-				${If} $R0 == ${DownloadMD5}
-					StrCpy $DOWNLOADALREADYEXISTED "true"
-					StrCpy $DOWNLOADRESULT "OK"
-				${EndIf}
-			!else
-				StrCpy $DOWNLOADALREADYEXISTED "true"
-				StrCpy $DOWNLOADRESULT "OK"
-			!endif
-		${EndIf}
-		
-		${If} $DOWNLOADALREADYEXISTED == "true"
-			StrCpy $DOWNLOADEDFILE "$EXEDIR\${DownloadFileName}"
-		${Else}
-			DownloadTheFile:
-			CreateDirectory `$PLUGINSDIR\Downloaded`
-			SetDetailsPrint both
-			${If} $(downloading) != ""
-				DetailPrint $(downloading)
-			${Else}
-				DetailPrint "Downloading ${DownloadName}..."
-			${EndIf}
+		!ifdef DownloadTo
+			;Just copy the file
+			CopyFiles /SILENT "$DOWNLOADEDFILE" "$INSTDIR\${DownloadTo}"
+		!else
+		;Process the file
+			!ifdef Extract1To
+				;Standard extract
 
-			SetDetailsPrint none
-			Delete "$PLUGINSDIR\Downloaded\${DownloadName}"
-			Delete "$PLUGINSDIR\Downloaded\${DownloadFilename}"
-			
-			${If} $(downloading) != ""
-				inetc::get /TIMEOUT 20000 /TRANSLATE $(downloading) $(downloadconnecting) $(downloadsecond) $(downloadminute) $(downloadhour) $(downloadplural) "%dkB (%d%%) of %dkB @ %d.%01dkB/s" " (%d %s%s $(downloadremaining))" "${DownloadURL}" "$PLUGINSDIR\Downloaded\${DownloadName}"
-			${Else}
-				inetc::get /TIMEOUT 20000 /TRANSLATE "Downloading %s..." "Connecting..." second minute hour s "%dkB (%d%%) of %dkB @ %d.%01dkB/s" " (%d %s%s remaining)" "${DownloadURL}" "$PLUGINSDIR\Downloaded\${DownloadName}"
-			${EndIf}
-			SetDetailsPrint both
-			DetailPrint $InstallingStatusString
-			SetDetailsPrint ListOnly
-			Pop $DOWNLOADRESULT
-			${If} $DOWNLOADRESULT == "OK"
-				Rename "$PLUGINSDIR\Downloaded\${DownloadName}" "$PLUGINSDIR\Downloaded\${DownloadFilename}"
-				StrCpy $DOWNLOADEDFILE "$PLUGINSDIR\Downloaded\${DownloadFilename}"
-				!ifdef DownloadMD5
-					md5dll::GetMD5File "$DOWNLOADEDFILE"
-					Pop $R0
-					${If} $R0 != ${DownloadMD5}
-						${If} $SECONDDOWNLOADATTEMPT != true
-							StrCpy $SECONDDOWNLOADATTEMPT true
-							Goto DownloadTheFile
+				!macro ExtractTo _n
+					!ifdef Extract${_n}To
+						CreateDirectory "$INSTDIR\${Extract${_n}To}"
+						nsisunz::UnzipToLog /file "${Extract${_n}File}" "$DOWNLOADEDFILE" "$INSTDIR\${Extract${_n}To}"
+						Pop $R0
+						${If} $R0 <> "OK"
+							DetailPrint "ERROR: $R0 (${DownloadFilename} - ${Extract${_n}File})"
+							Abort
 						${EndIf}
-						StrCpy $MD5MISMATCH "true"
+					!endif
+				!macroend
+				${!insertmacro1-10} ExtractTo
+			!endif
+			!ifdef AdvancedExtract1To
+				;Advanced extract with 7zip
+				CreateDirectory "$INSTDIR\7zTemp"
+				SetOutPath "$INSTDIR\7zTemp"
+				File "${NSISDIR}\..\7zip\7z.exe"
+				File "${NSISDIR}\..\7zip\7z.dll"
+				SetOutPath $INSTDIR
 
-						${If} $(downloadfilemismatch) != ""
-							MessageBox MB_OK|MB_ICONEXCLAMATION $(downloadfilemismatch)
+				; The original code didn't have a !ifdef for 1, but we
+				; know it will be defined, and it doesn't matter if we
+				; check if it is because it will be.
+				!macro AdvancedExtractFilter _n
+					!ifdef AdvancedExtract${_n}To
+						CreateDirectory "$INSTDIR\${AdvancedExtract${_n}To}"
+						${If} "${AdvancedExtract${_n}Filter}" == "**"
+							ExecDOS::exec `"$INSTDIR\7zTemp\7z.exe" x -r "$DOWNLOADEDFILE" -o"$INSTDIR\${AdvancedExtract${_n}To}" * -aoa -y` "" ""
 						${Else}
-							MessageBox MB_OK|MB_ICONEXCLAMATION `The downloaded copy of ${DownloadName} is not valid and can not be installed.  Please try installing again.`
+							ExecDOS::exec `"$INSTDIR\7zTemp\7z.exe" x "$DOWNLOADEDFILE" -o"$INSTDIR\${AdvancedExtract${_n}To}" "${AdvancedExtract${_n}Filter}" -aoa -y` "" ""
 						${EndIf}
-					${EndIf}
-				!endif
-			${EndIf}
-		${EndIf}
-		
-		${If} $MD5MISMATCH != "true"
-		${AndIf} $DOWNLOADRESULT == "OK"
-			!ifdef DownloadTo
-				;Just copy the file
-				CopyFiles /SILENT "$DOWNLOADEDFILE" "$INSTDIR\${DownloadTo}"
-			!else
-			;Process the file
-				!ifdef Extract1To
-					;Standard extract
+						Pop $R0
+						${If} $R0 <> 0
+							DetailPrint "ERROR: (${DownloadFilename} > ${AdvancedExtract${_n}To})"
+							Abort
+						${EndIf}
+					!endif
+				!macroend
+				${!insertmacro1-10} AdvancedExtractFilter
 
-					!macro ExtractTo _n
-						!ifdef Extract${_n}To
-							CreateDirectory "$INSTDIR\${Extract${_n}To}"
-							nsisunz::UnzipToLog /file "${Extract${_n}File}" "$DOWNLOADEDFILE" "$INSTDIR\${Extract${_n}To}"
-							Pop $R0
-							${If} $R0 <> "OK"
-								DetailPrint "ERROR: $R0 (${DownloadFilename} - ${Extract${_n}File})"
-								Abort
-							${EndIf}
-						!endif
-					!macroend
-					${!insertmacro1-10} ExtractTo
-				!endif
-				!ifdef AdvancedExtract1To
-					;Advanced extract with 7zip
-					CreateDirectory "$INSTDIR\7zTemp"
-					SetOutPath "$INSTDIR\7zTemp"
-					File "${NSISDIR}\..\7zip\7z.exe"
-					File "${NSISDIR}\..\7zip\7z.dll"
-					SetOutPath $INSTDIR
-
-					; The original code didn't have a !ifdef for 1, but we
-					; know it will be defined, and it doesn't matter if we
-					; check if it is because it will be.
-					!macro AdvancedExtractFilter _n
-						!ifdef AdvancedExtract${_n}To
-							CreateDirectory "$INSTDIR\${AdvancedExtract${_n}To}"
-							${If} "${AdvancedExtract${_n}Filter}" == "**"
-								ExecDOS::exec `"$INSTDIR\7zTemp\7z.exe" x -r "$DOWNLOADEDFILE" -o"$INSTDIR\${AdvancedExtract${_n}To}" * -aoa -y` "" ""
-							${Else}
-								ExecDOS::exec `"$INSTDIR\7zTemp\7z.exe" x "$DOWNLOADEDFILE" -o"$INSTDIR\${AdvancedExtract${_n}To}" "${AdvancedExtract${_n}Filter}" -aoa -y` "" ""
-							${EndIf}
-							Pop $R0
-							${If} $R0 <> 0
-								DetailPrint "ERROR: (${DownloadFilename} > ${AdvancedExtract${_n}To})"
-								Abort
-							${EndIf}
-						!endif
-					!macroend
-					${!insertmacro1-10} AdvancedExtractFilter
-
-					Delete "$INSTDIR\7zTemp\7z.dll"
-					Delete "$INSTDIR\7zTemp\7z.exe"
-					RMDir "$INSTDIR\7zTemp"
-				!endif
-				!ifdef DoubleExtractFilename
-					;Double extract using 7zip
-					CreateDirectory "$INSTDIR\7zTemp"
-					SetOutPath "$INSTDIR\7zTemp"
-					File "${NSISDIR}\..\7zip\7z.exe"
-					File "${NSISDIR}\..\7zip\7z.dll"
-					SetOutPath $INSTDIR
-
-					CreateDirectory "$PLUGINSDIR\Downloaded2"
-					ExecDOS::exec `"$INSTDIR\7zTemp\7z.exe" x "$DOWNLOADEDFILE" -o"$PLUGINSDIR\Downloaded2" "${DoubleExtractFilename}" -aoa -y` "" ""
-					Pop $R0
-					${If} $R0 <> 0
-						DetailPrint "ERROR: (${DownloadFilename} > ${DoubleExtractFilename})"
-						Abort
-					${EndIf}
-
-					; The original code didn't have a !ifdef for 1, but we
-					; know it will be defined, and it doesn't matter if we
-					; check if it is because it will be.
-					!macro DoubleExtractTo _n
-						!ifdef DoubleExtract${_n}To
-							CreateDirectory "$INSTDIR\${DoubleExtract${_n}To}"
-							${If} "${DoubleExtract${_n}Filter}" == "**"
-								ExecDOS::exec `"$INSTDIR\7zTemp\7z.exe" x -r "$PLUGINSDIR\Downloaded2\${DoubleExtractFilename}" -o"$INSTDIR\${DoubleExtract${_n}To}" * -aoa -y` "" ""
-							${Else}
-								ExecDOS::exec `"$INSTDIR\7zTemp\7z.exe" x "$PLUGINSDIR\Downloaded2\${DoubleExtractFilename}" -o"$INSTDIR\${DoubleExtract${_n}To}" "${DoubleExtract${_n}Filter}" -aoa -y` "" ""
-							${EndIf}
-							Pop $R0
-							${If} $R0 <> 0
-								DetailPrint "ERROR: (${DoubleExtractFilename} > ${DoubleExtract${_n}To})"
-								Abort
-							${EndIf}
-						!endif
-					!macroend
-					${!insertmacro1-10} DoubleExtractTo
-
-					Delete "$INSTDIR\7zTemp\7z.exe"
-					Delete "$INSTDIR\7zTemp\7z.dll"
-					RMDir "$INSTDIR\7zTemp"
-				!endif
+				Delete "$INSTDIR\7zTemp\7z.dll"
+				Delete "$INSTDIR\7zTemp\7z.exe"
+				RMDir "$INSTDIR\7zTemp"
 			!endif
-		${Else}
-			${If} $SECONDDOWNLOADATTEMPT != true
-			${AndIf} $DOWNLOADRESULT != "Cancelled"
-				StrCpy $SECONDDOWNLOADATTEMPT true
-				Goto DownloadTheFile
-			${EndIf}
-			${If} $(downloadfailed) != ""
-				MessageBox MB_OK|MB_ICONEXCLAMATION $(downloadfailed)
-			${Else}
-				MessageBox MB_OK|MB_ICONEXCLAMATION `The installer was unable to download ${DownloadName}.  The installation of the portable app will be incomplete without it. Please try installing again. (ERROR: $DOWNLOADRESULT)`
-			${EndIf}
-		${EndIf}
+			!ifdef DoubleExtractFilename
+				;Double extract using 7zip
+				CreateDirectory "$INSTDIR\7zTemp"
+				SetOutPath "$INSTDIR\7zTemp"
+				File "${NSISDIR}\..\7zip\7z.exe"
+				File "${NSISDIR}\..\7zip\7z.dll"
+				SetOutPath $INSTDIR
+
+				CreateDirectory "$PLUGINSDIR\Downloaded2"
+				ExecDOS::exec `"$INSTDIR\7zTemp\7z.exe" x "$DOWNLOADEDFILE" -o"$PLUGINSDIR\Downloaded2" "${DoubleExtractFilename}" -aoa -y` "" ""
+				Pop $R0
+				${If} $R0 <> 0
+					DetailPrint "ERROR: (${DownloadFilename} > ${DoubleExtractFilename})"
+					Abort
+				${EndIf}
+
+				; The original code didn't have a !ifdef for 1, but we
+				; know it will be defined, and it doesn't matter if we
+				; check if it is because it will be.
+				!macro DoubleExtractTo _n
+					!ifdef DoubleExtract${_n}To
+						CreateDirectory "$INSTDIR\${DoubleExtract${_n}To}"
+						${If} "${DoubleExtract${_n}Filter}" == "**"
+							ExecDOS::exec `"$INSTDIR\7zTemp\7z.exe" x -r "$PLUGINSDIR\Downloaded2\${DoubleExtractFilename}" -o"$INSTDIR\${DoubleExtract${_n}To}" * -aoa -y` "" ""
+						${Else}
+							ExecDOS::exec `"$INSTDIR\7zTemp\7z.exe" x "$PLUGINSDIR\Downloaded2\${DoubleExtractFilename}" -o"$INSTDIR\${DoubleExtract${_n}To}" "${DoubleExtract${_n}Filter}" -aoa -y` "" ""
+						${EndIf}
+						Pop $R0
+						${If} $R0 <> 0
+							DetailPrint "ERROR: (${DoubleExtractFilename} > ${DoubleExtract${_n}To})"
+							Abort
+						${EndIf}
+					!endif
+				!macroend
+				${!insertmacro1-10} DoubleExtractTo
+
+				Delete "$INSTDIR\7zTemp\7z.exe"
+				Delete "$INSTDIR\7zTemp\7z.dll"
+				RMDir "$INSTDIR\7zTemp"
+			!endif
+		!endif
 	!endif
 
 	;=== Copy Local Files
@@ -1207,6 +1300,9 @@ FunctionEnd
 !ifdef DownloadURL
 	Delete "$INTERNET_CACHE\${DownloadFileName}"
 !endif
+	${If} $bolLogFile == true
+		${DumpLogToFile} "$EXEDIR\$EXEFILE.log"
+	${EndIf}
 SectionEnd
 
 !ifdef MAINSECTIONTITLE
@@ -1233,11 +1329,18 @@ SectionEnd
 	!insertmacro MUI_FUNCTION_DESCRIPTION_END
 !endif
 
+Function .onInstFailed
+	!ifdef COPYLOCALFILES
+		${registry::Unload}
+	!endif
+	RMDir $INSTDIR ;remove directory if empty
+FunctionEnd
+
 !ifdef COPYLOCALFILES
-	Function .onInstFailed
+	Function .onInstSuccess
 		${registry::Unload}
 	FunctionEnd
-	Function .onInstSuccess
+	Function CustomAbortFunction
 		${registry::Unload}
 	FunctionEnd
 !endif

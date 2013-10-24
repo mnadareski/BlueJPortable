@@ -7,14 +7,15 @@
 
 !define DumpLogToFile "!insertmacro DumpLogToFile"
 !macro DumpLogToFile logfilename
+	Delete `${logfilename}`
 	push `${logfilename}`
-	call DumpLogToFile
+	call DumpLog
 !macroend
 
 !define LVM_GETITEMCOUNT 0x1004
 !define LVM_GETITEMTEXT 0x1073
 
-Function DumpLogToFile
+Function DumpLog
   Exch $5
   Push $0
   Push $1
@@ -48,7 +49,7 @@ Function DumpLogToFile
       System::Free $3
       Goto exit
   error:
-    MessageBox MB_OK error
+    ;MessageBox MB_OK error
   exit:
     Pop $6
     Pop $4
