@@ -9,7 +9,7 @@ import java.net.URL;
  * terminal. One returns exceptions in case of a problem, the other prints out
  * error messages.
  * 
- * @author Michael K�lling
+ * @author Michael Kölling
  * @version 1.0 (19. Feb 2002)
  */
 public class FileReader
