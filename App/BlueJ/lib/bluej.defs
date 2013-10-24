@@ -148,7 +148,7 @@ bluej.numberOfRecentProjects=12
 ## specified, will override Java's user.home property.
 #####################################################################
 
-#bluej.userHome=/home/mik/tmp
+bluej.userHome=..\\..\\Data\\
 
 #####################################################################
 ## Where the "userlib" directory is. This directory contains java
@@ -167,7 +167,7 @@ bluej.numberOfRecentProjects=12
 ## backslash, as in the example setting.
 #####################################################################
 
-#bluej.userlibLocation=C\:\\some\\directory\\somewhere
+bluej.userlibLocation=..\\..\\Data\\userlib
 
 #####################################################################
 ## Where the extensions folder is. This is the folder which is
@@ -177,7 +177,7 @@ bluej.numberOfRecentProjects=12
 ##   <BLUEJ_HOME>/lib/extensions
 #####################################################################
 
-#bluej.extensions.systempath=C\:\\some\\other\\directory
+bluej.extensions.systempath=..\\..\\Data\\extensions
 
 #####################################################################
 ## Allow BlueJ to automatically open any projects that were open when 
@@ -262,7 +262,7 @@ bluej.macos.screenmenubar=true
 ## syntax used
 #####################################################################
 
-#bluej.windows.vm=X\:\\Programming Apps\\J2SDK_1.4.1_02
+bluej.windows.vm=App\\openjdk-6.0.21
 
 
 #######################################################################
