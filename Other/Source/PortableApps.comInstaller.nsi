@@ -24,8 +24,8 @@
 ;as published at PortableApps.com/development. It may also be used with commercial
 ;software by contacting PortableApps.com.
 
-!define PORTABLEAPPSINSTALLERVERSION "3.0.3.0"
-!define PORTABLEAPPS.COMFORMATVERSION "3.0.3"
+!define PORTABLEAPPSINSTALLERVERSION "3.0.5.0"
+!define PORTABLEAPPS.COMFORMATVERSION "3.0.5"
 
 !if ${__FILE__} == "PortableApps.comInstallerPlugin.nsi"
 	!include PortableApps.comInstallerPluginConfig.nsh
@@ -818,12 +818,12 @@ Function LeaveDirectory
 	;Check for Program Files
 	ReadEnvStr $0 IPromiseNotToComplainWhenPortableAppsDontWorkRightInProgramFiles
 	${If} $0 != "I understand that this may not work and that I can not ask for help with any of my apps when operating in this fashion."
-		${WordFind} "$INSTDIR" "$PROGRAMFILES" "*" $R0
+		${WordFind} "$INSTDIR\" "$PROGRAMFILES\" "*" $R0
 		${If} $R0 > 0
 			MessageBox MB_OK|MB_ICONINFORMATION "$(invaliddirectory) [$PROGRAMFILES or sub-directories]"
 			Abort
 		${EndIf}
-		${WordFind} "$INSTDIR" "$PROGRAMFILES64" "*" $R0
+		${WordFind} "$INSTDIR\" "$PROGRAMFILES64\" "*" $R0
 		${If} $R0 > 0
 			MessageBox MB_OK|MB_ICONINFORMATION "$(invaliddirectory) [$PROGRAMFILES64 or sub-directories]"
 			Abort
@@ -1303,6 +1303,7 @@ FunctionEnd
 	${If} $bolLogFile == true
 		${DumpLogToFile} "$EXEDIR\$EXEFILE.log"
 	${EndIf}
+	SetOutPath $INSTDIR
 SectionEnd
 
 !ifdef MAINSECTIONTITLE
